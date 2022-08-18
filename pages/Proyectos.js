@@ -142,7 +142,6 @@ export default function Projects() {
             alt=""
             width={400}
             height={250}
-            priority
           />
           <span className={styles.Proyectos__line}></span>
           <p className={styles.Proyectos__info}>
