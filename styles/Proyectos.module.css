@@ -1,0 +1,128 @@
+.Proyectos__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0) 0%,
+    rgb(0, 0, 0) 50%,
+    rgba(0, 0, 0) 100%
+  );
+  /* background: rgb(120, 111, 255);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 100%
+  ); */
+  width: 100%;
+  height: auto;
+}
+
+.Proyectos__line {
+  height: 0.2rem;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.Proyectos__div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+
+  border-radius: 20px;
+  width: 90%;
+  height: 90%;
+  margin-top: 1.5rem;
+}
+
+.Proyectos__div h1 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.Proyectos__info {
+  color: #fff;
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.Proyectos___tecnologias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  width: 100%;
+}
+
+.tecnologias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  background-color: grey;
+  color: #fff;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 20px;
+  font-family: Roboto;
+  font-size: 0.9rem;
+}
+
+.Proyectos__div__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Proyectos__buttons {
+  margin-top: 2rem;
+  bottom: 1rem;
+  padding: 0.8em 1.8em;
+  border: 0.2rem solid rgb(112, 112, 112);
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: Roboto;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Proyectos__buttons::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #fff;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.Proyectos__buttons:hover::before {
+  width: 130%;
+}
+
+.Proyectos__buttons:hover {
+  color: #111;
+}
