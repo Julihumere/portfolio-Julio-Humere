@@ -17,7 +17,7 @@ export default function Layout() {
           </Link>
         </li>
         <li className={style.Layout__li}>
-          <Link href={"/About"}>
+          <Link href={"/SobreMi"}>
             <button className={style.Layout__button}>
               <span>Sobre mi</span>
             </button>
@@ -31,7 +31,7 @@ export default function Layout() {
           </Link>
         </li>
         <li className={style.Layout__li}>
-          <Link href={"/Projects"}>
+          <Link href={"/Proyectos"}>
             <button className={style.Layout__button}>
               <span>Proyectos</span>
             </button>
