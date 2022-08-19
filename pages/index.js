@@ -31,6 +31,7 @@ export default function Home() {
               network="github"
               bgColor="white"
               url="https://github.com/Julihumere"
+              target={"_blank"}
             />
           </li>
           <li>
@@ -38,6 +39,7 @@ export default function Home() {
               network="linkedin"
               bgColor="white"
               url="https://www.linkedin.com/in/juli-humere/"
+              target={"_blank"}
             />
           </li>
           <li>
@@ -45,6 +47,7 @@ export default function Home() {
               network="whatsapp"
               bgColor="white"
               url="https://walink.co/ef4aa4"
+              target={"_blank"}
             />
           </li>
         </ul>

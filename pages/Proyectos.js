@@ -123,10 +123,10 @@ export default function Projects() {
               ))}
           </div>
           <div className={styles.Proyectos__div__buttons}>
-            <Link href={"/"}>
+            <Link href={"https://love-of-travel.vercel.app/"}>
               <button className={styles.Proyectos__buttons}>Pagina</button>
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://github.com/Julihumere/PI-Countries"}>
               <button className={styles.Proyectos__buttons}>Codigo</button>
             </Link>
           </div>
@@ -157,10 +157,10 @@ export default function Projects() {
               ))}
           </div>
           <div className={styles.Proyectos__div__buttons}>
-            <Link href={"/"}>
+            <Link href={"https://pomodoro-and-todo.vercel.app/"}>
               <button className={styles.Proyectos__buttons}>Pagina</button>
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://github.com/Julihumere/pomodoro-and.-todo"}>
               <button className={styles.Proyectos__buttons}>Codigo</button>
             </Link>
           </div>
