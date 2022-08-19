@@ -53,6 +53,27 @@
   background-color: #fff;
 }
 
+@media screen and (max-width: 960px) {
+  .home__divMayor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25rem;
+  }
+  .home__title {
+    font-size: 3rem;
+  }
+
+  .home__ul {
+    width: 80%;
+
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    right: 1rem;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .home__divMayor {
     display: flex;
