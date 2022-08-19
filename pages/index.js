@@ -2,6 +2,7 @@ import Typewriter from "typewriter-effect";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "../Components/Layout";
+
 import { SocialIcon } from "react-social-icons";
 
 export default function Home() {
@@ -15,14 +16,14 @@ export default function Home() {
       <Layout />
       <div className={styles.home__divMayor}>
         <h1 className={styles.home__title}>Julio Humere</h1>
-        <Typewriter
+        {/* <Typewriter
           options={{
             loop: true,
             autoStart: true,
             pause: 3000,
             strings: ["Soy Desarrollador Full Stack"],
           }}
-        />
+        /> */}
 
         <ul className={styles.home__ul}>
           <li>

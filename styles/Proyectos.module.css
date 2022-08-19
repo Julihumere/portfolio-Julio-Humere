@@ -1,9 +1,7 @@
 .Proyectos__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   justify-items: center;
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -37,7 +35,7 @@
   border: 1px solid white;
 
   border-radius: 20px;
-  width: 90%;
+  width: 25rem;
   height: 90%;
   margin-top: 1.5rem;
 }
@@ -126,3 +124,29 @@
 .Proyectos__buttons:hover {
   color: #111;
 }
+
+/* @media screen and (max-width: 1280px) {
+  .Proyectos__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Proyectos__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Proyectos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} */

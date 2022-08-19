@@ -40,7 +40,7 @@ export default function Skills() {
           },
           {
             icon: "/img/FrontEnd/taildwind css.png",
-            title: "Taildwind CSS",
+            title: "Taildwind",
           },
         ],
       },

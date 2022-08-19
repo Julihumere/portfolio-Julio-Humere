@@ -88,3 +88,33 @@
   width: 50%;
   color: #fff;
 }
+
+@media screen and (max-width: 900px) {
+  .Skills__container h4 {
+    margin-left: 1.5rem;
+  }
+  .Skills__map {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Skills__container h4 {
+    margin-left: 1.5rem;
+  }
+  .Skills__map {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    width: 25rem;
+  }
+}

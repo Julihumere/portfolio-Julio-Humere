@@ -79,3 +79,47 @@
 .About__cv:hover {
   color: #111;
 }
+
+@media screen and (max-width: 972px) {
+  .About__container {
+    height: 100vh;
+    width: 100%;
+  }
+  .About__text {
+    width: 100%;
+    height: auto;
+  }
+
+  .About__cv {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .About__container {
+    height: 100vh;
+    width: 100%;
+  }
+  .About__text {
+    width: 100%;
+    height: auto;
+  }
+
+  .About__cv {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .About__container {
+    height: auto;
+    width: 100%;
+  }
+  .About__text {
+    width: 100%;
+  }
+
+  .About__cv {
+    margin-bottom: 2rem;
+  }
+}
