@@ -1,11 +1,5 @@
 .About__container {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0) 0%,
-    rgb(0, 0, 0) 50%,
-    rgba(0, 0, 0) 100%
-  );
+  background: rgb(62, 62, 62);
   /* background: rgb(120, 111, 255);
     background: linear-gradient(
       90deg,
@@ -73,11 +67,18 @@
 }
 
 .About__cv:hover::before {
-  width: 130%;
+  width: 100%;
+  height: 400%;
 }
 
 .About__cv:hover {
   color: #111;
+}
+
+.About__buttons__cv {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 972px) {

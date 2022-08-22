@@ -3,13 +3,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   justify-items: center;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0) 0%,
-    rgb(0, 0, 0) 50%,
-    rgba(0, 0, 0) 100%
-  );
+  background: rgb(62, 62, 62);
   /* background: rgb(120, 111, 255);
   background: linear-gradient(
     90deg,

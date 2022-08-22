@@ -1,0 +1,23 @@
+{
+  "index": {
+    "Descripcion": "Soy desarrollador FullStack"
+  },
+
+  "SobreMi": {
+    "Titulo": "Sobre mi...",
+    "Text1": "Fui parte del bootcamp de Henry, el cual me proporciono +800 horas de codeo, practica y aprendizaje. En el cual aprendi Javascript, React, Node.JS, Express, Redux, HTML, CSS. Y continuo aprendiendo nuevas tecnologias que me den paso a un excelente empleo, como typescript, nextJS, React Native, Mongo DB.",
+    "Text2": "Si bien no tengo experiencia laboral como tal, me siento capacitado para dar el maximo de mi y aprender lo que haya que saber, me considero una persona que tiene aprendizaje rapido y muchas ganas de demostrarlo. Tengo proyectos realizados que los pueden encontrar en mi github(github.com/Julihumere), con su respectiva demostracion en mi Linkedin(linkedin.com/in/juli-humere/)"
+  },
+  "Habilidades": {
+    "Titulo": "Habilidades",
+    "Info": "Estas son las skill aprendidas hasta el momento",
+    "Otros": "Otros"
+  },
+  "Proyectos": {
+    "TextoFoodies": "Es una SPA que tiene una paginacion de 9 recetas, con ordenamientos por abecedario y nivel saludable y filtrados por dietas, y una formulario controlado con javascript para crear distintas recetas.",
+    "TextoTravel": "Es una SPA que tiene una paginacion de 10 paises, con ordenamientos por abecedario y poblacion y filtrados por continentes y actividades,  y una formulario controlado con javascript para crear actividades turisticas.",
+    "TextoPomodoro": "Es una app creada con Next Js, pomodoro con la posibilidad de describir la tarea el tiempo de trabajo y de descanso. Y un ToDo list, para escribir tus tareas e ir marcando la completadas",
+    "BotonCodigo": "Codigo",
+    "BotonPagina": "Pagina"
+  }
+}

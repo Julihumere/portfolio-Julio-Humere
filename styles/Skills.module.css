@@ -1,18 +1,6 @@
 .Skills__container {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0) 0%,
-    rgb(0, 0, 0) 50%,
-    rgba(0, 0, 0) 100%
-  );
-  /* background: rgb(120, 111, 255);
-      background: linear-gradient(
-        90deg,
-        rgb(255, 255, 255) 0%,
-        rgb(255, 255, 255) 50%,
-        rgb(255, 255, 255) 100%
-      ); */
+  background: rgb(62, 62, 62);
+
   width: 100%;
   height: auto;
   display: flex;
