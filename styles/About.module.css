@@ -78,12 +78,13 @@
 .About__buttons__cv {
   width: 30rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 972px) {
   .About__container {
-    height: 100vh;
+    height: auto;
     width: 100%;
   }
   .About__text {
@@ -98,7 +99,7 @@
 
 @media screen and (max-width: 651px) {
   .About__container {
-    height: 100vh;
+    height: auto;
     width: 100%;
   }
   .About__text {
