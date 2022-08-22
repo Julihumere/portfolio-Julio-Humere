@@ -38,6 +38,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: black;
 }
 
 .lang__menu ul li button:hover {

@@ -75,28 +75,36 @@ export default function Layout() {
             <li className={style.Layout__menu__li}>
               <Link href={"/"}>
                 <button className={style.Layout__menu__button}>
-                  <span>Inicio</span>
+                  {idioma === "es" ? <span>Inicio</span> : <span>Home</span>}
                 </button>
               </Link>
             </li>
             <li className={style.Layout__menu__li}>
               <Link href={"/SobreMi"}>
                 <button className={style.Layout__menu__button}>
-                  <span>Sobre mi</span>
+                  {idioma === "es" ? <span>Sobre Mi</span> : <span>About</span>}
                 </button>
               </Link>
             </li>
             <li className={style.Layout__menu__li}>
               <Link href={"/Skills"}>
                 <button className={style.Layout__menu__button}>
-                  <span>Skills</span>
+                  {idioma === "es" ? (
+                    <span>Habilidades</span>
+                  ) : (
+                    <span>Skills</span>
+                  )}
                 </button>
               </Link>
             </li>
             <li className={style.Layout__menu__li}>
               <Link href={"/Proyectos"}>
                 <button className={style.Layout__menu__button}>
-                  <span>Proyectos</span>
+                  {idioma === "es" ? (
+                    <span>Proyectos</span>
+                  ) : (
+                    <span>Proyects</span>
+                  )}
                 </button>
               </Link>
             </li>
