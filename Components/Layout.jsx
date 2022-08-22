@@ -87,7 +87,7 @@ export default function Layout() {
               </Link>
             </li>
             <li className={style.Layout__menu__li}>
-              <Link href={"/Skills"}>
+              <Link href={"/Habilidades"}>
                 <button className={style.Layout__menu__button}>
                   {idioma === "es" ? (
                     <span>Habilidades</span>
