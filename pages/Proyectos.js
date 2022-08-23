@@ -202,12 +202,14 @@ export default function Projects(props) {
                 ))}
             </div>
             <div className={styles.Proyectos__div__buttons}>
-              <Link href={"https://pomodoro-and-todo.vercel.app/"}>
+              <Link href={"https://portfolio-julio-humere.vercel.app/"}>
                 <button className={styles.Proyectos__buttons}>
                   {props.Proyectos.BotonPagina}
                 </button>
               </Link>
-              <Link href={"https://github.com/Julihumere/pomodoro-and.-todo"}>
+              <Link
+                href={"https://github.com/Julihumere/portfolio-Julio-Humere"}
+              >
                 <button className={styles.Proyectos__buttons}>
                   {props.Proyectos.BotonCodigo}
                 </button>
