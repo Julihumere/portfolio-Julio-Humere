@@ -15,6 +15,7 @@ export default function Layout() {
     setMenu(!menu);
   };
 
+  const [isDarkMode, setIsDarkMode] = useState(() => false);
   return (
     <div className={style.Layout__container}>
       <div className={style.Layout__titulo}>
@@ -64,6 +65,7 @@ export default function Layout() {
             </Link>
           </li>
         </ul>
+
         <Lenguajes />
         <button className={style.Layout__menu} onClick={menuDesplegable}>
           <GiHamburgerMenu />

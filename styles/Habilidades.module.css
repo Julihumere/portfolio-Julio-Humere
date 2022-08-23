@@ -1,6 +1,4 @@
-.Skills__container {
-  background: rgb(62, 62, 62);
-
+.Habilidades__container {
   width: 100%;
   height: auto;
   display: flex;
@@ -8,20 +6,20 @@
   align-items: center;
 }
 
-.Skills__title {
+.Habilidades__title {
   color: #fff;
   font-family: Roboto;
   font-size: 3rem;
   height: 1rem;
 }
 
-.Skills__container h4 {
+.Habilidades__container h4 {
   color: #fff;
   font-family: Roboto;
   font-size: 1.4rem;
 }
 
-.Skills__div {
+.Habilidades__div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -30,7 +28,7 @@
   color: #fff;
 }
 
-.Skills__div__frontend {
+.Habilidades__div__frontend {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -39,18 +37,18 @@
   color: #fff;
 }
 
-.Skills__div h1 {
+.Habilidades__div h1 {
   color: #fff;
 }
 
-.Skills__map {
+.Habilidades__map {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.Skills__map div {
+.Habilidades__map div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +57,7 @@
 
 /* BACKEND */
 
-.Skills__div__backend {
+.Habilidades__div__backend {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -68,7 +66,7 @@
   color: #fff;
 }
 
-.Skills__div__otros {
+.Habilidades__div__otros {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -78,10 +76,10 @@
 }
 
 @media screen and (max-width: 900px) {
-  .Skills__container h4 {
+  .Habilidades__container h4 {
     margin-left: 1.5rem;
   }
-  .Skills__map {
+  .Habilidades__map {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
@@ -93,10 +91,10 @@
 }
 
 @media screen and (max-width: 425px) {
-  .Skills__container h4 {
+  .Habilidades__container h4 {
     margin-left: 1.5rem;
   }
-  .Skills__map {
+  .Habilidades__map {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
