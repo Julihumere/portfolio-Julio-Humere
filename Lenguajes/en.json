@@ -17,6 +17,7 @@
     "TextoFoodies": "Is a SPA with a page layout of 9 recipes per page, with sort and filtering of the elements and a form controlled with javascript to create a new recipe",
     "TextoTravel": "Is a SPA with page layout of 10 countries per page, with sort and filtergin of the elements and a form controlled with javascript to create a new tourist activity",
     "TextoPomodoro": "It is an app created with Next Js, pomodoro with the possibility to describe the task, work and rest time. And a ToDo list, to write down your tasks and check off the completed ones",
+    "TextoPortafolio": "It is an app created with Next Js, in it I describe my career in the IT world, in the section about me my academic and professional experience is told where you will also find my CV in different languages, then I show the projects carried out so far and the technical skills learned. You have the possibility to change the language from English to Spanish and vice versa",
     "BotonCodigo": "Code",
     "BotonPagina": "Page"
   }
