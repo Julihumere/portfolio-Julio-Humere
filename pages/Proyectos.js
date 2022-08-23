@@ -95,7 +95,7 @@ export default function Projects(props) {
                   {props.Proyectos.BotonPagina}
                 </button>
               </Link>
-              <Link href={"https://lnkd.in/d_D9TYer"}>
+              <Link href={"https://lnkd.in/d_D9TYer"} target={"_blank"}>
                 <button className={styles.Proyectos__buttons}>
                   {props.Proyectos.BotonCodigo}
                 </button>
@@ -133,7 +133,10 @@ export default function Projects(props) {
                   {props.Proyectos.BotonPagina}
                 </button>
               </Link>
-              <Link href={"https://github.com/Julihumere/PI-Countries"}>
+              <Link
+                href={"https://github.com/Julihumere/PI-Countries"}
+                target={"_blank"}
+              >
                 <button className={styles.Proyectos__buttons}>
                   {props.Proyectos.BotonCodigo}
                 </button>
@@ -171,7 +174,10 @@ export default function Projects(props) {
                   {props.Proyectos.BotonPagina}
                 </button>
               </Link>
-              <Link href={"https://github.com/Julihumere/pomodoro-and.-todo"}>
+              <Link
+                href={"https://github.com/Julihumere/pomodoro-and.-todo"}
+                target={"_blank"}
+              >
                 <button className={styles.Proyectos__buttons}>
                   {props.Proyectos.BotonCodigo}
                 </button>
@@ -209,6 +215,7 @@ export default function Projects(props) {
               </Link>
               <Link
                 href={"https://github.com/Julihumere/portfolio-Julio-Humere"}
+                target={"_blank"}
               >
                 <button className={styles.Proyectos__buttons}>
                   {props.Proyectos.BotonCodigo}
