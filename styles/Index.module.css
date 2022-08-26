@@ -1,6 +1,9 @@
 .index__container {
   width: 100%;
-  height: auto;
+  height: 79.6vh;
+  background-image: url("../public/Black\ abstract\ Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .index__divMayor {
@@ -8,14 +11,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80%;
 }
 
 .index__title {
   font-size: 5rem;
   letter-spacing: 0.5rem;
   color: #fff;
-  height: 20%;
 }
 .index__divMayor span {
   font-size: 2rem;
@@ -26,10 +27,8 @@
 .index__ul {
   display: flex;
   width: 50%;
-  height: 30%;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 5rem;
   position: relative;
   right: 1rem;
 }

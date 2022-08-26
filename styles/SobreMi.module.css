@@ -1,6 +1,9 @@
 .SobreMi__container {
+  background-image: url("../public/Black\ abstract\ Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 79.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +12,7 @@
 .SobreMi__text {
   width: 60%;
   height: 70%;
-  margin-top: 2rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

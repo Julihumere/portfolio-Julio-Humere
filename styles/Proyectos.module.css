@@ -1,4 +1,7 @@
 .Proyectos__container {
+  background-image: url("../public/Black\ abstract\ Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

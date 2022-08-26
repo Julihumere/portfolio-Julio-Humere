@@ -1,6 +1,6 @@
 .Layout__container {
-  background: transparent;
-  border-bottom: 0.2rem solid rgb(112, 112, 112);
+  background: #000;
+  box-shadow: 1rem 2rem 4rem#000;
   width: 100%;
   height: auto;
   display: flex;
