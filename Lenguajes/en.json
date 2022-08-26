@@ -6,7 +6,9 @@
   "SobreMi": {
     "Titulo": "About me...",
     "Text1": "I was part of Henry’s bootcamp, which gave me +800 hours of codeo, practice and learning. In which you learned Javascript, React, Node, Express, Redux, HTML, CSS. And I continue to learn new technologies that will have given me an excellent job, such as typescript, nextJS, React Native, Mongo DB.",
-    "Text2": "Although I do not have work experience as such, I feel able to give the most of my and learn what there is to know, I consider myself a person who has quick learning and eager to prove it. I have completed projects that can be found in my github(github.com/Julihumere), with their respective demonstration on my linkedin(linkedin.com/in/juli-humere/)"
+    "Text2": "Although I do not have work experience as such, I feel able to give the most of my and learn what there is to know, I consider myself a person who has quick learning and eager to prove it. I have completed projects that can be found in my github(github.com/Julihumere), with their respective demonstration on my linkedin(linkedin.com/in/juli-humere/)",
+    "cv_español": "CV Spanish",
+    "cv_ingles": "CV English"
   },
   "Habilidades": {
     "Titulo": "Skills",
