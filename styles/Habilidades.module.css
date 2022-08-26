@@ -1,7 +1,7 @@
 .Habilidades__container {
   background-image: url("../public/Black\ abstract\ Background.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
   width: 100%;
   height: auto;
   display: flex;

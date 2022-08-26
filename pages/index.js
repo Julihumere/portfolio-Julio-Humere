@@ -1,7 +1,6 @@
 import Typewriter from "typewriter-effect";
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
-
 import { SocialIcon } from "react-social-icons";
 
 export default function Home(props) {
