@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/Proyectos.module.css";
-import Layout from "../Components/Layout";
+
 import Link from "next/link";
 import Head from "next/head";
-import { motion } from "framer-motion";
 
 export default function Projects(props) {
   const proyectos = {
@@ -54,12 +53,7 @@ export default function Projects(props) {
     ],
   };
   return (
-    <motion.div
-      className="box"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       <div>
         <Head>
           <title>Julio Humere</title>
@@ -225,7 +219,7 @@ export default function Projects(props) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

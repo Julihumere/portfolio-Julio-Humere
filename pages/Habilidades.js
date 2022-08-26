@@ -1,21 +1,16 @@
 import React from "react";
 import styles from "../styles/Habilidades.module.css";
-import Layout from "../Components/Layout";
+
 import Image from "next/image";
 import Head from "next/head";
-import { motion } from "framer-motion";
+
 import HabilidadesJSON from "../JSON/Habilidades.json";
 
 export default function Skills(props) {
   const habilidadesjson = HabilidadesJSON.skillsInfo;
 
   return (
-    <motion.div
-      className="box"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       <div className={styles.Habilidades__container}>
         <Head>
           <title>Julio Humere</title>
@@ -65,7 +60,7 @@ export default function Skills(props) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

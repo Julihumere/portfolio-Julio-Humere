@@ -2,15 +2,10 @@ import React from "react";
 import styles from "../styles/SobreMi.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import { motion } from "framer-motion";
+
 export default function About(props) {
   return (
-    <motion.div
-      className="box"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       <div className={styles.SobreMi__container}>
         <Head>
           <title>Julio Humere</title>
@@ -39,7 +34,7 @@ export default function About(props) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

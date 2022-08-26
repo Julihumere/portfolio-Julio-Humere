@@ -1,14 +1,12 @@
 import Typewriter from "typewriter-effect";
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
-import Layout from "../Components/Layout";
-import { motion } from "framer-motion";
 
 import { SocialIcon } from "react-social-icons";
 
 export default function Home(props) {
   return (
-    <motion.div
+    <div
       className="box"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -59,7 +57,7 @@ export default function Home(props) {
           </ul>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
