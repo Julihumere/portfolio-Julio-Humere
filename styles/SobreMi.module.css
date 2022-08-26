@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
+
   font-size: 1.2rem;
 }
 
@@ -39,7 +39,7 @@
   font-size: 16px;
   transition: 0.3s;
   z-index: 1;
-  font-family: Roboto;
+
   color: #fff;
   cursor: pointer;
 }

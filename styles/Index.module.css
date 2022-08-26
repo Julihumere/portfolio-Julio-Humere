@@ -12,7 +12,6 @@
 }
 
 .index__title {
-  font-family: Roboto;
   font-size: 5rem;
   letter-spacing: 0.5rem;
   color: #fff;
@@ -20,7 +19,7 @@
 }
 .index__divMayor span {
   font-size: 2rem;
-  font-family: Roboto;
+
   color: #fff;
 }
 
