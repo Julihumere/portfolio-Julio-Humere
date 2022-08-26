@@ -16,6 +16,11 @@
   justify-content: space-evenly;
 }
 
+.Layout__portafolio {
+  padding: 1rem;
+  cursor: pointer;
+}
+
 .Layout__title {
   font-family: Roboto;
   height: 3rem;

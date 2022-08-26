@@ -1,6 +1,7 @@
 import { useState } from "react";
 import style from "../styles/Layout.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Lenguajes from "./Lenguajes";
 import { useRouter } from "next/router";
@@ -19,22 +20,18 @@ export default function Layout() {
   return (
     <div className={style.Layout__container}>
       <div className={style.Layout__titulo}>
-        <div>
-          {idioma === "es" ? (
-            <h1 className={style.Layout__title}>Portafolio</h1>
-          ) : (
-            <h1 className={style.Layout__title}>Portfolio</h1>
-          )}
+        <div className={style.Layout__portafolio}>
+          <Link href={"/"}>
+            <Image
+              src={"/Computer.png"}
+              width={80}
+              height={80}
+              style={{ padding: 1 }}
+            />
+          </Link>
         </div>
 
         <ul className={style.Layout__ul}>
-          <li className={style.Layout__li}>
-            <Link href={"/"}>
-              <button className={style.Layout__button}>
-                {idioma === "es" ? <span>Inicio</span> : <span>Home</span>}
-              </button>
-            </Link>
-          </li>
           <li className={style.Layout__li}>
             <Link href={"/SobreMi"}>
               <button className={style.Layout__button}>
@@ -74,13 +71,6 @@ export default function Layout() {
       {menu === true ? (
         <div className={style.Layout__menu__container}>
           <ul className={style.Layout__menu__ul}>
-            <li className={style.Layout__menu__li}>
-              <Link href={"/"}>
-                <button className={style.Layout__menu__button}>
-                  {idioma === "es" ? <span>Inicio</span> : <span>Home</span>}
-                </button>
-              </Link>
-            </li>
             <li className={style.Layout__menu__li}>
               <Link href={"/SobreMi"}>
                 <button className={style.Layout__menu__button}>
