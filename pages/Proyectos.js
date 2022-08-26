@@ -40,7 +40,8 @@ export default function Projects(props) {
       },
       {
         titulo: "Pomodoro and ToDo",
-        imagen: "/img/Proyectos/Pomodoro and todo.png",
+        imagen:
+          "/img/Proyectos/Pomodoro and ToDo - Brave 26_8_2022 14_38_17.png",
         info: `${props.Proyectos.TextoPomodoro}`,
         tecnologias: ["NextJs", "Vercel", "Module.css"],
       },
