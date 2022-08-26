@@ -43,6 +43,7 @@
 
 @media screen and (max-width: 960px) {
   .index__divMayor {
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -62,6 +63,7 @@
 
 @media screen and (max-width: 425px) {
   .index__divMayor {
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
