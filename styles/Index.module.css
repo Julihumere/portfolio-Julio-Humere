@@ -48,7 +48,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 25rem;
   }
   .index__title {
     font-size: 3rem;
@@ -68,7 +67,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 25rem;
   }
   .index__title {
     font-size: 3rem;

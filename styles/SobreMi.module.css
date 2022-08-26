@@ -76,12 +76,11 @@
 
 @media screen and (max-width: 972px) {
   .SobreMi__container {
-    height: auto;
     width: 100%;
+    height: auto;
   }
   .SobreMi__text {
     width: 100%;
-    height: auto;
   }
 
   .SobreMi__cv {
@@ -91,12 +90,11 @@
 
 @media screen and (max-width: 651px) {
   .SobreMi__container {
-    height: auto;
     width: 100%;
+    height: auto;
   }
   .SobreMi__text {
     width: 100%;
-    height: auto;
   }
 
   .SobreMi__cv {
@@ -106,8 +104,8 @@
 
 @media screen and (max-width: 425px) {
   .SobreMi__container {
-    height: auto;
     width: 100%;
+    height: auto;
   }
   .SobreMi__text {
     width: 100%;
