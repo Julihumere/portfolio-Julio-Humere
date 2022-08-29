@@ -56,7 +56,7 @@ export default function Layout() {
                 {idioma === "es" ? (
                   <span>Proyectos</span>
                 ) : (
-                  <span>Proyects</span>
+                  <span>Projects</span>
                 )}
               </button>
             </Link>
