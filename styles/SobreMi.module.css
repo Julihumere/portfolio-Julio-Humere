@@ -30,7 +30,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   font-size: 1.2rem;
 }
 
@@ -109,16 +108,90 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1200px) {
   .SobreMi__container {
     width: 100%;
     height: auto;
   }
   .SobreMi__text {
-    width: 100%;
+    width: 80%;
   }
-
+  .SobreMi__text p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .SobreMi__buttons__cv{
+    width: 80%;
+  }
   .SobreMi__cv {
+    width: 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .SobreMi__container {
+    width: 100%;
+    height: auto;
+  }
+  .SobreMi__text {
+    width: 80%;
+  }
+  .SobreMi__text p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .SobreMi__buttons__cv{
+    width: 80%;
+  }
+  .SobreMi__cv {
+    width: 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .SobreMi__container {
+    width: 100%;
+    height: auto;
+  }
+  .SobreMi__text {
+    width: 80%;
+  }
+  .SobreMi__text p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .SobreMi__buttons__cv{
+    width: 80%;
+  }
+  .SobreMi__cv {
+    width: 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .SobreMi__container {
+    width: 100%;
+    height: auto;
+  }
+  .SobreMi__text {
+    width: 80%;
+  }
+  .SobreMi__text p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .SobreMi__buttons__cv{
+    width: 80%;
+  }
+  .SobreMi__cv {
+    width: 8rem;
     margin-bottom: 2rem;
   }
 }

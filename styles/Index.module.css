@@ -120,6 +120,70 @@
   margin-right: 2.7rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .index__divMayor{
+    width: 70%;
+  }
+  .index__divTitle h1{
+    font-size: 2.4rem;
+  }
+  .typewriter{
+    font-size: 1rem;
+  }
+  .Index__button{
+    width: 6rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .index__divMayor{
+    width: 70%;
+  }
+  .index__divTitle h1{
+    font-size: 2.4rem;
+  }
+  .typewriter{
+    font-size: 1rem;
+  }
+  .Index__button{
+    width: 6rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .index__divMayor{
+    width: 70%;
+  }
+  .index__divTitle h1{
+    font-size: 2.4rem;
+  }
+  .typewriter{
+    font-size: 1rem;
+  }
+  .Index__button{
+    width: 6rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .index__divMayor{
+    width: 70%;
+  }
+  .index__divTitle h1{
+    font-size: 2.4rem;
+  }
+  .typewriter{
+    font-size: 1rem;
+  }
+  .Index__button{
+    width: 6rem;
+    height: 3rem;
+  }
+}
+
 
 
 
