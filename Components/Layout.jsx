@@ -23,7 +23,7 @@ export default function Layout() {
         <div className={style.Layout__portafolio}>
           <Link href={"/"}>
             <Image
-              src={"/Computer.png"}
+              src={"/casa home.png"}
               width={80}
               height={80}
               style={{ padding: 1 }}

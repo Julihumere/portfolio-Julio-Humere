@@ -2,10 +2,12 @@ import React from "react";
 import styles from "../styles/SobreMi.module.css";
 import Link from "next/link";
 import Head from "next/head";
+import Layout from "../Components/Layout";
 
 export default function About(props) {
   return (
     <div>
+        <Layout />
       <div className={styles.SobreMi__container}>
         <Head>
           <title>Julio Humere</title>

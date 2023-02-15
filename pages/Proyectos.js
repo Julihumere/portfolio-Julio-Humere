@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/Proyectos.module.css";
-
+import Layout from "../Components/Layout";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -47,7 +47,7 @@ export default function Projects(props) {
       },
       {
         titulo: "Portafolio",
-        imagen: "/img/Proyectos/Portfolio.png",
+        imagen: "/img/Proyectos/Portfolio.jpeg",
         info: `${props.Proyectos.TextoPortafolio}`,
         tecnologias: ["NextJs", "Vercel", "Module.css"],
       },
@@ -55,6 +55,7 @@ export default function Projects(props) {
   };
   return (
     <div>
+        <Layout />
       <div>
         <Head>
           <title>Julio Humere</title>

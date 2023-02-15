@@ -10,7 +10,6 @@ export default function Lenguajes() {
   const idioma = router.locale;
 
   const cambiarLenguaje = (e) => {
-    console.log(e);
     e.preventDefault();
     router.push(router.pathname, router.pathname, { locale: e.target.value });
   };
@@ -20,7 +19,7 @@ export default function Lenguajes() {
       {idioma === "es" ? (
         <div className={style.lang__menu}>
           <div className={style.select__lang}>
-            <Image src={ES} width={30} height={30} />
+            <Image src={ES} width={25} height={25} />
             <h5>Español</h5>
           </div>
           <ul>

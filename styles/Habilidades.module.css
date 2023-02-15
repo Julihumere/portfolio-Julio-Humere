@@ -1,12 +1,14 @@
 .Habilidades__container {
-  background-image: url("../public/Black\ abstract\ Background.jpg");
+  background-image: url("../public/—Pngtree—indoor\ office_1198573.jpg");
   background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .Habilidades__title {
@@ -18,6 +20,7 @@
 .Habilidades__container h4 {
   color: #fff;
   font-size: 1.4rem;
+ 
 }
 
 .Habilidades__div {
@@ -27,6 +30,11 @@
   align-items: center;
   width: 60%;
   color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: rgb(66,66,66);
+  background: linear-gradient(90deg, rgb(96, 96, 96) 0%, rgba(128,128,128,1) 35%, rgb(198, 198, 198) 100%);
+  border-radius: 25px;
 }
 
 .Habilidades__div__frontend {
@@ -86,7 +94,6 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-
     width: 25rem;
   }
 }

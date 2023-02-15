@@ -1,6 +1,9 @@
 {
   "index": {
-    "Descripcion": "I'm Full-stack Developer"
+    "Titulo": "Julio Humere",
+    "Fullstack": "I'm Full-stack Developer",
+    "Frontend": "I'm Frontend Developer",
+    "Backend": "I'm Backend Developer"
   },
 
   "SobreMi": {

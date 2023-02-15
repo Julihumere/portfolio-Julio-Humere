@@ -3,16 +3,17 @@
 }
 .select__lang {
   cursor: pointer;
-  width: 6rem;
+  width: 5.5rem;
   display: block;
-  padding: 5px 10px;
+  padding: 2px 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 15px;
 }
 
 .select__lang h5 {
-  color: #fff;
+  color: #000;
 }
 
 .lang__menu ul {

@@ -1,9 +1,10 @@
 .SobreMi__container {
-  background-image: url("../public/Black\ abstract\ Background.jpg");
+  background-image: url("../public/—Pngtree—indoor\ office_1198573.jpg"); 
   background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   width: 100%;
-  height: 84.9vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,13 +12,16 @@
 
 .SobreMi__text {
   width: 60%;
-  height: 70%;
-  margin-top: 5rem;
+  height: 90%;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
+  background: rgb(66,66,66);
+  background: linear-gradient(90deg, rgb(96, 96, 96) 0%, rgba(128,128,128,1) 35%, rgb(198, 198, 198) 100%);
+  border-radius: 25px;
 }
 
 .SobreMi__text p {

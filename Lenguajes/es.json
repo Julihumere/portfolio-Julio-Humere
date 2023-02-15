@@ -1,6 +1,9 @@
 {
   "index": {
-    "Descripcion": "Soy Desarrollador Full-stack"
+    "Titulo" : "Julio Humere",
+    "Fullstack": "Soy Desarrollador Full-stack",
+    "Frontend": "Soy Desarrollador Frontend",
+    "Backend": "Soy Desarrollador Backend"
   },
 
   "SobreMi": {
