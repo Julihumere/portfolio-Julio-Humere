@@ -1,9 +1,13 @@
 import "../styles/globals.css";
-import Layout from "../Components/Layout";
+import { useSpring, animated } from '@react-spring/web'
+
+
 
 function MyApp({ Component, pageProps }) {
+
+
   return (
-    <>  
+    <>       
       <Component {...pageProps} />{" "}
     </>
   );

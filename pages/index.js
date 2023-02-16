@@ -2,21 +2,17 @@ import Typewriter from "typewriter-effect";
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
 import { SocialIcon } from "react-social-icons";
-import Layout from "../Components/Layout";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import ES from '../public/img/ES.gif' 
-import EN from '../public/img/EN.gif' 
-import Image from "next/image";
 import Lenguajes from "../Components/Lenguajes";
+
 
 export default function Home(props) {
     const router = useRouter()
     const idioma = router.locale
-
     
-   
   return (
+ 
         <div className={styles.index__container}>
     <Head>
         <title>Julio Humere</title>
@@ -70,6 +66,7 @@ export default function Home(props) {
             <SocialIcon
               network="github"
               bgColor="black"
+              fgColor="white"
               url="https://github.com/Julihumere"
               target={"_blank"}
             />
@@ -78,6 +75,7 @@ export default function Home(props) {
             <SocialIcon
               network="linkedin"
               bgColor="black"
+              fgColor="white"
               url="https://www.linkedin.com/in/juli-humere/"
               target={"_blank"}
             />
@@ -86,6 +84,7 @@ export default function Home(props) {
             <SocialIcon
               network="whatsapp"
               bgColor="black"
+              fgColor="white"
               url="https://walink.co/ef4aa4"
               target={"_blank"}
             />

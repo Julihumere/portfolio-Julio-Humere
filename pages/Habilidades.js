@@ -3,8 +3,9 @@ import styles from "../styles/Habilidades.module.css";
 import Layout from "../Components/Layout";
 import Image from "next/image";
 import Head from "next/head";
-
 import HabilidadesJSON from "../JSON/Habilidades.json";
+
+
 
 export default function Skills(props) {
   const habilidadesjson = HabilidadesJSON.skillsInfo;

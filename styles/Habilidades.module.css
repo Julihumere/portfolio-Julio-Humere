@@ -32,8 +32,8 @@
   color: #fff;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background: rgb(66,66,66);
-  background: linear-gradient(90deg, rgb(96, 96, 96) 0%, rgba(128,128,128,1) 35%, rgb(198, 198, 198) 100%);
+  background: rgb(147,147,147);
+background: linear-gradient(90deg, rgba(147,147,147,1) 0%, rgba(0,0,0,1) 51%, rgba(147,147,147,1) 100%);
   border-radius: 25px;
 }
 
