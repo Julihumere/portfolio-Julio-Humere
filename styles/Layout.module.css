@@ -2,10 +2,10 @@
   background-image: url("../public/—Pngtree—indoor\ office_1198573.jpg"); 
   background-size: cover;
   background-attachment: fixed;
-  box-shadow:1rem 2rem 2rem 5rem #002462 ;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 15vh;
 }
 
 .Layout__titulo {

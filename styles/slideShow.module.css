@@ -1,0 +1,90 @@
+
+
+.slideShow__container{
+    position: relative;
+}
+.SlideShow{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Slide{
+    min-width: 100%;
+    overflow: hidden;
+    transition: .3s ease all;
+    z-index: 10;
+    max-height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.Slide img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.textSlide{
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    width: 90%;
+    padding: 10px 60px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SlideButtons{
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.SlideButtons button{
+    background: none;
+    border: none;
+    color: #fff;
+    pointer-events: all;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 86%;
+    text-align: center;
+    position: absolute;
+    transition: .3s ease all;
+    background: rgba(0,0,0,.2);
+}
+
+#button_left{
+    left: 0;  
+}
+
+#button_left:hover{
+    background: rgba(0,0,0,.5);
+}
+
+#button_rigth{
+    right: 0;
+}
+
+#button_rigth:hover{
+    background: rgba(0,0,0,.5);
+}
+
+.Link{
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .textSlide{
+        position: relative;
+    }
+}

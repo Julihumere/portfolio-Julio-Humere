@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import styles from "../styles/Proyectos.module.css";
 import Layout from "../Components/Layout";
 import Link from "next/link";
 import Head from "next/head";
+import SlideShow from "../Components/SlideShow";
+import {AiFillStar} from "react-icons/ai"
+import {BsFillJournalBookmarkFill} from 'react-icons/bs'
+import {FaGraduationCap} from 'react-icons/fa'
+import {MdOutlineWork} from 'react-icons/md'
+
 
 export default function Projects(props) {
   const proyectos = {
     proyectos: [
       {
         titulo: "Foodies",
-        imagen: "/img/Proyectos/Foods.png",
+        imagen: "/img/Proyectos/Foods (1).png",
         info: `${props.Proyectos.TextoFoodies}`,
         tecnologias: [
           "React",
@@ -22,10 +28,11 @@ export default function Projects(props) {
           "Vercel",
           "Heroku",
         ],
+        href: 'foodies'
       },
       {
         titulo: "Love of Travel",
-        imagen: "/img/Proyectos/love of travel.png",
+        imagen: "/img/Proyectos/love of travel (1).png",
         info: `${props.Proyectos.TextoTravel}`,
         tecnologias: [
           "React",
@@ -37,25 +44,34 @@ export default function Projects(props) {
           "Vercel",
           "Heroku",
         ],
+        href: 'countries'
       },
       {
         titulo: "Pomodoro and ToDo",
-        imagen:
-          "/img/Proyectos/Pomodoro and ToDo - Brave 26_8_2022 14_38_17.png",
+        imagen:"/img/Proyectos/Pomodoro and ToDo - Brave 26_8_2022 14_38_17",
         info: `${props.Proyectos.TextoPomodoro}`,
         tecnologias: ["NextJs", "Vercel", "Module.css"],
+        href: 'pomodoroAndTodo'
       },
       {
         titulo: "Portafolio",
-        imagen: "/img/Proyectos/Portfolio.jpeg",
+        imagen: "/img/Proyectos/Portfolio.png",
         info: `${props.Proyectos.TextoPortafolio}`,
         tecnologias: ["NextJs", "Vercel", "Module.css"],
+        href: 'portfolio'
       },
     ],
-
+    
+    
+    
   };
 
-  console.log(proyectos.proyectos.map(e=>e.titulo))
+
+  
+
+
+
+
   return (
     <div>
         <Layout />
@@ -65,40 +81,34 @@ export default function Projects(props) {
           <link rel="icon" href="/img/inicio.ico" />
         </Head>
         <div className={styles.Proyectos__container}>
-        {proyectos && proyectos.proyectos.map(e => 
-          <div className={styles.Proyectos__div}>
-            <h1>{e.titulo}</h1>
-            <Image
-              src={e.imagen}
-              alt=""
-              width="350%"
-              height='225%'
-            />
+          <div className={styles.Proyectos__titulo__slideShow}>
+            <h1>Explora los proyectos</h1>
+          <h3>Haciendo click te desplazaras al detalle!</h3>
+                 
+          <div className={styles.SlideShow}>
+            <SlideShow proyectos={proyectos} />
+          </div>
+          </div> 
+         <div className ={styles.Proyectos__container__card}>
+          {proyectos && proyectos.proyectos.map(e => 
+         <div className ={styles.Proyectos__card} id={e.href}>
             <div className={styles.Proyectos__info}>
-            <p>
-              {e.info}
-            </p>
+              <p>01/01/0000</p>
+              <h1><AiFillStar/>{e.titulo}</h1>
+              <span className={styles.line}></span>
+              <div className={styles.Proyectos__info__detail}><BsFillJournalBookmarkFill size='2em' /><h3>{e.info}</h3></div>
+              <span className={styles.line}></span>
+              <div className={styles.Proyectos__info__education}><FaGraduationCap  size='3em'/><h4>Henry</h4></div>
             </div>
-            <div className={styles.Proyectos___tecnologias}>
-              {e.tecnologias.map((e, i) => (
-                  <p key={i} className={styles.tecnologias}>
-                    {e}
-                  </p>
-                ))}
+            <div className={styles.Proyectos__img}>
+              <img src={e.imagen} />
+              <span className={styles.line}></span>
+              <div className={styles.tenchnologies}>{e.tecnologias.map(e => (<h4>{e}</h4>))}</div>
             </div>
-            <div className={styles.Proyectos__div__buttons}>
-              <Link href={"/"}>
-                <button className={styles.Proyectos__buttons}>
-                  {props.Proyectos.BotonPagina}
-                </button>
-              </Link>
-              <Link href={"https://lnkd.in/d_D9TYer"} target={"_blank"}>
-                <button className={styles.Proyectos__buttons}>
-                  {props.Proyectos.BotonCodigo}
-                </button>
-              </Link>
-            </div>
-          </div> )}
+         </div>
+           )}
+         </div>
+        
         </div>      
     </div>
   );
