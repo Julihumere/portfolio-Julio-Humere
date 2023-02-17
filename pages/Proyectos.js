@@ -91,7 +91,7 @@ export default function Projects(props) {
           </div> 
          <div className ={styles.Proyectos__container__card}>
           {proyectos && proyectos.proyectos.map(e => 
-         <div className ={styles.Proyectos__card} id={e.href}>
+         <div key={e.href} className ={styles.Proyectos__card} id={e.href}>
             <div className={styles.Proyectos__info}>
               <p>01/01/0000</p>
               <h1><AiFillStar/>{e.titulo}</h1>
