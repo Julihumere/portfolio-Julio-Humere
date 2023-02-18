@@ -3,11 +3,13 @@ import styles from "../styles/SobreMi.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Layout from "../Components/Layout";
+import MenuDesplegable from "../Components/MenuDesplegable";
 
 export default function About(props) {
   return (
     <div>
         <Layout />
+        <MenuDesplegable />
       <div className={styles.SobreMi__container}>
         <Head>
           <title>Julio Humere</title>
@@ -15,8 +17,11 @@ export default function About(props) {
           <link rel="icon" href="/img/inicio.ico" />
         </Head>
         <div className={styles.SobreMi__text}>
+          <div className={styles.SobreMi__1hoja}>
           <h1>{props.SobreMi.Titulo}</h1>
           <p>{props.SobreMi.Text1}</p>
+          </div>
+          <div className={styles.SobreMi__2hoja}>
           <p>{props.SobreMi.Text2}</p>
           <div className={styles.SobreMi__buttons__cv}>
             <Link
@@ -38,6 +43,8 @@ export default function About(props) {
               </button>
             </Link>
           </div>
+          </div>          
+          
         </div>
       </div>
     </div>

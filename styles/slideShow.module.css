@@ -1,5 +1,4 @@
 
-
 .slideShow__container{
     position: relative;
 }
@@ -17,7 +16,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: red;
 }
 
 .Slide img{

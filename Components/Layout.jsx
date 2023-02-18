@@ -5,6 +5,7 @@ import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Lenguajes from "./Lenguajes";
 import { useRouter } from "next/router";
+import {BsDoorOpen} from 'react-icons/bs'
 
 export default function Layout() {
   const router = useRouter();
@@ -17,17 +18,13 @@ export default function Layout() {
   };
 
   const [isDarkMode, setIsDarkMode] = useState(() => false);
+  
   return (
     <div className={style.Layout__container}>
       <div className={style.Layout__titulo}>
         <div className={style.Layout__portafolio}>
           <Link href={"/"}>
-            <Image
-              src={"/casa home.png"}
-              width={80}
-              height={80}
-              style={{ padding: 1 }}
-            />
+            <BsDoorOpen size={"2em"} />
           </Link>
         </div>
 
@@ -103,6 +100,7 @@ export default function Layout() {
           </ul>
         </div>
       ) : null}
+     
     </div>
   );
 }

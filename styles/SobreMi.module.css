@@ -1,29 +1,53 @@
 .SobreMi__container {
-  background-image: url("../public/—Pngtree—indoor\ office_1198573.jpg"); 
+  background-image: url("../public/img/Fondos/Fondo\ Sobre\ Mi.jpg");
+  background-color: #d7d7d9;
   background-size: cover;
   background-attachment: fixed;
-  margin: 0;
+  background-size: 100%;
+  background-position-y: 25%;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .SobreMi__text {
-  width: 60%;
-  height: 90%;
-  margin-top: 2rem;
+  width: 50%;
+  height: 70%;
+  margin-top: 10rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #fff;
-  background: rgb(147,147,147);
-background: linear-gradient(90deg, rgba(147,147,147,1) 0%, rgba(0,0,0,1) 51%, rgba(147,147,147,1) 100%);
   border-radius: 25px;
+  margin-left: 2rem;
 }
 
+.SobreMi__1hoja h1{
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+.SobreMi__1hoja{
+  width: 40%;
+  height: 100%;
+  text-align: left;
+  color: #000;
+
+}
+
+
+.SobreMi__2hoja{
+width: 40%;
+height: 100%;
+text-align: left;
+color: #000;
+}
 .SobreMi__text p {
   width: 80%;
   display: flex;
@@ -33,8 +57,13 @@ background: linear-gradient(90deg, rgba(147,147,147,1) 0%, rgba(0,0,0,1) 51%, rg
   font-size: 1.2rem;
 }
 
+.SobreMi__buttons__cv {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .SobreMi__cv {
-  margin-top: 2rem;
   padding: 0.8em 1.8em;
   border: 0.2rem solid rgb(112, 112, 112);
   position: relative;
@@ -42,12 +71,12 @@ background: linear-gradient(90deg, rgba(147,147,147,1) 0%, rgba(0,0,0,1) 51%, rg
   background-color: transparent;
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 10px;
   transition: 0.3s;
   z-index: 1;
-
-  color: #fff;
+  color: #000;
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 .SobreMi__cv::before {
@@ -58,7 +87,7 @@ background: linear-gradient(90deg, rgba(147,147,147,1) 0%, rgba(0,0,0,1) 51%, rg
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #fff;
+  background: #000;
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -70,135 +99,571 @@ background: linear-gradient(90deg, rgba(147,147,147,1) 0%, rgba(0,0,0,1) 51%, rg
 }
 
 .SobreMi__cv:hover {
-  color: #111;
+  color: #fff;
 }
 
-.SobreMi__buttons__cv {
-  width: 30rem;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 3rem;
-}
-
-@media screen and (max-width: 972px) {
-  .SobreMi__container {
-    width: 100%;
-    height: auto;
-  }
-  .SobreMi__text {
-    width: 100%;
+@media screen and (max-width: 1400px) {
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
   }
 
-  .SobreMi__cv {
-    margin-bottom: 2rem;
+  .SobreMi__text p {
+    font-size: 1.1rem;
   }
 }
 
-@media screen and (max-width: 651px) {
-  .SobreMi__container {
-    width: 100%;
-    height: auto;
-  }
-  .SobreMi__text {
-    width: 100%;
+@media screen and (max-width: 1290px) {
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
   }
 
-  .SobreMi__cv {
-    margin-bottom: 2rem;
+  .SobreMi__text p {
+    font-size: 1rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 8px;
   }
 }
+
+
 
 @media screen and (max-width: 1200px) {
-  .SobreMi__container {
-    width: 100%;
-    height: auto;
-  }
-  .SobreMi__text {
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
     width: 80%;
+    font-size: 1.8rem;
   }
+
   .SobreMi__text p {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  .SobreMi__buttons__cv{
-    width: 80%;
-  }
-  .SobreMi__cv {
-    width: 8rem;
-    margin-bottom: 2rem;
+
+  .SobreMi__cv{
+    font-size: 7px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .SobreMi__container {
-    width: 100%;
-    height: auto;
-  }
-  .SobreMi__text {
+
+
+
+@media screen and (max-width: 1090px) {
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
     width: 80%;
+    font-size: 1.5rem;
   }
+
   .SobreMi__text p {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
-  .SobreMi__buttons__cv{
-    width: 80%;
-  }
-  .SobreMi__cv {
-    width: 8rem;
-    margin-bottom: 2rem;
+
+  .SobreMi__cv{
+    font-size: 7px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .SobreMi__container {
+/* APARTIR DE AQUI EMPIEZA EL DISEÑO TABLET */
+
+@media screen and (max-width: 1021px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Responsive.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
     width: 100%;
-    height: auto;
-  }
-  .SobreMi__text {
-    width: 80%;
-  }
-  .SobreMi__text p {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
   }
-  .SobreMi__buttons__cv{
+
+  .SobreMi__text{
     width: 80%;
   }
-  .SobreMi__cv {
-    width: 8rem;
-    margin-bottom: 2rem;
+  .SobreMi__1hoja{
+    width: 100%;
+    height: 80vh;
+    margin-left: 5rem;
+  }
+  .SobreMi__2hoja{
+    width: 100%;
+    height: 80vh;
+    
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+  }
+
+  .SobreMi__text p {
+    font-size: 1.1rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 10px;
+    margin-top: 1rem;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .SobreMi__container {
+@media screen and (max-width: 862px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Responsive.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
     width: 100%;
-    height: auto;
-  }
-  .SobreMi__text {
-    width: 80%;
-  }
-  .SobreMi__text p {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
   }
-  .SobreMi__buttons__cv{
+
+  .SobreMi__text{
     width: 80%;
   }
-  .SobreMi__cv {
-    width: 8rem;
-    margin-bottom: 2rem;
+  .SobreMi__1hoja{
+    width: 100%;
+    height: 80vh;
+    margin-left: 5rem;
+  }
+  .SobreMi__2hoja{
+    width: 100%;
+    height: 80vh;
+    
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+  }
+
+  .SobreMi__text p {
+    font-size: 1rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 8px;
+    margin-top: 1rem;
   }
 }
 
-@media screen and (max-width: 450px){
-.SobreMi__cv{
-  font-size: 0.8rem;
-  width: 6rem;
+@media screen and (max-width: 770px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Responsive.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SobreMi__text{
+    width: 80%;
+  }
+  .SobreMi__1hoja{
+    width: 100%;
+    height: 80vh;
+    margin-left: 5rem;
+  }
+  .SobreMi__2hoja{
+    width: 100%;
+    height: 80vh;
+    
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+  }
+
+  .SobreMi__text p {
+    font-size: 0.9rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 7px;
+    margin-top: 1rem;
+  }
 }
+
+@media screen and (max-width: 660px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Responsive.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SobreMi__text{
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .SobreMi__1hoja{
+    width: 100%;
+    height: 80vh;
+    margin-left: 5rem;
+  }
+  .SobreMi__2hoja{
+    width: 100%;
+    height: 80vh;
+    
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+  }
+
+  .SobreMi__text p {
+    font-size: 0.8rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 6px;
+    margin-top: 1rem;
+  }
+}
+
+/* APARTIR DE AQUI EMPIEZA EL DISEÑO MOBILE */
+
+@media screen and (max-width: 641px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Mobile.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .SobreMi__text{
+    width: 90%;
+    height: 505;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 6rem;
+    margin-right: 2rem;
+  }
+  .SobreMi__1hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .SobreMi__2hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .SobreMi__text p {
+    font-size: 0.7rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 6px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Mobile.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .SobreMi__text{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 8rem;
+    margin-right: 2rem;
+  }
+  .SobreMi__1hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .SobreMi__2hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .SobreMi__text p {
+    font-size: 0.6rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 6px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Mobile.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .SobreMi__text{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+    margin-right: 2rem;
+  }
+  .SobreMi__1hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .SobreMi__2hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .SobreMi__text p {
+    font-size: 0.5rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 6px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 452px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Mobile.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .SobreMi__text{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+    margin-right: 2rem;
+  }
+  .SobreMi__1hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .SobreMi__2hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .SobreMi__text p {
+    font-size: 0.5rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 6px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  .SobreMi__container{
+    background-image: url('../public/img/Fondos/Fondo\ Sobre\ Mi\ Mobile.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .SobreMi__text{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+    margin-right: 2rem;
+  }
+  .SobreMi__1hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .SobreMi__2hoja{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .SobreMi__1hoja h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .SobreMi__text p {
+    font-size: 0.4rem;
+  }
+
+  .SobreMi__cv{
+    font-size: 4px;
+    margin-top: 1rem;
+  }
 }

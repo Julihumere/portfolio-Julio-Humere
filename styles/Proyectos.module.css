@@ -4,7 +4,7 @@
   justify-content: space-evenly;
   align-items: center;
   justify-items: center;
-  background-image: url("../public/—Pngtree—indoor\ office_1198573.jpg");
+  background-image: url("../public/img/Fondos/Fondo\ Proyectos.png");
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,11 +21,13 @@
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 25px;
+  margin-top: 8rem;
 }
 
 .Proyectos__titulo__slideShow h1{
   font-size: 3em;
   line-height: 20px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .SlideShow{
@@ -45,12 +47,13 @@
 
 .Proyectos__card{
   width: 90%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
-  background-color: rgb(14, 14, 14);
-  border: 2px solid #fff;
   border-radius: 25px;
   margin-top: 4rem;
+  border: 1px solid #fff;
+  background: rgb(66,66,66);
+  background: linear-gradient(0deg, rgba(66,66,66,1) 0%, rgba(65,65,65,0.8834384095435049) 15%, rgba(0,0,0,0.28119751318496145) 100%);  
 }
 
 .Proyectos__info{

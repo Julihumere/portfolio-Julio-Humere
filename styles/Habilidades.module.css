@@ -1,59 +1,105 @@
 .Habilidades__container {
-  background-image: url("../public/—Pngtree—indoor\ office_1198573.jpg");
+  background-image: url("../public/img/Fondos/Fondo\ Habilidades.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: space-around;
 }
 
-.Habilidades__title {
+
+
+.Habilidades__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.Habilidades__div1{
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  backdrop-filter: blur(3px);
+  border-radius: 25px;
+}
+
+.Habilidades__title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 35vh;  
+  border-radius: 25px;
+}
+
+.Habilidades__title h1 {
   color: #fff;
   font-size: 3rem;
   height: 1rem;
 }
 
-.Habilidades__container h4 {
+.Habilidades__title h4 {
   color: #fff;
-  font-size: 1.4rem;
- 
+  font-size: 1rem;
+  text-align: center;
 }
 
-.Habilidades__div {
+.Habilidades__div__otros {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 60%;
+  width: 90%;
+  height: 35vh;
   color: #fff;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: rgb(147,147,147);
-background: linear-gradient(90deg, rgba(147,147,147,1) 0%, rgba(0,0,0,1) 51%, rgba(147,147,147,1) 100%);
+  border-radius: 25px;
+}
+
+.Habilidades__div2{
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  backdrop-filter: blur(3px);
   border-radius: 25px;
 }
 
 .Habilidades__div__frontend {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  flex-wrap: nowrap;
+  width: 90%;
+  height: 35vh;
   color: #fff;
+    border-radius: 25px;
 }
 
 .Habilidades__div h1 {
   color: #fff;
+  font-family: 'Roboto Slab', serif;
 }
 
 .Habilidades__map {
-  display: flex;
+  height: 40vh;
   width: 100%;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
   align-items: center;
 }
 
@@ -71,18 +117,13 @@ background: linear-gradient(90deg, rgba(147,147,147,1) 0%, rgba(0,0,0,1) 51%, rg
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 70%;
+  width: 90%;
+  height: 35vh;
   color: #fff;
+    border-radius: 25px;
 }
 
-.Habilidades__div__otros {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 50%;
-  color: #fff;
-}
+
 
 @media screen and (max-width: 900px) {
   .Habilidades__container h4 {

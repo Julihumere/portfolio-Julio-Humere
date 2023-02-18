@@ -19,7 +19,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  backdrop-filter: blur(50px);
+  background: rgb(133,133,133);
+  background: linear-gradient(0deg, rgba(133,133,133,1) 0%, rgba(133,133,133,1) 15%, rgba(133,133,133,0.10752804539784666) 100%);
   border: 1px solid black;
   border-radius: 25px;
   box-shadow:1rem 1rem 2rem black;

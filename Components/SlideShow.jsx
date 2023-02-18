@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from "react";
 import styles from '../styles/slideShow.module.css'
 import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
 import { Link } from "react-scroll";
+import Image from "next/image";
 
 export default function SlideShow({proyectos}) {
     let arrayProyectos = proyectos
@@ -56,8 +57,8 @@ export default function SlideShow({proyectos}) {
         <div className={styles.SlideShow} ref={slideShow}>
             {arrayProyectos && arrayProyectos.proyectos.map(e=>
             <div className={styles.Slide} >
-                   <Link to={e.href} spy={true} smooth={true} offset={-30} duration={500} className={styles.Link}>
-                    <img src={e.imagen} alt="" />
+                   <Link to={e.href} spy={true} smooth={true} offset={-120} duration={500} className={styles.Link}>
+                    <Image width={"800"} height={"450"} src={e.imagen} alt="" />
                     </Link>
                 <div className={styles.textSlide}>
                     <Link to={e.href} spy={true} smooth={true} offset={-30} duration={500}><p>{e.titulo}</p></Link>
