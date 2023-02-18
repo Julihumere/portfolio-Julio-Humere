@@ -111,7 +111,7 @@ export default function Projects(props) {
                 <source src={e.video} />
               </video>
               <span className={styles.line}></span>
-              <div className={styles.tenchnologies}>{e.tecnologias.map(e => (<h4>{e}</h4>))}</div>
+              <div className={styles.tenchnologies}>{e.tecnologias.map((e)=> (<h4 key={e}>{e}</h4>))}</div>
             </div>
          </div>
         
