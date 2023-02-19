@@ -1,8 +1,9 @@
 .index__container {
   background-image: url("../public/—Pngtree—indoor\ office_1198573.jpg");
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment:local;
+  background-attachment: fixed;
+  background-position: center;
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -19,52 +20,56 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background: rgb(133,133,133);
-  background: linear-gradient(0deg, rgba(133,133,133,1) 0%, rgba(133,133,133,1) 15%, rgba(133,133,133,0.10752804539784666) 100%);
+  background: rgb(133, 133, 133);
+  background: linear-gradient(
+    0deg,
+    rgba(133, 133, 133, 1) 0%,
+    rgba(133, 133, 133, 1) 15%,
+    rgba(133, 133, 133, 0.10752804539784666) 100%
+  );
   border: 1px solid black;
   border-radius: 25px;
-  box-shadow:1rem 1rem 2rem black;
+  box-shadow: 1rem 1rem 2rem black;
 }
 
-.index__divTitle{
+.index__divTitle {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.lenguajes{
+.lenguajes {
   position: absolute;
   top: 5%;
   right: 5%;
 }
 
-.index__divTitle h1{
+.index__divTitle h1 {
   font-size: 4.5rem;
   color: #252420;
 }
 
-.divTypewriter{
+.divTypewriter {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.typewriter{
+.typewriter {
   color: #000;
   font-size: 2rem;
   font-weight: 300;
 }
 
-
-.index__buttons{
+.index__buttons {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
 
-.Index__line{
+.Index__line {
   display: block;
   height: 0.2rem;
   width: 100%;
@@ -74,112 +79,132 @@
   transform-origin: left;
 }
 
-.Index__li{
+.Index__li {
   overflow: hidden;
 }
 
-.Index__button__span:hover + .Index__line{
+.Index__button__span:hover + .Index__line {
   transform: translateX(0);
 }
 
-
-.index__idiomas{
+.index__idiomas {
   width: 5rem;
   position: absolute;
   top: 33.3%;
   left: 17.4%;
 }
 
-
-.index__ul{
+.index__ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin-right: 2.7rem;
 }
 
 @media screen and (max-width: 1200px) {
-  .index__divMayor{
-    width: 70%;
+  .index__container {
+    background-position: center;
   }
-  .index__divTitle h1{
-    font-size: 2.4rem;
+  .index__divMayor {
+    width: 80%;
   }
-  .typewriter{
-    font-size: 1rem;
+  .index__divTitle h1 {
+    font-size: 2.5rem;
   }
-  .Index__button{
-    width: 6rem;
-    height: 3rem;
+  .typewriter {
+    font-size: 1.8rem;
+  }
+  .index__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+  }
+  .Index__button__span {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .index__divMayor{
-    width: 70%;
+  .index__divMayor {
+    width: 80%;
   }
-  .index__divTitle h1{
-    font-size: 2.4rem;
+  .index__divTitle h1 {
+    font-size: 2.5rem;
   }
-  .typewriter{
-    font-size: 1rem;
+  .typewriter {
+    font-size: 1.8rem;
   }
-  .Index__button{
-    width: 6rem;
-    height: 3rem;
+  .index__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+  }
+  .Index__button__span {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .index__divMayor{
-    width: 70%;
+  .index__divMayor {
+    width: 80%;
   }
-  .index__divTitle h1{
-    font-size: 2.4rem;
+  .index__divTitle h1 {
+    font-size: 2.5rem;
   }
-  .typewriter{
-    font-size: 1rem;
+  .typewriter {
+    font-size: 1.5rem;
   }
-  .Index__button{
-    width: 6rem;
-    height: 3rem;
+  .index__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
   }
-}
-
-@media screen and (max-width: 500px) {
-  .index__divMayor{
-    width: 70%;
-  }
-  .index__divTitle h1{
-    font-size: 2.4rem;
-  }
-  .typewriter{
-    font-size: 1rem;
-  }
-  .Index__button{
-    width: 6rem;
-    height: 3rem;
+  .Index__button__span {
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .index__divMayor{
-    width: 70%;
+  .index__divMayor {
+    width: 80%;
   }
-  .index__divTitle h1{
-    font-size: 2.4rem;
+  .index__divTitle h1 {
+    font-size: 2.5rem;
   }
-  .typewriter{
-    font-size: 1rem;
+  .typewriter {
+    font-size: 1.5rem;
   }
-  .Index__button{
-    font-size: 0.8rem;
-    width: 5rem;
-    height: 2rem;
+  .index__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+  }
+  .Index__button__span {
+    font-size: 1.2rem;
   }
 }
 
-
-
-
+@media screen and (max-width: 400px) {
+  .index__divMayor {
+    width: 80%;
+  }
+  .index__divTitle h1 {
+    font-size: 2.5rem;
+  }
+  .typewriter {
+    font-size: 1.4rem;
+  }
+  .index__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+  }
+  .Index__button__span {
+    font-size: 1rem;
+  }
+}
