@@ -1,111 +1,46 @@
-
-import React from "react";
-import { Link } from "next/link";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
+import Link from 'next/link'
+import React from 'react'
 import styles from "../styles/MenuDesplegable.module.css"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
+import {faGithub, faLinkedinIn, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+import  Lenguajes  from '../Components/Lenguajes'
+import {BsDoorOpen} from 'react-icons/bs'
 export default function MenuDesplegable() {
-
-    const [menuActive, setMenuActive] = useState(false);
-    const [Modelos, setModelos] = useState(false);
-    const [Ficha, setFicha] = useState(false);
-    const handleMouseOverModelos = () => {
-      setModelos(true);
-    };
-  
-    const handleMouseOutModelos = () => {
-      setModelos(false);
-    };
-  
-    const handleMouseOverFicha = () => {
-      setFicha(true);
-    };
-  
-    const handleMouseOutFicha = () => {
-      setFicha(false);
-    };
-  
-    const openMenu = () => {
-      if (menuActive === false) {
-        setMenuActive(true);
-      } else {
-        setMenuActive(false);
-      }
-    };
   return (
     <div>
-      <div className={styles.header__title__menu}>
-        {menuActive === false ? (
-          <>
-            <h4>Menu</h4>
-            <button id={styles.logo} onClick={openMenu}>
-              <AiOutlineMenu width={25} height={2} />
-            </button>
-          </>
-        ) : (
-          <div className="header__button__cerrar">
-            <h4>Cerrar</h4>
-            <button id="logo" onClick={openMenu}>
-              <AiOutlineClose width={25} height={2} />
-            </button>
-            <button className="header__button__menu__responsive">
-              <AiOutlineMenu />
-            </button>
-          </div>
-        )}
-      </div>
-    {menuActive ? (
-      <>
-        <div className="home__background"></div>
-        <div className="home__menuActive">
-          <div className="home__list_white">
-            <div className="header__button__cerrar__responsive">
-              <h3>
-                Cerrar{" "}
-                <button id="logo" onClick={openMenu}>
-                  {" "}
-                  <AiOutlineClose width={25} height={2} />
-                </button>
-              </h3>
-            </div>
-
-            <ul>
-              <li>Modelos</li>
-              <li>Servicios y Accesorios</li>
-              <li>Financiación</li>
-              <li>Reviews y Comunidad</li>
-            </ul>
-            <div className="home__menuActive__line"></div>
-            <ul>
-              <li>Toyota Moblity Service</li>
-              <li>Toyota Gazoo Racing</li>
-              <li>Toyota Hibridos</li>
-            </ul>
-            <div className="home__menuActive__line"></div>
-            <ul>
-              <li>Concesionarios</li>
-              <li>Test Drive</li>
-              <li>Contacto</li>
-            </ul>
-          </div>
-
-          <div className="home__menuActive__line"></div>
-          <div className="home__list_grey">
-            <ul>
-              <li>Actividades</li>
-              <li>Servicios al Cliente</li>
-              <li>Ventas Especiales</li>
-              <li>Innovación</li>
-              <li>Prensa</li>
-              <li>Acerca De</li>
-            </ul>
-          </div>
+      <nav className={styles.nav__container}>
+        <input type='checkbox' className={styles.nav__collapse__input} id="nav__collapse__checkbox"/> 
+        <label htmlFor="nav__collapse__checkbox" className={styles.nav__collapse__label}>
+          <span className={styles.line}></span>
+          <span className={styles.line}></span>
+          <span className={styles.line}></span>        
+        </label>
+         <div className={styles.nav__collapse__bg}></div>
+       <div className={styles.nav__socialNetworks}>
+          <Link href='#' target='_blank' className={styles.nav__socialNetworks__item}><FontAwesomeIcon icon={faGithub} /></Link>
+          <Link href='#' target='_blank' className={styles.nav__socialNetworks__item}><FontAwesomeIcon icon={faLinkedinIn} /></Link>
+          <Link href='#' target='_blank' className={styles.nav__socialNetworks__item}><FontAwesomeIcon icon={faWhatsapp} /></Link>
+          <Link href='#' target='_blank' className={styles.nav__socialNetworks__item}><FontAwesomeIcon icon={faEnvelope} /></Link>
         </div>
-      </>
-    ) : null}
-    <div className="line"></div>
-  </div>
+         <div className={styles.nav__menu}>
+          <div className={styles.nav__menu__Links}>
+            <h1><Link href={"/"}>
+            <BsDoorOpen size={"2em"} style={{width:'33.3%'}} />
+          </Link>Inicio</h1>
+            <Lenguajes />
+            <a href="#" className={styles.nav__Link__item}>
+          Sobre Mi
+          </a>
+          <a href="#" className={styles.nav__Link__item}>
+          Proyectos
+          </a>
+          <a href="#" className={styles.nav__Link__item}>
+          Habilidades
+          </a>
+          </div>   
+        </div>
+      </nav>
+    </div>
   )
-  
 }

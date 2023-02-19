@@ -23,7 +23,7 @@ export default function Home(props) {
       <div className={styles.index__divMayor}>
 
         <div className={styles.index__divTitle}>
-            <h1>{props.index.Titulo}</h1>           
+            <h1>{props.index.Titulo}</h1>         
            <div className={styles.lenguajes}><Lenguajes /></div>
         </div>
       
@@ -42,23 +42,60 @@ export default function Home(props) {
         
    
         
-          <div className={styles.index__buttons}>
-          <Link href={"/SobreMi"}>
-              <button className={styles.Index__button}>
-                {idioma === "es" ? <span>Sobre Mi</span> : <span>About</span>}
-              </button>
-            </Link>
-            <Link href={"/Habilidades"}>
-              <button className={styles.Index__button}>
-                {idioma === "es" ? <span >Habilidades</span> : <span>Skills</span>}
-              </button>
-            </Link>
-            <Link href={"/Proyectos"}>
-              <button className={styles.Index__button}>
-                {idioma === "es" ? <span >Proyectos</span> : <span>Projects</span>}
-              </button>
-            </Link>
-            </div>
+          <ul className={styles.index__buttons}>
+            <li className={styles.Index__li}>
+               <a href={"/SobreMi"}>
+              <h1>
+                {idioma === "es" ?
+                <>
+                <span className={styles.Index__button__span}>Sobre Mi</span> 
+                <span className={styles.Index__line}></span>
+                </>                
+                 : 
+                 <>
+                 <span className={styles.Index__button__span}>About</span>
+                 <span className={styles.Index__line}></span>
+                 </>  
+                 }
+              </h1>             
+            </a> 
+            </li>
+            <li className={styles.Index__li}>
+               <a href={"/Habilidades"}>
+              <h1>
+                {idioma === "es" ?
+                <>
+                <span className={styles.Index__button__span}>Habilidades</span> 
+                <span className={styles.Index__line}></span>
+                </>                
+                 : 
+                 <>
+                 <span className={styles.Index__button__span}>Skills</span>
+                 <span className={styles.Index__line}></span>
+                 </>  
+                 }
+              </h1>             
+            </a>
+               </li>
+               <li className={styles.Index__li}>
+               <a href={"/Proyectos"}>
+              <h1>
+                {idioma === "es" ?
+                <>
+                <span className={styles.Index__button__span}>Proyectos</span> 
+                <span className={styles.Index__line}></span>
+                </>                
+                 : 
+                 <>
+                 <span className={styles.Index__button__span}>Projects</span>
+                 <span className={styles.Index__line}></span>
+                 </>  
+                 }
+              </h1>             
+            </a>
+               </li>
+            
+            </ul>
      
 
             <ul className={styles.index__ul}>

@@ -3,13 +3,11 @@ import styles from "../styles/SobreMi.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Layout from "../Components/Layout";
-import MenuDesplegable from "../Components/MenuDesplegable";
 
 export default function About(props) {
   return (
     <div>
         <Layout />
-        <MenuDesplegable />
       <div className={styles.SobreMi__container}>
         <Head>
           <title>Julio Humere</title>
