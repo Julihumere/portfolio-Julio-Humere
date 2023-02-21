@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-i18next": "^11.18.4",
     "react-icons": "^4.4.0",
+    "react-scroll": "^1.8.9",
     "react-social-icons": "^5.14.0",
     "typewriter-effect": "^2.19.0"
   },
