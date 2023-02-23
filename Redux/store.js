@@ -1,6 +1,6 @@
 import { compose } from "redux";
 import thunk from "redux-thunk";
-import reducer from "./Reducer";
+import reducer from "./reducer";
 import { configureStore } from "@reduxjs/toolkit";
 
 

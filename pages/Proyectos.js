@@ -1,17 +1,26 @@
 import React, { useRef, useEffect } from "react";
-import Image from "next/image";
+import { useSelector, useDispatch } from "react-redux";
 import styles from "../styles/Proyectos.module.css";
 import Layout from "../Components/Layout";
-import Link from "next/link";
 import Head from "next/head";
 import SlideShow from "../Components/SlideShow";
 import {AiFillStar} from "react-icons/ai"
 import {BsFillJournalBookmarkFill} from 'react-icons/bs'
 import {FaGraduationCap} from 'react-icons/fa'
-import {MdOutlineWork} from 'react-icons/md'
+import { getProyectos } from '../Redux/actions.js'
 
 
 export default function Projects(props) {
+  const dispatch = useDispatch()
+  const algo = useSelector(state=> state.proyectos)
+  console.log(algo)
+
+
+  useEffect(()=>{
+    dispatch(getProyectos())
+  },[])
+
+
   const proyectos = {
     proyectos: [
       {

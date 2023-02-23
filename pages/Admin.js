@@ -31,6 +31,7 @@ export default function Admin() {
             router.push('/PanelAdmin')
         } 
     }
+    console.log(cookie.get('inicio'))
   return (
     <div className={styles.Admin__container}>
         <h1>Bienvenido Julio!</h1>
