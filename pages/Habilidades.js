@@ -32,7 +32,7 @@ export default function Skills(props) {
             </div> */}
             <div className={styles.Habilidades__div}>
               {habilidades.Habilidades && habilidades.Habilidades.map(e=>(
-              <div className={styles.Habilidades__tecnologia}>
+              <div key={e} className={styles.Habilidades__tecnologia}>
                 <Image src={e.icono} width='50' height='50' />
                 <h5>{e.tecnologia}</h5>
               </div>
