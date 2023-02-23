@@ -147,7 +147,7 @@ export default function PanelAdmin() {
               <label>Area</label>
               <select multiple={false} onChange={e => handleOnSelectHabilidades(e)} value={habilidad.area}>
                 <option hidden>Elegir el Area</option>
-                <option value='FrontEnd'>FrontEnd</option>
+                <option value='Frontend'>FrontEnd</option>
                 <option value='Backend'>Backend</option>
                 <option value='Lenguaje'>Lenguaje</option>
                 <option value='Otros'>Otros</option>
