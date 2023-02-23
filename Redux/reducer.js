@@ -1,5 +1,5 @@
 
-import { PROYECTOS } from './types';
+import { PROYECTOS, HABILIDADES } from './types';
 
 
 const initialState = {
@@ -13,6 +13,12 @@ const reducer = (state = initialState, action)=>{
             return{
                 ...state,
                 proyectos: action.payload
+            }
+        }
+        case HABILIDADES:{
+            return{
+                ...state,
+                habilidades: action.payload
             }
         }
         default:

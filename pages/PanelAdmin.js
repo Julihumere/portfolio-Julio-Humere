@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { crearProyecto } from '../Redux/actions';
+import { crearHabilidad, crearProyecto } from '../Redux/actions';
 
 
 
@@ -23,42 +23,64 @@ export default function PanelAdmin() {
     tipo: '',
     habilidad: []
   })
+  const [habilidad, setHabilidad] = useState({
+    tecnologia: '',
+    icono: '',
+    area:''
+  })
   useEffect(()=>{
     if(inicio !== 'true'){
       router.push('/Admin')
     } 
   }, [])
 
-  const handleOnChange = (e)=>{
+  //Proyecto
+  const handleOnChangeProyectos = (e)=>{
     setProyecto({
       ...proyecto,
       [e.target.name]: e.target.value
     })
   }
 
-  const handleOnSelectArea = (e)=>{
-    setProyecto({
-      ...proyecto,
-      tipo: e.target.value
-    })
-  }
-
-  const handleOnSelectHabilidad = (e)=>{
+  const handleOnSelectProyectos = (e)=>{
     setProyecto({
       ...proyecto,
       habilidad: [...proyecto.habilidad, e.target.value]
     })
   }
 
-  const handleSubmit = (e)=>{
+  const handleSubmitProyectos = (e)=>{
     e.preventDefault()
     dispatch(crearProyecto(proyecto))
   }
+
+  //Habilidad
+
+  const handleOnChangeHabilidades = (e)=>{
+    setHabilidad({
+      ...habilidad,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleOnSelectHabilidades = (e)=>{
+    setHabilidad({
+      ...habilidad,
+      area: e.target.value
+    })
+  }
+
+  const handleSubmitHabilidades = (e)=>{
+    e.preventDefault()
+    dispatch(crearHabilidad(habilidad))
+  }
+
 
   const cerrarSesion = ()=>{
     cookie.remove('inicio')
     router.push('/')
   }
+
   return (
       <div className={styles.PanelAdmin__container}>
         <nav className={styles.PanelAdmin__nav}>
@@ -68,37 +90,42 @@ export default function PanelAdmin() {
           </ul>
         </nav>
         <div className={styles.PanelAdmin__forms}>
+
+          {/* PROYECTOS */}
+
           <div className={styles.PanelAdmin__form}>
             <h1>Proyectos</h1>
-            <form onSubmit={handleSubmit} className={styles.PanelAdmin__form__div}>
+            <form onSubmit={handleSubmitProyectos} className={styles.PanelAdmin__form__div}>
               <div className={styles.PanelAdmin__form__input}>
               <label>Titulo</label>
-              <input onChange={handleOnChange} name='titulo' value={proyecto.titulo} />
+              <input onChange={handleOnChangeProyectos} name='titulo' value={proyecto.titulo} />
               </div>
               <div className={styles.PanelAdmin__form__input}>
                <label>Descripcion</label>
-              <textarea onChange={handleOnChange} name='descripcion' value={proyecto.descripcion} />
+              <textarea onChange={handleOnChangeProyectos} name='descripcion' value={proyecto.descripcion} />
               </div>
               <div className={styles.PanelAdmin__form__input}>
               <label>Imagen</label>
-              <input onChange={handleOnChange} name='imagen' value={proyecto.imagen} />
+              <input onChange={handleOnChangeProyectos} name='imagen' value={proyecto.imagen} />
               </div>
               <div className={styles.PanelAdmin__form__input}>
               <label>Video</label>
-              <input onChange={handleOnChange} name='video' value={proyecto.video} />
+              <input onChange={handleOnChangeProyectos} name='video' value={proyecto.video} />
               </div>
               <div className={styles.PanelAdmin__form__input}>
               <label>Area</label>
-              <input onChange={handleOnChange} name='tipo' value={proyecto.tipo} />
+              <input onChange={handleOnChangeProyectos} name='tipo' value={proyecto.tipo} />
               </div>
               <div className={styles.PanelAdmin__form__input}>
                <label>Habilidades</label>
-              {/* <select multiple={false} onChange={e=>handleOnSelectHabilidad(e)} value={proyecto.habilidad}>
-
-              </select> */}
-              <input onChange={handleOnChange} name='habilidad' value={proyecto.habilidad} />
+              <select multiple={false} onChange={e=>handleOnSelectProyectos(e)} value={proyecto.habilidad}>
+                  <option value='React'>React</option>
+                  <option value='Redux'>Redux</option>
+                  <option value='NodeJs'>NodeJs</option>
+                  <option value='ExpressJS'>ExpressJS</option>
+              </select>
               </div> 
-              <h3>React, Node, Next, Express, PostgreSQL</h3>                 
+              <h3>{proyecto.habilidad}</h3>                 
               <button className={styles.PanelAdmin__form__button}>Crear</button>
             </form>
           </div>
@@ -107,27 +134,27 @@ export default function PanelAdmin() {
 
         <div className={styles.PanelAdmin__form}>
             <h1>Habilidad</h1>
-          {/* <div className={styles.PanelAdmin__form__div}>            
+          <form onSubmit={handleSubmitHabilidades} className={styles.PanelAdmin__form__div}>            
             <div className={styles.PanelAdmin__form__input}>
               <label>Tecnologia</label>
-              <input onChange={handleOnChange} name='titulo' value={proyecto.titulo} />
+              <input onChange={handleOnChangeHabilidades} name='tecnologia' value={habilidad.tecnologia} />
             </div>
             <div className={styles.PanelAdmin__form__input}>
                <label>Icono</label>
-              <textarea onChange={handleOnChange} name='descripcion' value={proyecto.descripcion} />
+              <textarea onChange={handleOnChangeHabilidades} name='icono' value={habilidad.icono} />
             </div>
             <div className={styles.PanelAdmin__form__input}>
               <label>Area</label>
-              <select onChange={e => handleOnSelectArea(e)} value={proyecto.tipo}>
+              <select multiple={false} onChange={e => handleOnSelectHabilidades(e)} value={habilidad.area}>
                 <option hidden>Elegir el Area</option>
                 <option value='FrontEnd'>FrontEnd</option>
                 <option value='Backend'>Backend</option>
-                <option value='Lenguajes'>Lenguajes</option>
+                <option value='Lenguaje'>Lenguaje</option>
                 <option value='Otros'>Otros</option>
               </select> 
             </div>
             <button className={styles.PanelAdmin__form__button}>Crear</button>
-          </div> */}
+          </form>
         </div>
       </div>
         

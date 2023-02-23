@@ -13,7 +13,6 @@ export default function Lenguajes() {
   const [mode, setMode] = useState(false)
 
   const cambiarLenguaje = (e) => {
-    console.log(e.target.checked)
     if(e.target.checked === true){
       setMode(true)
       e.preventDefault();

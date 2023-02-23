@@ -13,7 +13,6 @@ import { getProyectos } from '../Redux/actions.js'
 export default function Projects(props) {
   const dispatch = useDispatch()
   const algo = useSelector(state=> state.proyectos)
-  console.log(algo)
 
 
   useEffect(()=>{
