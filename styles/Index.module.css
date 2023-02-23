@@ -1,8 +1,6 @@
 .index__container {
-  background-image: url("../public/—Pngtree—indoor\ office_1198573.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-attachment:local;
+  background: rgb(4,0,145);
+  background: linear-gradient(0deg, rgba(4,0,145,1) 0%, rgba(4,0,145,1) 15%, rgba(4,0,145,0.10752804539784666) 100%);
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -19,11 +17,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background: rgb(133,133,133);
-  background: linear-gradient(0deg, rgba(133,133,133,1) 0%, rgba(133,133,133,1) 15%, rgba(133,133,133,0.10752804539784666) 100%);
-  border: 1px solid black;
-  border-radius: 25px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4408613787311799) 53%, rgba(0,0,0,1) 100%);
   box-shadow:1rem 1rem 2rem black;
+  border-radius: 25px;
 }
 
 .index__divTitle{
@@ -52,7 +49,7 @@
 }
 
 .typewriter{
-  color: #000;
+  color: #fff;
   font-size: 2rem;
   font-weight: 300;
 }

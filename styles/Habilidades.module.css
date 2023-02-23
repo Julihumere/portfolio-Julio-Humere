@@ -1,7 +1,6 @@
 .Habilidades__container {
-  background-image: url("../public/img/Fondos/Fondo\ Habilidades.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  background: rgb(4,0,145);
+  background: linear-gradient(0deg, rgba(4,0,145,1) 0%, rgba(4,0,145,1) 15%, rgba(4,0,145,0.10752804539784666) 100%);
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -11,192 +10,28 @@
   justify-content: space-around;
 }
 
-
-
-.Habilidades__div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 70%;
-  color: #fff;
-  border-radius: 25px;
-}
-
-.Habilidades__div1{
-  width: 50%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  backdrop-filter: blur(3px);
-  border-radius: 25px;
-}
-
-.Habilidades__title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 90%;
-  height: 35vh;  
-  border-radius: 25px;
-}
-
-.Habilidades__title h1 {
-  color: #fff;
-  font-size: 3rem;
-  height: 1rem;
-}
-
-.Habilidades__title h4 {
-  color: #fff;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.Habilidades__div__otros {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 90%;
-  height: 35vh;
-  color: #fff;
-  border-radius: 25px;
-}
-
-.Habilidades__div2{
-  width: 50%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  backdrop-filter: blur(3px);
-  border-radius: 25px;
-}
-
-.Habilidades__div__frontend {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 90%;
-  height: 35vh;
-  color: #fff;
-    border-radius: 25px;
-}
-
-.Habilidades__div h1 {
-  color: #fff;
-  font-family: 'Roboto Slab', serif;
-}
-
-.Habilidades__map {
-  height: 40vh;
-  width: 100%;
+.Habilidades__div{
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
-  align-items: center;
+  justify-items: center;
 }
 
-.Habilidades__map div {
+.Habilidades__tecnologia{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  background: rgb(66,66,66);
+  background: linear-gradient(0deg, rgba(66,66,66,1) 0%, rgba(65,65,65,0.8834384095435049) 15%, rgba(0,0,0,0.28119751318496145) 100%);  
+  width: 10rem;
+  height: 8rem;
+  margin-bottom: 1rem;
+  padding: 0.2em 2em;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out all;
 }
 
-/* BACKEND */
-
-.Habilidades__div__backend {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 90%;
-  height: 35vh;
-  color: #fff;
-    border-radius: 25px;
-}
-
-
-
-@media screen and (max-width: 900px) {
-  .Habilidades__container h4 {
-    margin-left: 1.5rem;
-  }
-  .Habilidades__map {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 25rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .Habilidades__div {
-    width: 80%;
-  }
-  .Habilidades__map {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    width: 25rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .Habilidades__div {
-    width: 80%;
-  }
-  .Habilidades__map {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    width: 25rem;
-  }
-}
-
-
-@media screen and (max-width: 700px) {
-  .Habilidades__div {
-    width: 80%;
-  }
-  .Habilidades__map {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    width: 25rem;
-  }
-}
-
-
-@media screen and (max-width: 500px) {
-  .Habilidades__div {
-    width: 90%;
-  }
-  .Habilidades__map {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    width: 25rem;
-  }
+.Habilidades__tecnologia:hover{
+  background-color: #000;
 }

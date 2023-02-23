@@ -1,14 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from "../styles/Habilidades.module.css";
 import Layout from "../Components/Layout";
 import Image from "next/image";
 import Head from "next/head";
 import HabilidadesJSON from "../JSON/Habilidades.json";
-
-
+import { useSelector, useDispatch } from "react-redux";
+import { getHabilidades } from "../Redux/actions";
 
 export default function Skills(props) {
-  const habilidadesjson = HabilidadesJSON.skillsInfo;
+  const dispatch = useDispatch()
+  const habilidades = useSelector(state => state.habilidades)
+
+  useEffect(()=>{
+    dispatch(getHabilidades())
+  }, [])
+
 
   return (
     <div>
@@ -20,57 +26,18 @@ export default function Skills(props) {
           <link rel="icon" href="/img/inicio.ico" />
         </Head>\
         <Layout />
-        <div className={styles.Habilidades__div}>
-          <div className={styles.Habilidades__div1}>
-            <div className={styles.Habilidades__title}>
+            {/* <div className={styles.Habilidades__title}>
               <h1>{props.Habilidades.Titulo}</h1>
               <h4>{props.Habilidades.Info}</h4>
-            </div>
-            
-          <div className={styles.Habilidades__div__otros}>
-              <h1>{props.Habilidades.Otros}</h1>
-              <div className={styles.Habilidades__map}>
-                {habilidadesjson &&
-                 habilidadesjson[2].skills.map((e, i) => (
-                   <div key={i}>
-                     <Image src={e.icon} alt="" width={40} height={40} />
-                     <h5>{e.title}</h5>
-                   </div>
-                 ))}
-            </div>
-          </div>
-          </div>
-          <div className={styles.Habilidades__div2}>
-          <div className={styles.Habilidades__div__frontend}>
-            <h1>{habilidadesjson[0].title}</h1>
-            <div className={styles.Habilidades__map}>
-              {habilidadesjson &&
-                habilidadesjson[0].skills.map((e, i) => (
-                  <div key={i}>
-                    <Image src={e.icon} alt="" width={40} height={40}  />
-                    <h5>{e.title}</h5>
-                  </div>
-                ))}
-            </div>
-          </div>
-          <div className={styles.Habilidades__div__backend}>
-            <h1>{habilidadesjson[1].title}</h1>
-            <div className={styles.Habilidades__map}>
-              {habilidadesjson &&
-                habilidadesjson[1].skills.map((e, i) => (
-                  <div key={i}>
-                    <Image src={e.icon} alt="" width={40} height={40} />
-                    <h5>{e.title}</h5>
-                  </div>
-                ))}
-            </div>
-          </div>
-          
-        
-          
-         
-          </div>
-        </div>
+            </div> */}
+            <div className={styles.Habilidades__div}>
+              {habilidades.Habilidades && habilidades.Habilidades.map(e=>(
+              <div className={styles.Habilidades__tecnologia}>
+                <Image src={e.icono} width='50' height='50' />
+                <h5>{e.tecnologia}</h5>
+              </div>
+            ))}
+            </div>   
       </div>
     </div>
   );
