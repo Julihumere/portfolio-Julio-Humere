@@ -4,7 +4,6 @@ import styles from "../styles/MenuDesplegable.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import {faGithub, faLinkedinIn, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
-import  Lenguajes  from '../Components/Lenguajes'
 import {BsDoorOpen} from 'react-icons/bs'
 export default function MenuDesplegable() {
   return (
@@ -28,7 +27,6 @@ export default function MenuDesplegable() {
             <h1><Link href={"/"}>
             <BsDoorOpen size={"2em"} style={{width:'33.3%'}} />
           </Link>Inicio</h1>
-            <Lenguajes />
             <a href="#" className={styles.nav__Link__item}>
           Sobre Mi
           </a>

@@ -4,7 +4,6 @@ import styles from "../styles/Index.module.css";
 import { SocialIcon } from "react-social-icons";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Lenguajes from "../Components/Lenguajes";
 import Image from "next/image";
 import Spline from '@splinetool/react-spline';
 
@@ -15,12 +14,9 @@ import Spline from '@splinetool/react-spline';
 
 
 
-export default function Home(props) {
+export default function Home() {
     const router = useRouter()
     const idioma = router.locale
-
-
-
 
     
   return (
@@ -35,12 +31,9 @@ export default function Home(props) {
       <div className={styles.index__divMayor}>
 
         <div className={styles.index__divTitle}>
-        <Spline style={{width:'30%', height:'100%'}} scene="https://prod.spline.design/d6Y54wtG-JYV4csQ/scene.splinecode" />
-        <Spline style={{width:'60%', 
-        height:'100%', 
-        display:'flex', 
-        alignItems:'center'}} scene="https://prod.spline.design/zEfz3-ZgG7pnSuuU/scene.splinecode" />        
-           <div className={styles.lenguajes}><Lenguajes /></div>
+          <h1>Julio Humere</h1>
+        <Spline  className={styles.logoJH} scene="https://prod.spline.design/d6Y54wtG-JYV4csQ/scene.splinecode" />
+        <Spline className={styles.titulo} scene="https://prod.spline.design/zEfz3-ZgG7pnSuuU/scene.splinecode" />        
         </div>
       
         <div className={styles.divTypewriter}>
@@ -49,7 +42,7 @@ export default function Home(props) {
           options={{
             loop: true,
             autoStart: true,
-            strings: [`${props.index.Fullstack}`,`${props.index.Frontend}`,`${props.index.Backend}`],
+            strings: ['Soy Desarrollador Fullstack', 'Soy Desarrollador Frontend','Soy Desarrollador Backend'],
           }}
         />
         </h2>
@@ -62,51 +55,30 @@ export default function Home(props) {
             <li className={styles.Index__li}>
                <a href={"/SobreMi"}>
               <h1>
-                {idioma === "es" ?
                 <>
                 <span className={styles.Index__button__span}>Sobre Mi</span> 
                 <span className={styles.Index__line}></span>
                 </>                
-                 : 
-                 <>
-                 <span className={styles.Index__button__span}>About</span>
-                 <span className={styles.Index__line}></span>
-                 </>  
-                 }
               </h1>             
             </a> 
             </li>
             <li className={styles.Index__li}>
                <a href={"/Habilidades"}>
               <h1>
-                {idioma === "es" ?
                 <>
                 <span className={styles.Index__button__span}>Habilidades</span> 
                 <span className={styles.Index__line}></span>
                 </>                
-                 : 
-                 <>
-                 <span className={styles.Index__button__span}>Skills</span>
-                 <span className={styles.Index__line}></span>
-                 </>  
-                 }
               </h1>             
             </a>
                </li>
                <li className={styles.Index__li}>
                <a href={"/Proyectos"}>
               <h1>
-                {idioma === "es" ?
                 <>
                 <span className={styles.Index__button__span}>Proyectos</span> 
                 <span className={styles.Index__line}></span>
                 </>                
-                 : 
-                 <>
-                 <span className={styles.Index__button__span}>Projects</span>
-                 <span className={styles.Index__line}></span>
-                 </>  
-                 }
               </h1>             
             </a>
                </li>
@@ -150,14 +122,4 @@ export default function Home(props) {
     
     </div>
   );
-}
-
-export async function getStaticProps({ locale }) {
-  const response = await import(`../Lenguajes/${locale}.json`);
-  return {
-
-    props: {
-      index: response.default.index,
-    },
-  };
 }

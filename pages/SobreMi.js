@@ -16,11 +16,11 @@ export default function About(props) {
      
         <div className={styles.SobreMi__text}>
           <div className={styles.Hoja1}>
-             <h1>{props.SobreMi.Titulo}</h1>
-          <p>{props.SobreMi.Text1}</p>   
+             <h1>Sobre mi</h1>
+          <p>Fui parte del bootcamp de Henry, el cual me proporciono +600 horas de codeo, practica y aprendizaje. En el cual aprendi Javascript, React, Node.JS, Express, Redux, HTML, CSS. Y continuo aprendiendo nuevas tecnologias que me habran paso a un excelente empleo, como typescript, nextJS, React Native, Mongo DB. Actualmente me encuentro en curso de la tecnicatura universitaria de desarrollo web</p>   
           </div>
          <div className={styles.Hoja2}>
-           <p>{props.SobreMi.Text2}</p>
+           <p>Si bien no tengo experiencia laboral como tal, me siento capacitado para dar el maximo de mi y aprender lo que haya que saber, me considero una persona que tiene aprendizaje rapido y muchas ganas de demostrarlo</p>
           <div className={styles.SobreMi__buttons__cv}>
             <Link
               href={
@@ -28,7 +28,7 @@ export default function About(props) {
               }
             >
               <button className={styles.SobreMi__cv}>
-                {props.SobreMi.cv_español}
+                Cv Español
               </button>
             </Link>
             <Link
@@ -37,7 +37,7 @@ export default function About(props) {
               }
             >
               <button className={styles.SobreMi__cv}>
-                {props.SobreMi.cv_ingles}
+                CV Ingles
               </button>
             </Link>
           </div>
@@ -48,11 +48,3 @@ export default function About(props) {
   );
 }
 
-export async function getStaticProps({ locale }) {
-  const response = await import(`../Lenguajes/${locale}.json`);
-  return {
-    props: {
-      SobreMi: response.default.SobreMi,
-    },
-  };
-}

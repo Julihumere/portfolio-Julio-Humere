@@ -72,9 +72,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .Layout__container{
+    justify-content: flex-start;
+  }
   .Layout__MenuDesplegable{
     display: flex;
-    
   }
   .Layout__Home{
     display: none;

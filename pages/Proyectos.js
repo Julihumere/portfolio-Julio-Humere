@@ -10,7 +10,7 @@ import {FaGraduationCap} from 'react-icons/fa'
 import { getProyectos } from '../Redux/actions.js'
 import { format } from "date-fns";
 
-export default function Projects(props) {
+export default function Projects() {
   const dispatch = useDispatch()
   const proyectos = useSelector(state=> state.proyectos)
 
@@ -75,11 +75,3 @@ export default function Projects(props) {
   );
 }
 
-export async function getStaticProps({ locale }) {
-  const response = await import(`../Lenguajes/${locale}.json`);
-  return {
-    props: {
-      Proyectos: response.default.Proyectos,
-    },
-  };
-}

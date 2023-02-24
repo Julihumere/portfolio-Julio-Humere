@@ -32,6 +32,18 @@
   align-items: center;
 }
 
+.logoJH{
+  width: 30%;
+  height: 100%;
+}
+
+.titulo{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .lenguajes{
   position: absolute;
   top: 5%;
@@ -98,12 +110,27 @@
   margin-right: 2.7rem;
 }
 
-@media screen and (max-width: 1200px) {
+.index__divTitle h1{
+  display: none;
+}
+
+@media screen and (max-width: 1230px) {
   .index__divMayor{
     width: 70%;
   }
+  .logoJH{
+    display: none;
+  }
+  
+  .titulo{
+    width:40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .index__divTitle h1{
-    font-size: 2.4rem;
+    display: none;
   }
   .typewriter{
     font-size: 1rem;
@@ -111,6 +138,9 @@
   .Index__button{
     width: 6rem;
     height: 3rem;
+  }
+  .index__buttons{
+    padding: 0;
   }
 }
 
@@ -128,46 +158,54 @@
     width: 6rem;
     height: 3rem;
   }
+  .index__buttons{
+    padding: 0;
+  }
+  .Index__li h1{
+    font-size: 1.5rem;
+  }
+  .titulo{
+    display: none;
+  }
+  .index__divTitle h1{
+    display: block;
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .index__divMayor{
     width: 70%;
   }
-  .index__divTitle h1{
-    font-size: 2.4rem;
-  }
   .typewriter{
     font-size: 1rem;
   }
-  .Index__button{
+  .Index__button__span{
     width: 6rem;
     height: 3rem;
   }
+  .index__buttons{
+    padding: 0;
+  }
+  .Index__li h1{
+    font-size: 1.2rem;
+  }
+  .index__divTitle h1{
+    display: block;
+    font-size: 3rem;
+  }
 }
+
 
 @media screen and (max-width: 500px) {
   .index__divMayor{
     width: 70%;
   }
   .index__divTitle h1{
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
-  .typewriter{
-    font-size: 1rem;
-  }
-  .Index__button{
-    width: 6rem;
-    height: 3rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .index__divMayor{
-    width: 70%;
-  }
-  .index__divTitle h1{
-    font-size: 2.4rem;
+  .Index__li h1{
+    font-size: 0.8rem;
   }
   .typewriter{
     font-size: 1rem;
@@ -176,6 +214,9 @@
     font-size: 0.8rem;
     width: 5rem;
     height: 2rem;
+  }
+  .index__buttons{
+    padding: 0;
   }
 }
 

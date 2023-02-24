@@ -1,9 +1,5 @@
 import { useState } from "react";
 import style from "../styles/Layout.module.css";
-import Link from "next/link";
-import Image from "next/image";
-import { GiHamburgerMenu } from "react-icons/gi";
-import Lenguajes from "./Lenguajes";
 import { useRouter } from "next/router";
 import {BsDoorOpen} from 'react-icons/bs'
 import MenuDesplegable from "./MenuDesplegable";
@@ -88,10 +84,7 @@ export default function Layout() {
                 )}</h1>
             </a>
           </li>
-        </ul>
-        <div className={style.Layout__Lenguajes}>
-          <Lenguajes />       
-        </div>          
+        </ul>      
 </div>
   );
 }

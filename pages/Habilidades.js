@@ -3,11 +3,10 @@ import styles from "../styles/Habilidades.module.css";
 import Layout from "../Components/Layout";
 import Image from "next/image";
 import Head from "next/head";
-import HabilidadesJSON from "../JSON/Habilidades.json";
 import { useSelector, useDispatch } from "react-redux";
 import { getHabilidades } from "../Redux/actions";
 
-export default function Skills(props) {
+export default function Skills() {
   const dispatch = useDispatch()
   const habilidades = useSelector(state => state.habilidades)
 
@@ -27,10 +26,6 @@ export default function Skills(props) {
           <link rel="icon" href="/img/inicio.ico" />
         </Head>
         <Layout />
-            {/* <div className={styles.Habilidades__title}>
-              <h1>{props.Habilidades.Titulo}</h1>
-              <h4>{props.Habilidades.Info}</h4>
-            </div> */}
             <div className={styles.Habilidades__div}>
               {habilidades && habilidades.map(e=>(
               <div key={e} className={styles.Habilidades__tecnologia}>
@@ -42,13 +37,4 @@ export default function Skills(props) {
       </div>
     </div>
   );
-}
-
-export async function getStaticProps({ locale }) {
-  const response = await import(`../Lenguajes/${locale}.json`);
-  return {
-    props: {
-      Habilidades: response.default.Habilidades,
-    },
-  };
 }
