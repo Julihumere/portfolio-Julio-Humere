@@ -8,11 +8,11 @@ import {AiFillStar} from "react-icons/ai"
 import {BsFillJournalBookmarkFill} from 'react-icons/bs'
 import {FaGraduationCap} from 'react-icons/fa'
 import { getProyectos } from '../Redux/actions.js'
-
+import { format } from "date-fns";
 
 export default function Projects(props) {
   const dispatch = useDispatch()
-  const algo = useSelector(state=> state.proyectos)
+  const proyectos = useSelector(state=> state.proyectos)
 
 
   useEffect(()=>{
@@ -20,63 +20,6 @@ export default function Projects(props) {
   },[])
 
 
-  const proyectos = {
-    proyectos: [
-      {
-        titulo: "Foodies",
-        imagen: "/img/Proyectos/Foods (1).png",
-        video: "/img/Proyectos/Foodies.mp4",
-        info: `${props.Proyectos.TextoFoodies}`,
-        tecnologias: [
-          "React",
-          "Redux",
-          "NodeJs",
-          "ExpressJs",
-          "Sequelize",
-          "SQL",
-          "Vercel",
-          "Heroku",
-        ],
-        href: 'foodies'
-      },
-      {
-        titulo: "Love of Travel",
-        imagen: "/img/Proyectos/love of travel (1).png",
-        video: "/img/Proyectos/Love of Travel.mp4",
-        info: `${props.Proyectos.TextoTravel}`,
-        tecnologias: [
-          "React",
-          "Redux",
-          "NodeJs",
-          "ExpressJs",
-          "Sequelize",
-          "SQL",
-          "Vercel",
-          "Heroku",
-        ],
-        href: 'countries'
-      },
-      {
-        titulo: "Pomodoro and ToDo",
-        imagen:"/img/Proyectos/Pomodoro and ToDo - Brave 26_8_2022 14_38_17.png",
-        video:"/img/Proyectos/Pomodoro and Todo.mp4",
-        info: `${props.Proyectos.TextoPomodoro}`,
-        tecnologias: ["NextJs", "Vercel", "Module.css"],
-        href: 'pomodoroAndTodo'
-      },
-      {
-        titulo: "Portafolio",
-        imagen: "/img/Proyectos/Portfolio.png",
-        video: "/img/Proyectos/Portfolio.mp4",
-        info: `${props.Proyectos.TextoPortafolio}`,
-        tecnologias: ["NextJs", "Vercel", "Module.css"],
-        href: 'portfolio'
-      },
-    ],
-    
-    
-    
-  };
 
 
 
@@ -102,24 +45,24 @@ export default function Projects(props) {
           </div> 
           
          <div className ={styles.Proyectos__container__card}>
-          {proyectos && proyectos.proyectos.map(e => 
+          {proyectos && proyectos.map(e => 
           
-         <div key={e.href} className ={styles.Proyectos__card} id={e.href}>
+         <div key={e.titulo} className ={styles.Proyectos__card} id={e.titulo}>
           <div className={styles.Proyectos__card__color}> </div>
             <div className={styles.Proyectos__info}>
-              <p>01/01/0000</p>
+              <p>{e.fecha}</p>
               <h1><AiFillStar/>{e.titulo}</h1>
               <span className={styles.line}></span>
-              <div className={styles.Proyectos__info__detail}><BsFillJournalBookmarkFill size='2em' /><h3>{e.info}</h3></div>
+              <div className={styles.Proyectos__info__detail}><BsFillJournalBookmarkFill size='2em' /><h3>{e.descripcion}</h3></div>
               <span className={styles.line}></span>
-              <div className={styles.Proyectos__info__education}><FaGraduationCap  size='3em'/><h4>Henry</h4></div>
+              <div className={styles.Proyectos__info__education}><FaGraduationCap  size='3em'/><h4>{e.tipo}</h4></div>
             </div>
             <div className={styles.Proyectos__img}>
               <video controls width={"600"} height={"400"} style={{borderRadius: "25px"}} >
                 <source src={e.video} />
               </video>
               <span className={styles.line}></span>
-              <div className={styles.tenchnologies}>{e.tecnologias.map((e)=> (<h4 key={e}>{e}</h4>))}</div>
+              <div className={styles.tenchnologies}>{e.habilidad.map((e)=> (<h4 key={e}>{e}</h4>))}</div>
             </div>
          </div>
         

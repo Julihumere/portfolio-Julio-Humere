@@ -23,6 +23,7 @@ export const crearProyecto = (payload)=>()=>{
             method: 'post',
             url: `${base_url}/proyectos/crearProyecto`,
             data:{
+                fecha: payload.fecha,
                 titulo: payload.titulo,
                 imagen: payload.imagen,
                 video: payload.video,

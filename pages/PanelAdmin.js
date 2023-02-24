@@ -6,6 +6,8 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { crearHabilidad, crearProyecto } from '../Redux/actions';
+import { useSelector } from 'react-redux';
+import { getHabilidades } from './../Redux/actions';
 
 
 
@@ -13,8 +15,17 @@ export default function PanelAdmin() {
   const cookie = new Cookies()
   const router = useRouter()
   const dispatch = useDispatch()
+
+  const habilidadArray = useSelector(state => state.habilidades)
   const inicio = cookie.get('inicio')
 
+
+ useEffect(()=>{
+    dispatch(getHabilidades())
+    if(inicio !== 'true'){
+      router.push('/Admin')
+    } 
+  }, [])
   const [proyecto, setProyecto] = useState({
     titulo: '',
     descripcion: '',
@@ -28,11 +39,8 @@ export default function PanelAdmin() {
     icono: '',
     area:''
   })
-  useEffect(()=>{
-    if(inicio !== 'true'){
-      router.push('/Admin')
-    } 
-  }, [])
+ 
+
 
   //Proyecto
   const handleOnChangeProyectos = (e)=>{
@@ -52,6 +60,22 @@ export default function PanelAdmin() {
   const handleSubmitProyectos = (e)=>{
     e.preventDefault()
     dispatch(crearProyecto(proyecto))
+    setProyecto({
+      fecha: '',
+      titulo: '',
+      descripcion: '',
+      imagen: '',
+      video:'',
+      tipo: '',
+      habilidad: []
+    })
+  }
+
+  const resetHabilidades = (e)=>{
+    setProyecto({
+      ...proyecto,
+      habilidad: []
+    })
   }
 
   //Habilidad
@@ -73,6 +97,11 @@ export default function PanelAdmin() {
   const handleSubmitHabilidades = (e)=>{
     e.preventDefault()
     dispatch(crearHabilidad(habilidad))
+    setHabilidad({
+      tecnologia: '',
+      icono: '',
+      area:''
+    })
   }
 
 
@@ -97,6 +126,10 @@ export default function PanelAdmin() {
             <h1>Proyectos</h1>
             <form onSubmit={handleSubmitProyectos} className={styles.PanelAdmin__form__div}>
               <div className={styles.PanelAdmin__form__input}>
+              <label>Fecha</label>
+              <input onChange={handleOnChangeProyectos} name='fecha' value={proyecto.fecha} />
+              </div>
+              <div className={styles.PanelAdmin__form__input}>
               <label>Titulo</label>
               <input onChange={handleOnChangeProyectos} name='titulo' value={proyecto.titulo} />
               </div>
@@ -119,13 +152,17 @@ export default function PanelAdmin() {
               <div className={styles.PanelAdmin__form__input}>
                <label>Habilidades</label>
               <select multiple={false} onChange={e=>handleOnSelectProyectos(e)} value={proyecto.habilidad}>
-                  <option value='React'>React</option>
-                  <option value='Redux'>Redux</option>
-                  <option value='NodeJs'>NodeJs</option>
-                  <option value='ExpressJS'>ExpressJS</option>
+                  <option hidden>Elige las tecnologias</option>
+                  {habilidadArray && habilidadArray.map(e =>(
+                  <option key={e} value={e.tecnologia}>{e.tecnologia}</option>
+                  ))}
               </select>
               </div> 
-              <h3>{proyecto.habilidad}</h3>                 
+              <div className={styles.PanelAdmin__form__reset}>
+                <h5>{proyecto.habilidad.join(' - ')}</h5>
+                <button onClick={resetHabilidades}>❌</button>  
+              </div>
+                           
               <button className={styles.PanelAdmin__form__button}>Crear</button>
             </form>
           </div>

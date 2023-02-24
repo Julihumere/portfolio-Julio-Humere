@@ -3,9 +3,16 @@ import styles from '../styles/slideShow.module.css'
 import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
 import { Link } from "react-scroll";
 import Image from "next/image";
+import { useSelector, useDispatch } from 'react-redux';
+import { getProyectos } from './../Redux/actions';
 
 export default function SlideShow({proyectos}) {
-    let arrayProyectos = proyectos
+    const dispatch = useDispatch()
+    const arrayProyectos = useSelector(state => state.proyectos)
+
+    useEffect(()=>{
+        dispatch(getProyectos())
+    }, [])
 
     const slideShow = useRef(null)
 
@@ -55,9 +62,9 @@ export default function SlideShow({proyectos}) {
   return (
     <div className={styles.slideShow__container}>
         <div className={styles.SlideShow} ref={slideShow}>
-            {arrayProyectos && arrayProyectos.proyectos.map(e=>
+            {arrayProyectos && arrayProyectos.map(e=>
             <div className={styles.Slide} >
-                   <Link to={e.href} spy={true} smooth={true} offset={-120} duration={500} className={styles.Link}>
+                   <Link to={e.titulo} spy={true} smooth={true} offset={-120} duration={500} className={styles.Link}>
                     <Image width={"800"} height={"450"} src={e.imagen} alt="" />
                     </Link>
                 <div className={styles.textSlide}>
