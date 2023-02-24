@@ -5,11 +5,23 @@ import { SocialIcon } from "react-social-icons";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Lenguajes from "../Components/Lenguajes";
+import Image from "next/image";
+import Spline from '@splinetool/react-spline';
+
+
+
+    
+
+
 
 
 export default function Home(props) {
     const router = useRouter()
     const idioma = router.locale
+
+
+
+
     
   return (
  
@@ -23,7 +35,11 @@ export default function Home(props) {
       <div className={styles.index__divMayor}>
 
         <div className={styles.index__divTitle}>
-            <h1>{props.index.Titulo}</h1>         
+        <Spline style={{width:'30%', height:'100%'}} scene="https://prod.spline.design/d6Y54wtG-JYV4csQ/scene.splinecode" />
+        <Spline style={{width:'60%', 
+        height:'100%', 
+        display:'flex', 
+        alignItems:'center'}} scene="https://prod.spline.design/zEfz3-ZgG7pnSuuU/scene.splinecode" />        
            <div className={styles.lenguajes}><Lenguajes /></div>
         </div>
       
@@ -139,6 +155,7 @@ export default function Home(props) {
 export async function getStaticProps({ locale }) {
   const response = await import(`../Lenguajes/${locale}.json`);
   return {
+
     props: {
       index: response.default.index,
     },
