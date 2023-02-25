@@ -1,6 +1,11 @@
 .index__container {
-  background: rgb(4,0,145);
-  background: linear-gradient(0deg, rgba(4,0,145,1) 0%, rgba(4,0,145,1) 15%, rgba(4,0,145,0.10752804539784666) 100%);
+  background: rgb(4, 0, 145);
+  background: linear-gradient(
+    0deg,
+    rgba(4, 0, 145, 1) 0%,
+    rgba(4, 0, 145, 1) 15%,
+    rgba(4, 0, 145, 0.10752804539784666) 100%
+  );
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -12,33 +17,36 @@
 
 .index__divMayor {
   width: 70%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4408613787311799) 53%, rgba(0,0,0,1) 100%);
-  box-shadow:1rem 1rem 2rem black;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4408613787311799) 53%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 1rem 1rem 2rem black;
   border-radius: 25px;
 }
 
-
-
-.index__divTitle{
+.index__divTitle {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.logoJH{
+.logoJH {
   width: 30%;
   height: 100%;
   margin-left: 4rem;
 }
 
-.titulo{
+.titulo {
   width: 60%;
   height: 100%;
   display: flex;
@@ -46,38 +54,41 @@
   margin-right: 2rem;
 }
 
-.lenguajes{
+.lenguajes {
   position: absolute;
   top: 5%;
   right: 5%;
 }
 
-.index__divTitle h1{
+.index__divTitle h1 {
   font-size: 4.5rem;
   color: #fff;
 }
 
-.divTypewriter{
+.divTypewriter {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.typewriter{
+.typewriter {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
-
-.index__buttons{
+.index__buttons {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
 
-.Index__line{
+.Index__button__span {
+  font-size: 1.8rem;
+}
+
+.Index__line {
   display: block;
   height: 0.2rem;
   width: 100%;
@@ -87,24 +98,22 @@
   transform-origin: left;
 }
 
-.Index__li{
+.Index__li {
   overflow: hidden;
 }
 
-.Index__button__span:hover + .Index__line{
+.Index__button__span:hover + .Index__line {
   transform: translateX(0);
 }
 
-
-.index__idiomas{
+.index__idiomas {
   width: 5rem;
   position: absolute;
   top: 33.3%;
   left: 17.4%;
 }
 
-
-.index__ul{
+.index__ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -112,116 +121,114 @@
   margin-right: 2.7rem;
 }
 
-.index__divTitle h1{
+.index__divTitle h1 {
   display: none;
 }
 
 @media screen and (max-width: 1230px) {
-  .index__divMayor{
+  .index__divMayor {
     width: 70%;
   }
-  .logoJH{
+  .logoJH {
     display: none;
   }
-  
-  .titulo{
-    width:40%;
+
+  .titulo {
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .index__divTitle h1{
+  .index__divTitle h1 {
     display: none;
   }
-  .typewriter{
+  .typewriter {
     font-size: 1rem;
   }
-  .Index__button{
+  .Index__button {
     width: 6rem;
     height: 3rem;
   }
-  .index__buttons{
+  .index__buttons {
     padding: 0;
+  }
+  .Index__button__span {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .index__divMayor{
+  .index__divMayor {
     width: 70%;
   }
-  .index__divTitle h1{
+  .index__divTitle h1 {
     font-size: 2.4rem;
   }
-  .typewriter{
+  .typewriter {
     font-size: 1rem;
   }
-  .Index__button{
+  .Index__button {
     width: 6rem;
     height: 3rem;
   }
-  .index__buttons{
+  .index__buttons {
     padding: 0;
   }
-  .Index__li h1{
+  .Index__li h1 {
     font-size: 1.5rem;
   }
-  .titulo{
+  .titulo {
     display: none;
   }
-  .index__divTitle h1{
+  .index__divTitle h1 {
     display: block;
     font-size: 4rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .index__divMayor{
+  .index__divMayor {
     width: 70%;
   }
-  .typewriter{
+  .typewriter {
     font-size: 1rem;
   }
-  .Index__button__span{
+  .Index__button__span {
     width: 6rem;
     height: 3rem;
   }
-  .index__buttons{
+  .index__buttons {
     padding: 0;
   }
-  .Index__li h1{
+  .Index__li h1 {
     font-size: 1.2rem;
   }
-  .index__divTitle h1{
+  .index__divTitle h1 {
     display: block;
     font-size: 3rem;
   }
 }
 
-
 @media screen and (max-width: 500px) {
-  .index__divMayor{
+  .index__divMayor {
     width: 70%;
   }
-  .index__divTitle h1{
+  .index__divTitle h1 {
     font-size: 2rem;
   }
-  .Index__li h1{
+  .Index__li h1 {
     font-size: 0.8rem;
   }
-  .typewriter{
+  .typewriter {
     font-size: 1rem;
   }
-  .Index__button{
+  .Index__button {
     font-size: 0.8rem;
     width: 5rem;
     height: 2rem;
   }
-  .index__buttons{
+  .index__buttons {
     padding: 0;
   }
 }
-
-
-
-

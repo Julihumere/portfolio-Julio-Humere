@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/Habilidades.module.css";
 import Layout from "../Components/Layout";
 import Image from "next/image";
@@ -7,18 +7,15 @@ import { useSelector, useDispatch } from "react-redux";
 import { getHabilidades } from "../Redux/actions";
 
 export default function Skills() {
-  const dispatch = useDispatch()
-  const habilidades = useSelector(state => state.habilidades)
+  const dispatch = useDispatch();
+  const habilidades = useSelector((state) => state.habilidades);
 
-  useEffect(()=>{
-    dispatch(getHabilidades())
-  }, [])
-
-
+  useEffect(() => {
+    dispatch(getHabilidades());
+  }, []);
 
   return (
     <div>
-       
       <div className={styles.Habilidades__container}>
         <Head>
           <title>Julio Humere</title>
@@ -26,14 +23,15 @@ export default function Skills() {
           <link rel="icon" href="/img/inicio.ico" />
         </Head>
         <Layout />
-            <div className={styles.Habilidades__div}>
-              {habilidades && habilidades.map(e=>(
+        <div className={styles.Habilidades__div}>
+          {habilidades &&
+            habilidades.map((e) => (
               <div key={e} className={styles.Habilidades__tecnologia}>
-                <Image src={e.icono} width='50' height='50' />
+                <Image src={e.icono} width="50" height="50" />
                 <h5>{e.tecnologia}</h5>
               </div>
             ))}
-            </div>   
+        </div>
       </div>
     </div>
   );
