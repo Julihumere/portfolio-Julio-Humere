@@ -140,8 +140,14 @@
   }
 }
 
-@media screen and (max-width: 387px) {
+@media screen and (max-width: 500px) {
   .nav__socialNetworks {
     width: 12rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav__socialNetworks {
+    width: 10rem;
   }
 }

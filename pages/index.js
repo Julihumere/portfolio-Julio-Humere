@@ -4,6 +4,7 @@ import styles from "../styles/Index.module.css";
 import { SocialIcon } from "react-social-icons";
 import { useRouter } from "next/router";
 import Spline from "@splinetool/react-spline";
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
@@ -18,15 +19,11 @@ export default function Home() {
 
       <div className={styles.index__divMayor}>
         <div className={styles.index__divTitle}>
-          <h1>Julio Humere</h1>
           <Spline
             className={styles.logoJH}
             scene="https://prod.spline.design/d6Y54wtG-JYV4csQ/scene.splinecode"
           />
-          <Spline
-            className={styles.titulo}
-            scene="https://prod.spline.design/zEfz3-ZgG7pnSuuU/scene.splinecode"
-          />
+          <h1>Julio Humere</h1>
         </div>
 
         <div className={styles.divTypewriter}>
@@ -47,17 +44,17 @@ export default function Home() {
 
         <ul className={styles.index__buttons}>
           <li className={styles.Index__li}>
-            <a href={"/SobreMi"}>
+            <Link href={"/SobreMi"}>
               <h1>
                 <>
                   <span className={styles.Index__button__span}>Sobre Mi</span>
                   <span className={styles.Index__line}></span>
                 </>
               </h1>
-            </a>
+            </Link>
           </li>
           <li className={styles.Index__li}>
-            <a href={"/Habilidades"}>
+            <Link href={"/Habilidades"}>
               <h1>
                 <>
                   <span className={styles.Index__button__span}>
@@ -66,17 +63,17 @@ export default function Home() {
                   <span className={styles.Index__line}></span>
                 </>
               </h1>
-            </a>
+            </Link>
           </li>
           <li className={styles.Index__li}>
-            <a href={"/Proyectos"}>
+            <Link href={"/Proyectos"}>
               <h1>
                 <>
                   <span className={styles.Index__button__span}>Proyectos</span>
                   <span className={styles.Index__line}></span>
                 </>
               </h1>
-            </a>
+            </Link>
           </li>
         </ul>
 

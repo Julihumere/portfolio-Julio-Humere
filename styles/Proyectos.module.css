@@ -95,7 +95,6 @@
   font-size: 2em;
   font-weight: 500;
   line-height: 10px;
-  margin-left: 1em;
 }
 
 .Proyectos__info p {
@@ -130,6 +129,9 @@
   width: 50%;
   height: auto;
 }
+.Proyectos__img video {
+  width: 80%;
+}
 
 .Proyectos__img img {
   width: 95%;
@@ -151,10 +153,72 @@
   justify-content: center;
   align-items: center;
   padding: 0.2rem;
-  background-color: #fff;
-  color: #000;
-  width: 4rem;
-  height: 2rem;
+  color: #fff;
   border-radius: 20px;
   font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1520px) {
+  .Proyectos__img video {
+    width: 80%;
+  }
+  .Proyectos__img .tenchnologies {
+    width: 80%;
+  }
+
+  .tenchnologies h4 {
+    width: 3rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Proyectos__card {
+    height: 50rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Proyectos__info {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .Proyectos__info__detail h3 {
+    font-size: 0.8rem;
+  }
+  .Proyectos__info__education h4 {
+    font-size: 0.8rem;
+  }
+
+  .Proyectos__img {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Proyectos__img video {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Proyectos__img video {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .Proyectos__info__detail h3 {
+    font-size: 0.6rem;
+  }
+  .Proyectos__info__education h4 {
+    font-size: 0.6rem;
+  }
 }

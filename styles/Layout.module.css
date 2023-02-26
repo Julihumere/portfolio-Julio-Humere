@@ -11,19 +11,13 @@
   z-index: 90;
 }
 
-.Layout__Home a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
-
 .Layout__Buttons {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  align-items: center;
+  width: 100%;
 }
 
 .Layout__Buttons__title {
@@ -42,6 +36,7 @@
 
 .Layout__li {
   overflow: hidden;
+  cursor: pointer;
 }
 
 .Layout__button__span {
