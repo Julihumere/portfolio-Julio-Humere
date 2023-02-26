@@ -42,7 +42,38 @@ export const crearProyecto = (payload) => () => {
 };
 
 export const updateProyecto = (payload) => () => {
-  console.log(payload);
+  try {
+    const proyecto = axios({
+      method: "put",
+      url: `${base_url}/proyectos/updateProyecto`,
+      data: {
+        id: payload.id,
+        fecha: payload.fecha,
+        titulo: payload.titulo,
+        imagen: payload.imagen,
+        video: payload.video,
+        descripcion: payload.descripcion,
+        tipo: payload.tipo,
+        habilidad: payload.habilidad,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const deleteProyecto = (payload) => () => {
+  try {
+    const proyecto = axios({
+      method: "delete",
+      url: `${base_url}/proyectos/deleteProyecto`,
+      data: {
+        id: payload,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 //HABILIDAD

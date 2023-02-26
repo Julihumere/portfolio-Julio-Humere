@@ -11,6 +11,7 @@ import {
   getHabilidades,
   getProyectos,
   updateProyecto,
+  deleteProyecto,
 } from "../Redux/actions";
 
 export default function PanelAdmin() {
@@ -97,6 +98,7 @@ export default function PanelAdmin() {
     let id = e.target.value;
     const data = proyectos && proyectos.find((e) => e.id === id);
     setUpdate({
+      id: data.id,
       fecha: data.fecha,
       titulo: data.titulo,
       descripcion: data.descripcion,
@@ -130,6 +132,10 @@ export default function PanelAdmin() {
       ...update,
       habilidad: [],
     });
+  };
+
+  const eliminarProyecto = (e) => {
+    dispatch(deleteProyecto(e.target.value));
   };
 
   //Habilidad
@@ -300,12 +306,25 @@ export default function PanelAdmin() {
         </div>
       </div>
       <div className={styles.PanelAdmin__update__container}>
-        <div className={styles.PanelAdmin__update__buttons}>
+        <div className={styles.PanelAdmin__container__buttons}>
           {proyectos &&
             proyectos.map((e) => (
-              <button value={e.id} onClick={idProyecto}>
-                {e.titulo}
-              </button>
+              <div className={styles.PanelAdmin__update__buttons}>
+                <button
+                  className={styles.PanelAdmin__update__eliminar}
+                  value={e.id}
+                  onClick={eliminarProyecto}
+                >
+                  ❌
+                </button>
+                <button
+                  className={styles.PanelAdmin__update__nombre}
+                  value={e.id}
+                  onClick={idProyecto}
+                >
+                  {e.titulo}
+                </button>
+              </div>
             ))}
         </div>
         <form
@@ -360,7 +379,9 @@ export default function PanelAdmin() {
             <h5>{update.habilidad.join(" - ")}</h5>
             <button onClick={resetHabilidadesUpdate}>❌</button>
           </div>
-          <button type="submit">Actualizar</button>
+          <div className={styles.PanelAdmin__buttons}>
+            <button type="submit">Actualizar</button>
+          </div>
         </form>
       </div>
     </div>
