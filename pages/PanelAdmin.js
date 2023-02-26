@@ -309,7 +309,7 @@ export default function PanelAdmin() {
         <div className={styles.PanelAdmin__container__buttons}>
           {proyectos &&
             proyectos.map((e) => (
-              <div className={styles.PanelAdmin__update__buttons}>
+              <div key={e} className={styles.PanelAdmin__update__buttons}>
                 <button
                   className={styles.PanelAdmin__update__eliminar}
                   value={e.id}
@@ -372,7 +372,9 @@ export default function PanelAdmin() {
             <option hidden>Elige las habilidades</option>
             {habilidadArray &&
               habilidadArray.map((e) => (
-                <option value={e.tecnologia}>{e.tecnologia}</option>
+                <option key={e} value={e.tecnologia}>
+                  {e.tecnologia}
+                </option>
               ))}
           </select>
           <div className={styles.PanelAdmin__form__reset}>
