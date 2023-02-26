@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-right: 3rem;
+}

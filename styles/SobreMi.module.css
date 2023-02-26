@@ -1,6 +1,11 @@
 .SobreMi__container {
-  background: rgb(4,0,145);
-  background: linear-gradient(0deg, rgba(4,0,145,1) 0%, rgba(4,0,145,1) 15%, rgba(4,0,145,0.10752804539784666) 100%);
+  background: rgb(4, 0, 145);
+  background: linear-gradient(
+    0deg,
+    rgba(4, 0, 145, 1) 0%,
+    rgba(4, 0, 145, 1) 15%,
+    rgba(4, 0, 145, 0.10752804539784666) 100%
+  );
   width: 100%;
   height: 100vh;
   display: flex;
@@ -22,13 +27,13 @@
   border: 2px solid #fff;
 }
 
-.Hoja1 h1{
+.Hoja1 h1 {
   text-align: center;
   color: #fff;
   font-size: 2.5rem;
 }
 
-.Hoja1{
+.Hoja1 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -37,16 +42,15 @@
   justify-content: space-evenly;
 }
 
-.Hoja2{
+.Hoja2 {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  border-left:3px solid #fff;
+  border-left: 3px solid #fff;
 }
-
 
 .SobreMi__text p {
   width: 80%;
@@ -108,18 +112,17 @@
   }
 }
 
-
 @media screen and (max-width: 840px) {
-  .Hoja1 h1{
+  .Hoja1 h1 {
     font-size: 2rem;
   }
-  .SobreMi__text{
+  .SobreMi__text {
     width: 80%;
   }
   .SobreMi__text p {
     font-size: 0.8rem;
   }
-  .SobreMi__buttons__cv{
+  .SobreMi__buttons__cv {
     width: 100%;
     height: 20%;
     display: flex;
@@ -131,14 +134,13 @@
     width: 40%;
     font-size: 7px;
   }
-
 }
 
 @media screen and (max-width: 580px) {
-  .Hoja1 h1{
+  .Hoja1 h1 {
     font-size: 2rem;
   }
-  .SobreMi__text{
+  .SobreMi__text {
     margin: 0;
     margin-top: 3rem;
     width: 80%;
@@ -146,7 +148,7 @@
   .SobreMi__text p {
     font-size: 30px;
   }
-  .SobreMi__buttons__cv{
+  .SobreMi__buttons__cv {
     width: 100%;
     height: 20%;
     display: flex;
@@ -158,14 +160,13 @@
     width: 40%;
     font-size: 7px;
   }
-
 }
 
 @media screen and (max-width: 580px) {
-  .Hoja1 h1{
+  .Hoja1 h1 {
     font-size: 2rem;
   }
-  .SobreMi__text{
+  .SobreMi__text {
     margin: 0;
     margin-top: 3rem;
     width: 80%;
@@ -173,7 +174,7 @@
   .SobreMi__text p {
     font-size: 0.7rem;
   }
-  .SobreMi__buttons__cv{
+  .SobreMi__buttons__cv {
     width: 100%;
     height: 20%;
     display: flex;
@@ -185,15 +186,13 @@
     width: 40%;
     font-size: 7px;
   }
-
 }
 
 @media screen and (max-width: 430px) {
-
-  .Hoja1 h1{
+  .Hoja1 h1 {
     font-size: 2rem;
   }
-  .SobreMi__text{
+  .SobreMi__text {
     margin: 0;
     margin-top: 3rem;
     width: 90%;
@@ -201,7 +200,7 @@
   .SobreMi__text p {
     font-size: 0.7rem;
   }
-  .SobreMi__buttons__cv{
+  .SobreMi__buttons__cv {
     width: 100%;
     height: 40%;
     display: flex;
@@ -213,7 +212,4 @@
     width: 40%;
     font-size: 7px;
   }
-
 }
-
-

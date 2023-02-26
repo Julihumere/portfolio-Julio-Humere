@@ -9,14 +9,13 @@
   left: 0;
   right: 0;
   z-index: 90;
-
 }
 
-.Layout__Home a{
+.Layout__Home a {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  color: #fff;
 }
 
 .Layout__Buttons {
@@ -27,11 +26,11 @@
   width: 50%;
 }
 
-.Layout__Buttons__title{
+.Layout__Buttons__title {
   font-size: 1.5em;
 }
 
-.Layout__line{
+.Layout__line {
   display: block;
   height: 0.2rem;
   width: 100%;
@@ -41,18 +40,21 @@
   transform-origin: left;
 }
 
-.Layout__li{
+.Layout__li {
   overflow: hidden;
 }
 
-.Layout__button__span:hover + .Layout__line{
+.Layout__button__span {
+  color: #fff;
+}
+
+.Layout__button__span:hover + .Layout__line {
   transform: translateX(0);
 }
 
 .Layout__li {
   list-style: none;
 }
-
 
 .Layout__menu {
   display: none;
@@ -61,32 +63,30 @@
 .Layout__menu__container {
   display: none;
 }
-.Layout__Lenguajes{
+.Layout__Lenguajes {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.Layout__MenuDesplegable{
+.Layout__MenuDesplegable {
   display: none;
 }
 
 @media screen and (max-width: 1000px) {
-  .Layout__container{
+  .Layout__container {
     justify-content: flex-start;
   }
-  .Layout__MenuDesplegable{
+  .Layout__MenuDesplegable {
     display: flex;
   }
-  .Layout__Home{
+  .Layout__Home {
     display: none;
   }
-  .Layout__Buttons{
+  .Layout__Buttons {
     display: none;
   }
-  .Layout__Lenguajes{
+  .Layout__Lenguajes {
     display: none;
   }
 }
-
-

@@ -8,6 +8,7 @@ import { AiFillStar } from "react-icons/ai";
 import { BsFillJournalBookmarkFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 import { getProyectos } from "../Redux/actions.js";
+import Footer from "../Components/Footer";
 
 export default function Projects() {
   const dispatch = useDispatch();
@@ -65,8 +66,8 @@ export default function Projects() {
                 <div className={styles.Proyectos__img}>
                   <video
                     controls
-                    width={"600"}
-                    height={"400"}
+                    width={"500"}
+                    height={"300"}
                     style={{ borderRadius: "25px" }}
                   >
                     <source src={e.video} />
@@ -82,6 +83,7 @@ export default function Projects() {
             ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

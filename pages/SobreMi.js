@@ -3,6 +3,7 @@ import styles from "../styles/SobreMi.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Layout from "../Components/Layout";
+import Footer from "../Components/Footer";
 
 export default function About(props) {
   return (
@@ -51,6 +52,7 @@ export default function About(props) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
