@@ -8,7 +8,6 @@ import { AiFillStar } from "react-icons/ai";
 import { BsFillJournalBookmarkFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 import { getProyectos } from "../Redux/actions.js";
-import { format } from "date-fns";
 
 export default function Projects() {
   const dispatch = useDispatch();

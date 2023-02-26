@@ -19,6 +19,8 @@ export default function PanelAdmin() {
   const router = useRouter();
   const dispatch = useDispatch();
 
+  const habilidades = ["Frontend", "Backend", "Otros", "Lenguaje"];
+
   const habilidadArray = useSelector((state) => state.habilidades);
   const inicio = cookie.get("inicio");
 
@@ -241,14 +243,14 @@ export default function PanelAdmin() {
             <div className={styles.PanelAdmin__form__input}>
               <label>Habilidades</label>
               <select
-                multiple={false}
+                multiple={true}
                 onChange={(e) => handleOnSelectProyectos(e)}
                 value={proyecto.habilidad}
               >
                 <option hidden>Elige las tecnologias</option>
                 {habilidadArray &&
-                  habilidadArray.map((e) => (
-                    <option key={e} value={e.tecnologia}>
+                  habilidadArray.map((e, i) => (
+                    <option key={i} value={e.tecnologia}>
                       {e.tecnologia}
                     </option>
                   ))}
@@ -290,15 +292,17 @@ export default function PanelAdmin() {
             <div className={styles.PanelAdmin__form__input}>
               <label>Area</label>
               <select
-                multiple={false}
+                multiple={true}
                 onChange={(e) => handleOnSelectHabilidades(e)}
                 value={habilidad.area}
               >
                 <option hidden>Elegir el Area</option>
-                <option value="Frontend">FrontEnd</option>
-                <option value="Backend">Backend</option>
-                <option value="Lenguaje">Lenguaje</option>
-                <option value="Otros">Otros</option>
+                {habilidades &&
+                  habilidades.map((e, i) => (
+                    <option key={i} value={e}>
+                      {e}
+                    </option>
+                  ))}
               </select>
             </div>
             <button className={styles.PanelAdmin__form__button}>Crear</button>
@@ -308,8 +312,8 @@ export default function PanelAdmin() {
       <div className={styles.PanelAdmin__update__container}>
         <div className={styles.PanelAdmin__container__buttons}>
           {proyectos &&
-            proyectos.map((e) => (
-              <div key={e} className={styles.PanelAdmin__update__buttons}>
+            proyectos.map((e, i) => (
+              <div key={i} className={styles.PanelAdmin__update__buttons}>
                 <button
                   className={styles.PanelAdmin__update__eliminar}
                   value={e.id}
@@ -371,8 +375,8 @@ export default function PanelAdmin() {
           <select onChange={handleOnSelectUpdate}>
             <option hidden>Elige las habilidades</option>
             {habilidadArray &&
-              habilidadArray.map((e) => (
-                <option key={e} value={e.tecnologia}>
+              habilidadArray.map((e, i) => (
+                <option key={i} value={e.tecnologia}>
                   {e.tecnologia}
                 </option>
               ))}
