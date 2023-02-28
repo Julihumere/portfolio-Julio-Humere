@@ -1,7 +1,6 @@
 
 import Typewriter from "typewriter-effect";
 import styles from "../styles/Home.module.css";
-import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
 import Image from "next/image";
 import {

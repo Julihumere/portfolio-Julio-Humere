@@ -1,10 +1,4 @@
-import Typewriter from "typewriter-effect";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { SocialIcon } from "react-social-icons";
-import { useRouter } from "next/router";
-import Spline from "@splinetool/react-spline";
-import Link from "next/link";
 import SobreMi from "../Components/SobreMi.jsx"
 import Habilidades from "../Components/Habilidades.jsx"
 import Proyectos from "../Components/Proyectos.jsx"
