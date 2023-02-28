@@ -28,13 +28,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  background: rgb(25, 13, 156);
-  background: linear-gradient(
-    90deg,
-    rgba(25, 13, 156, 1) 0%,
-    rgba(13, 1, 115, 1) 50%,
-    rgba(2, 1, 41, 1) 100%
-  );
+  background: var(--bgHabilidades);
   border: 1px solid midnightblue;
   border-radius: 15px;
   transition: 0.3s ease-in-out all;

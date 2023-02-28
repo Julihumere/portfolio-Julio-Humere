@@ -16,7 +16,7 @@
   border-radius: 25px;
   margin-top: 8rem;
   margin-left: 2rem;
-  background-color: rgb(49, 49, 129);
+  background-color: var(--bgCards);
   border: 2px solid #fff;
 }
 

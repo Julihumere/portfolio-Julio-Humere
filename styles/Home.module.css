@@ -102,7 +102,7 @@
 }
 
 .typewriter {
-  color: #fff;
+  color: var(--foreground);
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -116,7 +116,16 @@
   align-items: center;
   justify-content: space-evenly;
   width: 30%;
+  background-color: var(--bgCards);
+  padding: 1em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
+
+.Home__socialNetworks a{
+  color: #fff;
+}
+
 
 .socialNetworks{
   width: 2rem;
@@ -129,7 +138,10 @@
   height: 3rem;
   transform: rotate(360deg);
   cursor: pointer;
+  color: #000;
 }
+
+
 
 
 

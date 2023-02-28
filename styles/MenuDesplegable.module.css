@@ -95,7 +95,7 @@
     flex-direction: column;
     width: 10.5;
     height: 100vh;
-    background-color: #000;
+    background-color: var(--background);
     font-weight: 300;
     z-index: 1;
     transform: scaleY(0);
@@ -117,14 +117,14 @@
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
-    color: #fff;
+    color: var(--foreground);
     cursor: pointer;
   }
   .nav__Link__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--foreground);
     height: 10vh;
     width: 14rem;
     transition: all ease-in-out 0.5s;

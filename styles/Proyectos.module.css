@@ -17,24 +17,18 @@
   align-items: center;
   border-radius: 25px;
   margin-top: 8rem;
-  background: rgb(0, 6, 150);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 6, 150, 1) 0%,
-    rgba(0, 4, 92, 0.4800770650056898) 50%,
-    rgba(0, 0, 0, 0.2980042358740371) 100%
-  );
+  background: var(--bgSlideShow)
 }
 
 .Proyectos__titulo__slideShow h1 {
   font-size: 3em;
   line-height: 20px;
   font-family: "Roboto Slab", serif;
-  color: #fff;
+  color: var(--foreground);
 }
 
 .Proyectos__titulo__slideShow h3 {
-  color: #fff;
+  color: var(--foreground);
 }
 
 .SlideShow {
@@ -60,15 +54,10 @@
   border-radius: 25px;
   margin-top: 4rem;
   border: 1px solid #fff;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 6, 150, 1) 0%,
-    rgba(0, 4, 92, 0.4800770650056898) 50%,
-    rgba(0, 0, 0, 0.2980042358740371) 100%
-  );
+  background: var(--bgProyectos);
   animation: proyectosCard .5s ease-in-out;
-  box-shadow: 0.8rem 0.8rem 0.8rem #000;
-  color: #fff;
+  box-shadow: 0.8rem 0.8rem 0.8rem rgb(158, 158, 158);
+  color: var(--foreground);
 }
 
 
@@ -84,7 +73,7 @@
 .line {
   height: 0.1rem;
   width: 80%;
-  background-color: #fff;
+  background-color: var(--foreground);
 }
 
 .Proyectos__info h1 {
@@ -121,6 +110,40 @@
   justify-content: space-evenly;
 }
 
+.enlaces{
+  width: 40%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.enlaces a{
+  color: inherit;
+}
+
+.link{
+  font-size: 2rem;
+  transition: .2s ease-in;
+}
+
+.link:hover{
+  font-size: 3rem;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.github{
+  font-size: 2rem;
+  transition: .2s ease-in;
+}
+
+.github:hover{
+  font-size: 3rem;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
 .Proyectos__img {
   display: flex;
   flex-direction: column;
@@ -148,30 +171,32 @@
   width: 50%;
 }
 
-.tenchnologies h4 {
+.Proyectos__img h1{
+  font-size: 1.2rem;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+}
+
+.tecnologias{
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 30%;
+}
+
+.habilidades {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
   padding: 0.2rem;
-  color: #fff;
+  color: var(--foreground);
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
-@media screen and (max-width: 1520px) {
-  .Proyectos__img video {
-    width: 80%;
-  }
-  .Proyectos__img .tenchnologies {
-    width: 80%;
-  }
-
-  .tenchnologies h4 {
-    width: 3rem;
-    height: 2rem;
-    font-size: 0.7rem;
-  }
-}
 
 @media screen and (max-width: 800px) {
   .Proyectos__card {

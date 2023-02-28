@@ -10,9 +10,13 @@ export default function ThemeToggler() {
     useEffect(() => setMounted(true), [])
     if (!mounted) return null
 
+    const handleTheme = ()=>{
+      setTheme(theme === 'light' ? 'dark' : 'light')
+    }
+
     return (
       <button
-        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        onClick={handleTheme}
         aria-label='Toggle Dark Mode'
         className={styles.button__toggler}
       >

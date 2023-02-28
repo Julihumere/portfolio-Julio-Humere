@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default function HomePage() {
+  
   return (
     <div  className={styles.index__container}>
     <div className={styles.index__divMayor}>
@@ -41,21 +42,20 @@ export default function HomePage() {
         </div>      
       </div>
       <div className={styles.Home__socialNetworks}>
-        <Link 
-          href="https://github.com/Julihumere"
-          target="_blank">
+        <a href="https://github.com/Julihumere"
+          target="_blank">       
           <FontAwesomeIcon icon={faGithub} className={styles.socialNetworks} />
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://www.linkedin.com/in/juli-humere/"
           target="_blank">
           <FontAwesomeIcon icon={faLinkedinIn} className={styles.socialNetworks} />
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://wa.link/h0b3bf"
           target="_blank">
           <FontAwesomeIcon icon={faWhatsapp} className={styles.socialNetworks} />
-        </Link>
+        </a>
           
         </div>
       </div>
