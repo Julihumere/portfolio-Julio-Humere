@@ -1,11 +1,4 @@
 .SobreMi__container {
-  background: rgb(4, 0, 145);
-  background: linear-gradient(
-    0deg,
-    rgba(4, 0, 145, 1) 0%,
-    rgba(4, 0, 145, 1) 15%,
-    rgba(4, 0, 145, 0.10752804539784666) 100%
-  );
   width: 100%;
   height: 120vh;
   display: flex;

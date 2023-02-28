@@ -4,13 +4,6 @@
   justify-content: space-evenly;
   align-items: center;
   justify-items: center;
-  background: rgb(4, 0, 145);
-  background: linear-gradient(
-    0deg,
-    rgba(4, 0, 145, 1) 0%,
-    rgba(4, 0, 145, 1) 15%,
-    rgba(4, 0, 145, 0.10752804539784666) 100%
-  );
   background-attachment: fixed;
   margin: 0;
   width: 100%;
@@ -67,10 +60,17 @@
   border-radius: 25px;
   margin-top: 4rem;
   border: 1px solid #fff;
-  background: transparent;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 6, 150, 1) 0%,
+    rgba(0, 4, 92, 0.4800770650056898) 50%,
+    rgba(0, 0, 0, 0.2980042358740371) 100%
+  );
+  animation: proyectosCard .5s ease-in-out;
   box-shadow: 0.8rem 0.8rem 0.8rem #000;
   color: #fff;
 }
+
 
 .Proyectos__info {
   width: 50%;

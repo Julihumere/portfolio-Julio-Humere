@@ -1,17 +1,10 @@
 .Habilidades__container {
-  background: rgb(4, 0, 145);
-  background: linear-gradient(
-    0deg,
-    rgba(4, 0, 145, 1) 0%,
-    rgba(4, 0, 145, 1) 15%,
-    rgba(4, 0, 145, 0.10752804539784666) 100%
-  );
   margin: 0;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .Habilidades__div {
@@ -21,7 +14,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .Habilidades__div h1 {

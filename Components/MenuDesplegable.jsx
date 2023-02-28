@@ -69,13 +69,13 @@ export default function MenuDesplegable() {
               </Link>
               Inicio
             </h1>
-            <a href="#" className={styles.nav__Link__item}>
+            <a href="#sobremi" className={styles.nav__Link__item}>
               Sobre Mi
             </a>
-            <a href="#" className={styles.nav__Link__item}>
+            <a href="#habilidades" className={styles.nav__Link__item}>
               Proyectos
             </a>
-            <a href="#" className={styles.nav__Link__item}>
+            <a href="#proyectos" className={styles.nav__Link__item}>
               Habilidades
             </a>
           </div>

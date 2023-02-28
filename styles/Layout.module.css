@@ -11,13 +11,22 @@
   z-index: 90;
 }
 
+.Layout__icono{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
 .Layout__Buttons {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 40%;
 }
 
 .Layout__Buttons__title {

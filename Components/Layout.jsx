@@ -1,7 +1,7 @@
 import Link from "next/link";
 import style from "../styles/Layout.module.css";
-import { BsDoorOpen } from "react-icons/bs";
 import MenuDesplegable from "./MenuDesplegable";
+import Spline from "@splinetool/react-spline";
 
 export default function Layout() {
   return (
@@ -9,16 +9,21 @@ export default function Layout() {
       <div className={style.Layout__MenuDesplegable}>
         <MenuDesplegable />
       </div>
+      <div className={style.Layout__icono}>
+            <Link href={"/"}>
+              <h5>Home</h5>
+            {/* <Spline
+            style={{
+              background: 'red',
+              width: 100
+            }}
+            scene="https://prod.spline.design/d6Y54wtG-JYV4csQ/scene.splinecode"
+          /> */}
+            </Link>
+        </div>
       <ul className={style.Layout__Buttons}>
         <li className={style.Layout__li}>
-          <h1>
-            <Link href={"/"}>
-              <BsDoorOpen size={"1em"} color="white" />
-            </Link>
-          </h1>
-        </li>
-        <li className={style.Layout__li}>
-          <Link href={"/SobreMi"}>
+          <Link href={"#sobremi"} scroll={false}>
             <h1 className={style.Layout__Buttons__title}>
               <>
                 <span className={style.Layout__button__span}>Sobre Mi</span>
@@ -28,7 +33,7 @@ export default function Layout() {
           </Link>
         </li>
         <li className={style.Layout__li}>
-          <Link href={"/Habilidades"}>
+          <Link href={"#habilidades"}>
             <h1 className={style.Layout__Buttons__title}>
               <>
                 <span className={style.Layout__button__span}>Habilidades</span>
@@ -38,7 +43,7 @@ export default function Layout() {
           </Link>
         </li>
         <li className={style.Layout__li}>
-          <Link href={"/Proyectos"}>
+          <Link href={"#proyectos"}>
             <h1 className={style.Layout__Buttons__title}>
               <>
                 <span className={style.Layout__button__span}>Proyectos</span>
