@@ -59,24 +59,14 @@ export default function MenuDesplegable() {
         </div>
         <div className={styles.nav__menu}>
           <div className={styles.nav__menu__Links}>
-            <h1>
-              <Link href={"/"}>
-                <BsDoorOpen
-                  size={"2em"}
-                  style={{ width: "33.3%" }}
-                  color="white"
-                />
-              </Link>
-              Inicio
-            </h1>
             <a href="#sobremi" className={styles.nav__Link__item}>
               Sobre Mi
             </a>
             <a href="#habilidades" className={styles.nav__Link__item}>
-              Proyectos
+            Habilidades
             </a>
             <a href="#proyectos" className={styles.nav__Link__item}>
-              Habilidades
+              Proyectos
             </a>
           </div>
         </div>

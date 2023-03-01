@@ -27,6 +27,25 @@ export default function Skills() {
     <div className={styles.Habilidades__container} id="habilidades">
       <title>&lt; Habilidades /&gt;</title>
       <div className={styles.Habilidades__div}>
+      <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <h1>Lenguajes</h1>
+          <div className={styles.Habilidades__tecnologia__div}>
+            {Lenguajes &&
+              Lenguajes.map((e, i) => (
+                <div key={e} className={styles.Habilidades__tecnologia}>
+                  <Image src={e.icono} width="50" height="50" />
+                  <h5>{e.tecnologia}</h5>
+                </div>
+              ))}
+          </div>
+        </div>
         <div
           style={{
             width: "100%",
@@ -40,7 +59,7 @@ export default function Skills() {
             {Frontend &&
               Frontend.map((e, i) => (
                 <div key={e} className={styles.Habilidades__tecnologia}>
-                  <Image src={e.icono} width="30" height="30" />
+                  <Image src={e.icono} width="50" height="50" />
                   <h5>{e.tecnologia}</h5>
                 </div>
               ))}
@@ -59,26 +78,7 @@ export default function Skills() {
             {Backend &&
               Backend.map((e, i) => (
                 <div key={e} className={styles.Habilidades__tecnologia}>
-                  <Image src={e.icono} width="40" height="40" />
-                  <h5>{e.tecnologia}</h5>
-                </div>
-              ))}
-          </div>
-        </div>
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <h1>Lenguajes</h1>
-          <div className={styles.Habilidades__tecnologia__div}>
-            {Lenguajes &&
-              Lenguajes.map((e, i) => (
-                <div key={e} className={styles.Habilidades__tecnologia}>
-                  <Image src={e.icono} width="40" height="40" />
+                  <Image src={e.icono} width="50" height="50" />
                   <h5>{e.tecnologia}</h5>
                 </div>
               ))}
@@ -97,7 +97,7 @@ export default function Skills() {
             {Otros &&
               Otros.map((e, i) => (
                 <div key={e} className={styles.Habilidades__tecnologia}>
-                  <Image src={e.icono} width="40" height="40" />
+                  <Image src={e.icono} width="50" height="50" />
                   <h5>{e.tecnologia}</h5>
                 </div>
               ))}

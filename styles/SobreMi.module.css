@@ -1,6 +1,6 @@
 .SobreMi__container {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,14 +19,14 @@
 
 .SobreMi__text {
   width: 60%;
-  height: 90vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  margin-bottom: 2rem;
-  background-color: var(--bgCards);
+  background: var(--bgHabilidades);
   border: 2px solid #fff;
+  margin-bottom: 5rem;
 }
 
 .Hoja1 h1 {

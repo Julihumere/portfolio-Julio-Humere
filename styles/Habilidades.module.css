@@ -38,24 +38,26 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  background: var(--bgHabilidades);
-  border: 1px solid midnightblue;
-  border-radius: 15px;
-  transition: 0.3s ease-in-out all;
-  margin-bottom: 1rem;
 }
 
 .Habilidades__tecnologia {
-  height: 100%;
+  height: 80%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.6em;
+  background: var(--bgHabilidades);
+  border: 1px solid midnightblue;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out all;
+  margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 
 .Habilidades__tecnologia h5 {
-  color: #fff;
+  color: var(--foreground);
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -68,6 +70,10 @@
   .Habilidades__container title {
     margin-top: 2rem;
     font-size: 3rem;
+  }
+  .Habilidades__tecnologia h5 {
+    color: #fff;
+    font-size: 0.6rem;
   }
 }
 
