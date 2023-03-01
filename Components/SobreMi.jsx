@@ -8,6 +8,7 @@ import Footer from "./Footer";
 export default function About(props) {
   return (
     <div className={styles.SobreMi__container} id="sobremi">
+      <title>&lt; SobreMi /&gt;</title>
       <div className={styles.SobreMi__text}>
         <div className={styles.Hoja1}>
           <h1>Sobre mi</h1>
@@ -15,9 +16,8 @@ export default function About(props) {
             Fui parte del bootcamp de Henry, el cual me proporciono +600 horas
             de codeo, practica y aprendizaje. En el cual aprendi Javascript,
             React, Node.JS, Express, Redux, HTML, CSS. Y continuo aprendiendo
-            nuevas tecnologias que me habran paso a un excelente empleo, como
-            typescript, nextJS, React Native, Mongo DB. Actualmente me encuentro
-            en curso de la tecnicatura universitaria de desarrollo web
+            nuevas tecnologias que me den paso a un excelente empleo, como
+            typescript, nextJS, React Native, Mongo DB.
           </p>
         </div>
         <div className={styles.Hoja2}>

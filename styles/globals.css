@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Roboto+Slab:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Roboto+Slab:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 html,
 body {
   padding: 0;
@@ -56,20 +57,20 @@ li {
     rgb(83, 88, 255) 0%,
     rgba(123, 130, 255, 0.48) 50%,
     rgba(255, 255, 255, 0.298) 100%
-  ); ;
+  );
   --bgProyectos: linear-gradient(
     0deg,
     rgb(76, 82, 255) 0%,
     rgba(94, 102, 255, 0.48) 50%,
     rgba(255, 255, 255, 0.298) 100%
-  );;
+  );
   --stars: var(--foreground);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background: black;
   --foreground: white;
-  --bgCards:darkblue;
+  --bgCards: darkblue;
   --bgHabilidades: linear-gradient(
     90deg,
     rgba(25, 13, 156, 1) 0%,
@@ -81,11 +82,11 @@ li {
     rgba(0, 6, 150, 1) 0%,
     rgba(0, 4, 92, 0.4800770650056898) 50%,
     rgba(0, 0, 0, 0.2980042358740371) 100%
-  );;
+  );
   --bgProyectos: linear-gradient(
     0deg,
     rgba(0, 6, 150, 1) 0%,
     rgba(0, 4, 92, 0.4800770650056898) 50%,
     rgba(0, 0, 0, 0.2980042358740371) 100%
-  );;
+  );
 }

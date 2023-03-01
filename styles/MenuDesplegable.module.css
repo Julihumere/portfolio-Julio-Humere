@@ -90,10 +90,10 @@
   .nav__menu {
     position: absolute;
     left: 0;
-    top: -2vh;
+    top: -5vh;
     display: flex;
     flex-direction: column;
-    width: 10.5;
+    width: 60%;
     height: 100vh;
     background-color: var(--background);
     font-weight: 300;

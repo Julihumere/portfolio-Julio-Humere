@@ -7,14 +7,24 @@
   justify-content: center;
 }
 
+.Habilidades__container title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Kalam", cursive;
+  margin-top: 3rem;
+}
+
 .Habilidades__div {
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
-  margin-top: 5rem;
 }
 
 .Habilidades__div h1 {
@@ -23,7 +33,7 @@
 }
 
 .Habilidades__tecnologia__div {
-  width: 80%;
+  width: 90%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -32,7 +42,7 @@
   border: 1px solid midnightblue;
   border-radius: 15px;
   transition: 0.3s ease-in-out all;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .Habilidades__tecnologia {
@@ -41,7 +51,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  padding: 0.6em;
 }
 
 .Habilidades__tecnologia h5 {
@@ -55,6 +65,10 @@
     grid-template-rows: 1fr;
     justify-items: center;
   }
+  .Habilidades__container title {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -63,12 +77,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
-}
-
-@media screen and (max-width: 520px) {
-  .Habilidades__tecnologia__div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+  .Habilidades__container title {
+    font-size: 2rem;
   }
 }
