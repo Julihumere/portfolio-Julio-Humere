@@ -1,3 +1,4 @@
+
 import axios from "axios";
 import {
   PROYECTOS,
@@ -6,11 +7,12 @@ import {
   CREAR_PROYECTO,
 } from "./types.js";
 
-const base_url = "https://api-portfolio-julio-humere.up.railway.app";
 
-export const getProyectos = () => (dispatch) => {
+const base_url = `${process.env.NEXT_PUBLIC_URL}`;
+
+export const getProyectos = () => async(dispatch) => {
   try {
-    const proyectos = axios.get(`${base_url}/proyectos`).then((res) => {
+    const proyectos = await axios.get(`${base_url}/proyectos`).then((res) => {
       dispatch({
         type: PROYECTOS,
         payload: res.data,

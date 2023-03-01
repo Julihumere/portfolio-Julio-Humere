@@ -8,6 +8,9 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['res.cloudinary.com', 'my.spline.design']
+  },
+  env:{
+    URL: process.env.URL
   }
 };
 

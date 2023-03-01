@@ -12,9 +12,7 @@ export default function Layout({theme, setTheme}) {
       </div>
       <div className={style.Layout__icono}>
             <Link href={"/"}>
-            <Spline
-            scene="https://prod.spline.design/d6Y54wtG-JYV4csQ/scene.splinecode"
-          />
+            <Spline scene="https://prod.spline.design/d6Y54wtG-JYV4csQ/scene.splinecode" />
             </Link>
         </div>
       <ul className={style.Layout__Buttons}>
