@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import { getHabilidades } from "../Redux/actions";
 
-export default function Skills() {
+export default function Habilidades() {
   const dispatch = useDispatch();
   const habilidades = useSelector((state) => state.habilidades);
 
@@ -39,7 +39,7 @@ export default function Skills() {
           <div className={styles.Habilidades__tecnologia__div}>
             {Lenguajes &&
               Lenguajes.map((e, i) => (
-                <div key={e} className={styles.Habilidades__tecnologia}>
+                <div key={i} className={styles.Habilidades__tecnologia}>
                   <Image src={e.icono} width="50" height="50" />
                   <h5>{e.tecnologia}</h5>
                 </div>
@@ -58,7 +58,7 @@ export default function Skills() {
           <div className={styles.Habilidades__tecnologia__div}>
             {Frontend &&
               Frontend.map((e, i) => (
-                <div key={e} className={styles.Habilidades__tecnologia}>
+                <div key={i} className={styles.Habilidades__tecnologia}>
                   <Image src={e.icono} width="50" height="50" />
                   <h5>{e.tecnologia}</h5>
                 </div>
@@ -77,7 +77,7 @@ export default function Skills() {
           <div className={styles.Habilidades__tecnologia__div}>
             {Backend &&
               Backend.map((e, i) => (
-                <div key={e} className={styles.Habilidades__tecnologia}>
+                <div key={i} className={styles.Habilidades__tecnologia}>
                   <Image src={e.icono} width="50" height="50" />
                   <h5>{e.tecnologia}</h5>
                 </div>
@@ -96,7 +96,7 @@ export default function Skills() {
           <div className={styles.Habilidades__tecnologia__div}>
             {Otros &&
               Otros.map((e, i) => (
-                <div key={e} className={styles.Habilidades__tecnologia}>
+                <div key={i} className={styles.Habilidades__tecnologia}>
                   <Image src={e.icono} width="50" height="50" />
                   <h5>{e.tecnologia}</h5>
                 </div>

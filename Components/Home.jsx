@@ -11,15 +11,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HomePage() {
   return (
-    <div className={styles.index__container}>
-      <div className={styles.index__divMayor}>
-        <div className={styles.index__divTitle}>
+    <div className={styles.Home__container} id="/">
+      <div className={styles.Home__divMayor}>
+        <div className={styles.Home__divTitle}>
           <div>
             <h1>Julio</h1>
             <h1>Humere</h1>
           </div>
-          <div className={styles.divTypewriter}>
-            <h2 className={styles.typewriter}>
+          <div className={styles.Home__divTypewriter}>
+            <h2 className={styles.Home__typewriter}>
               <Typewriter
                 options={{
                   loop: true,
@@ -44,18 +44,18 @@ export default function HomePage() {
       </div>
       <div className={styles.Home__socialNetworks}>
         <a href="https://github.com/Julihumere" target="_blank">
-          <FontAwesomeIcon icon={faGithub} className={styles.socialNetworks} />
+          <FontAwesomeIcon icon={faGithub} className={styles.Home__item__socialNetworks} />
         </a>
         <a href="https://www.linkedin.com/in/juli-humere/" target="_blank">
           <FontAwesomeIcon
             icon={faLinkedinIn}
-            className={styles.socialNetworks}
+            className={styles.Home__item__socialNetworks}
           />
         </a>
         <a href="https://wa.link/h0b3bf" target="_blank">
           <FontAwesomeIcon
             icon={faWhatsapp}
-            className={styles.socialNetworks}
+            className={styles.Home__item__socialNetworks}
           />
         </a>
       </div>

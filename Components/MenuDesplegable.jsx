@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import {useState} from "react";
 import styles from "../styles/MenuDesplegable.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -10,6 +10,16 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { BsDoorOpen } from "react-icons/bs";
 export default function MenuDesplegable() {
+  const [menu, setMenu] = useState(false)
+
+  const openMenu = ()=>{
+    setMenu(!menu)
+  }
+
+  const closeMenu = (e)=>{
+    setMenu(false)
+  }
+
   return (
     <div>
       <nav className={styles.nav__container}>
@@ -17,6 +27,8 @@ export default function MenuDesplegable() {
           type="checkbox"
           className={styles.nav__collapse__input}
           id="nav__collapse__checkbox"
+          checked={menu}
+          onChange={openMenu}
         />
         <label
           htmlFor="nav__collapse__checkbox"
@@ -60,13 +72,13 @@ export default function MenuDesplegable() {
         <div className={styles.nav__menu}>
           <div className={styles.nav__menu__Links}>
             <a href="#sobremi" className={styles.nav__Link__item}>
-              Sobre Mi
+             <button onClick={closeMenu} value={menu}>Sobre Mi</button> 
             </a>
             <a href="#habilidades" className={styles.nav__Link__item}>
-            Habilidades
+            <button onClick={closeMenu} value={menu}>Habilidades</button> 
             </a>
             <a href="#proyectos" className={styles.nav__Link__item}>
-              Proyectos
+            <button onClick={closeMenu} value={menu}>Proyectos</button> 
             </a>
           </div>
         </div>

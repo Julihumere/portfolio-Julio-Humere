@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     position: relative;
+
   }
 
   .nav__collapse__input {
@@ -101,6 +102,8 @@
     transform: scaleY(0);
     transition: transform 0.3s;
     transform-origin: top;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
   }
 
   .nav__menu__Links {
@@ -121,19 +124,33 @@
     color: var(--foreground);
     cursor: pointer;
   }
+
+  .nav__Link__item button{
+    background: none;
+    border: none;
+    background-color: darkblue;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+  }
+
   .nav__Link__item {
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--foreground);
-    height: 10vh;
-    width: 100%;
+    height: 7vh;
+    width: 70%;
     transition: all ease-in-out 0.5s;
+    border-radius: 20px;
   }
 
   .nav__Link__item:hover {
-    background-color: blue;
+    background-color: midnightblue;
     height: 10vh;
+    width: 90%;
   }
 
   .nav__collapse__input:checked ~ .nav__menu {

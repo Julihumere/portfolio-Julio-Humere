@@ -218,6 +218,8 @@
   .Proyectos__titulo__slideShow h3 {
     font-size: 1.1rem;
   }
+
+
   .habilidades {
     width: 70%;
     display: grid;
@@ -230,7 +232,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .Proyectos__container title {
     margin-top: 2rem;
     font-size: 2rem;
@@ -243,7 +245,7 @@
   }
 
   .Proyectos__titulo__slideShow h3 {
-    font-size: 0.9srem;
+    font-size: 0.9rem;
   }
   .Proyectos__card {
     height: auto;
@@ -269,22 +271,48 @@
 
   .Proyectos__img {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
   .Proyectos__img video {
-    width: 70%;
+    width: 60%;
+    margin-bottom: 1rem;
   }
 
   .habilidades {
     height: 100%;
+    width: 80%;
+    align-items: center;
   }
 
   .habilidades h4 {
-    font-size: 0.6rem;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Proyectos__img video{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Proyectos__img video{
+    width: 90%;
+  }
+  .Proyectos__img{
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Proyectos__img video{
+    width: 90%;
   }
 }
 

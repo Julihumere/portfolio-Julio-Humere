@@ -1,14 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import {BiUpArrowAlt} from "react-icons/bi"
 import styles from "../styles/ButtonTop.module.css"
+import { useRouter } from 'next/router';
 
 
 export default function ButtonTop() {
+    const router = useRouter()
 
     const [visible, setVisible] = useState(false)
 
     const goTop = ()=>{
         window.scrollTo({top:0, left:0, behavior: 'smooth'})
+        router.push('/')
     }
 
     const scroll = ()=>{

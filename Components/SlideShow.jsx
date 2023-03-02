@@ -6,14 +6,14 @@ import Image from "next/image";
 import { useSelector, useDispatch } from 'react-redux';
 import { getProyectos } from './../Redux/actions';
 
-export default function SlideShow({proyectos}) {
+export default function SlideShow() {
     const dispatch = useDispatch()
     const arrayProyectos = useSelector(state => state.proyectos)
-
+    
     useEffect(()=>{
         dispatch(getProyectos())
     }, [])
-
+    
     const slideShow = useRef(null)
 
 
@@ -62,13 +62,13 @@ export default function SlideShow({proyectos}) {
   return (
     <div className={styles.slideShow__container}>
         <div className={styles.SlideShow} ref={slideShow}>
-            {arrayProyectos && arrayProyectos.map(e=>
-            <div className={styles.Slide} >
+            {arrayProyectos.length > 0 && arrayProyectos.map((e, i)=>
+            <div className={styles.Slide} key={i} >
                    <Link to={e.titulo} spy={true} smooth={true} offset={-120} duration={500} className={styles.Link}>
                     <Image width={"800"} height={"450"} src={e.imagen} alt="" />
                     </Link>
                 <div className={styles.textSlide}>
-                    <Link to={e.href} spy={true} smooth={true} offset={-30} duration={500}><p>{e.titulo}</p></Link>
+                    <p>{e.titulo}</p>
                 </div>
             </div> )}
         </div>
