@@ -28,6 +28,8 @@ export const crearProyecto = (payload) => () => {
         video: payload.video,
         descripcion: payload.descripcion,
         tipo: payload.tipo,
+        github: payload.github,
+        demo: payload.demo,
         habilidad: payload.habilidad,
       },
     });
@@ -49,6 +51,8 @@ export const updateProyecto = (payload) => () => {
         video: payload.video,
         descripcion: payload.descripcion,
         tipo: payload.tipo,
+        github: payload.github,
+        demo: payload.demo,
         habilidad: payload.habilidad,
       },
     });
