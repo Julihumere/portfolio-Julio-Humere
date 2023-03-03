@@ -40,6 +40,8 @@ export default function PanelAdmin() {
     imagen: "",
     video: "",
     tipo: "",
+    github: "",
+    demo: "",
     habilidad: [],
   });
   const [habilidad, setHabilidad] = useState({
@@ -55,6 +57,8 @@ export default function PanelAdmin() {
     imagen: "",
     video: "",
     tipo: "",
+    github: "",
+    demo: "",
     habilidad: [],
   });
 
@@ -83,6 +87,8 @@ export default function PanelAdmin() {
       imagen: "",
       video: "",
       tipo: "",
+      github: "",
+      demo: "",
       habilidad: [],
     });
   };
@@ -107,6 +113,8 @@ export default function PanelAdmin() {
       imagen: data.imagen,
       video: data.video,
       tipo: data.tipo,
+      github: data.github,
+      demo: data.demo,
       habilidad: data.habilidad,
     });
   };
@@ -238,6 +246,22 @@ export default function PanelAdmin() {
                 onChange={handleOnChangeProyectos}
                 name="tipo"
                 value={proyecto.tipo}
+              />
+            </div>
+            <div className={styles.PanelAdmin__form__input}>
+              <label>Github</label>
+              <input
+                onChange={handleOnChangeProyectos}
+                name="tipo"
+                value={proyecto.github}
+              />
+            </div>
+            <div className={styles.PanelAdmin__form__input}>
+              <label>Pagina</label>
+              <input
+                onChange={handleOnChangeProyectos}
+                name="tipo"
+                value={proyecto.demo}
               />
             </div>
             <div className={styles.PanelAdmin__form__input}>

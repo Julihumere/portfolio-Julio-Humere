@@ -113,8 +113,8 @@
 }
 
 .PanelAdmin__form__div {
-  width: 70%;
-  height: 50rem;
+  width: 80%;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
