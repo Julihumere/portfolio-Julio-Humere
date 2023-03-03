@@ -1,13 +1,7 @@
 import Typewriter from "typewriter-effect";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
 import Image from "next/image";
-import {
-  faGithub,
-  faLinkedinIn,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 export default function HomePage() {
   return (
@@ -44,19 +38,13 @@ export default function HomePage() {
       </div>
       <div className={styles.Home__socialNetworks}>
         <a href="https://github.com/Julihumere" target="_blank">
-          <FontAwesomeIcon icon={faGithub} className={styles.Home__item__socialNetworks} />
+          <FaGithub className={styles.Home__item__socialNetworks} />
         </a>
         <a href="https://www.linkedin.com/in/juli-humere/" target="_blank">
-          <FontAwesomeIcon
-            icon={faLinkedinIn}
-            className={styles.Home__item__socialNetworks}
-          />
+          <FaLinkedinIn className={styles.Home__item__socialNetworks} />
         </a>
         <a href="https://wa.link/h0b3bf" target="_blank">
-          <FontAwesomeIcon
-            icon={faWhatsapp}
-            className={styles.Home__item__socialNetworks}
-          />
+          <FaWhatsapp className={styles.Home__item__socialNetworks} />
         </a>
       </div>
     </div>

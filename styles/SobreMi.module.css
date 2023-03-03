@@ -27,6 +27,7 @@
   background: var(--bgHabilidades);
   border: 2px solid #fff;
   margin-bottom: 5rem;
+  z-index: 2;
 }
 
 .Hoja1 h1 {
@@ -62,7 +63,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--foreground);
 }
 
 .SobreMi__buttons__cv {
@@ -207,6 +208,3 @@
     font-size: 7px;
   }
 }
-
-
-

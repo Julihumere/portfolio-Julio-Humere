@@ -1,24 +1,18 @@
 import Link from "next/link";
-import {useState} from "react";
+import { useState } from "react";
 import styles from "../styles/MenuDesplegable.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedinIn,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { BsDoorOpen } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+
 export default function MenuDesplegable() {
-  const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(false);
 
-  const openMenu = ()=>{
-    setMenu(!menu)
-  }
+  const openMenu = () => {
+    setMenu(!menu);
+  };
 
-  const closeMenu = (e)=>{
-    setMenu(false)
-  }
+  const closeMenu = (e) => {
+    setMenu(false);
+  };
 
   return (
     <div>
@@ -45,40 +39,39 @@ export default function MenuDesplegable() {
             target="_blank"
             className={styles.nav__socialNetworks__item}
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <FaGithub size="1.5em" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/juli-humere/"
             target="_blank"
             className={styles.nav__socialNetworks__item}
           >
-            <FontAwesomeIcon icon={faLinkedinIn} />
+            <FaLinkedinIn size="1.5em" />
           </Link>
           <Link
             href="https://wa.link/h0b3bf"
             target="_blank"
             className={styles.nav__socialNetworks__item}
           >
-            <FontAwesomeIcon icon={faWhatsapp} />
-          </Link>
-          <Link
-            href="#"
-            target="_blank"
-            className={styles.nav__socialNetworks__item}
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FaWhatsapp size="1.5em" />
           </Link>
         </div>
         <div className={styles.nav__menu}>
           <div className={styles.nav__menu__Links}>
             <a href="#sobremi" className={styles.nav__Link__item}>
-             <button onClick={closeMenu} value={menu}>Sobre Mi</button> 
+              <button onClick={closeMenu} value={menu}>
+                Sobre Mi
+              </button>
             </a>
             <a href="#habilidades" className={styles.nav__Link__item}>
-            <button onClick={closeMenu} value={menu}>Habilidades</button> 
+              <button onClick={closeMenu} value={menu}>
+                Habilidades
+              </button>
             </a>
             <a href="#proyectos" className={styles.nav__Link__item}>
-            <button onClick={closeMenu} value={menu}>Proyectos</button> 
+              <button onClick={closeMenu} value={menu}>
+                Proyectos
+              </button>
             </a>
           </div>
         </div>

@@ -1,16 +1,9 @@
-
 import axios from "axios";
-import {
-  PROYECTOS,
-  HABILIDADES,
-  CREAR_HABILIDADES,
-  CREAR_PROYECTO,
-} from "./types.js";
-
+import { PROYECTOS, HABILIDADES } from "./types.js";
 
 const base_url = `${process.env.NEXT_PUBLIC_URL}`;
 
-export const getProyectos = () => async(dispatch) => {
+export const getProyectos = () => async (dispatch) => {
   try {
     const proyectos = await axios.get(`${base_url}/proyectos`).then((res) => {
       dispatch({
