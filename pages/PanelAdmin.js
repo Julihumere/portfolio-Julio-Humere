@@ -252,7 +252,7 @@ export default function PanelAdmin() {
               <label>Github</label>
               <input
                 onChange={handleOnChangeProyectos}
-                name="tipo"
+                name="github"
                 value={proyecto.github}
               />
             </div>
@@ -260,7 +260,7 @@ export default function PanelAdmin() {
               <label>Pagina</label>
               <input
                 onChange={handleOnChangeProyectos}
-                name="tipo"
+                name="demo"
                 value={proyecto.demo}
               />
             </div>
