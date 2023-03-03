@@ -1,14 +1,15 @@
 import Head from "next/head";
-import SobreMi from "../Components/SobreMi.jsx"
-import Habilidades from "../Components/Habilidades.jsx"
-import Proyectos from "../Components/Proyectos.jsx"
+import SobreMi from "../Components/SobreMi.jsx";
+import Habilidades from "../Components/Habilidades.jsx";
+import Proyectos from "../Components/Proyectos.jsx";
 import Layout from "../Components/Layout";
-import HomePage from './../Components/Home';
+import HomePage from "./../Components/Home";
 import Stars from "../Components/Stars";
-import ButtonTop from './../Components/ButtonTop';
-
+import ButtonTop from "./../Components/ButtonTop";
+import { useTheme } from "next-themes";
 
 export default function Home() {
+  const { theme, setTheme } = useTheme();
 
   return (
     <div>

@@ -27,6 +27,7 @@
   align-items: center;
   border-radius: 25px;
   background: var(--bgSlideShow);
+  z-index: 2;
 }
 
 .Proyectos__titulo__slideShow h1 {
@@ -66,6 +67,7 @@
   background: var(--bgProyectos);
   animation: proyectosCard 0.5s ease-in-out;
   color: var(--foreground);
+  z-index: 2;
 }
 
 .Proyectos__info {
@@ -219,7 +221,6 @@
     font-size: 1.1rem;
   }
 
-
   .habilidades {
     width: 70%;
     display: grid;
@@ -296,22 +297,22 @@
 }
 
 @media screen and (max-width: 700px) {
-  .Proyectos__img video{
+  .Proyectos__img video {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .Proyectos__img video{
+  .Proyectos__img video {
     width: 90%;
   }
-  .Proyectos__img{
+  .Proyectos__img {
     height: 60vh;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .Proyectos__img video{
+  .Proyectos__img video {
     width: 90%;
   }
 }
