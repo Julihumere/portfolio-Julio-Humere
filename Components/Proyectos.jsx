@@ -58,10 +58,10 @@ export default function Projects() {
                   </div>
                   <span className={styles.line}></span>
                   <div className={styles.enlaces}>
-                    <a href="google.com" target="_blank">
+                    <a href={e.demo} target="_blank">
                       <FaLink className={styles.link} />
                     </a>
-                    <a href="google.com" target="_blank">
+                    <a href={e.github} target="_blank">
                       <FaGithub className={styles.github} />
                     </a>
                   </div>
