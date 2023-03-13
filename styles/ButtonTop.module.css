@@ -1,5 +1,4 @@
 .Button__top__container{
-    font-size: 2.4rem;
     width: 3rem;
     height: 3rem;
     background-color: var(--bgCards);
@@ -15,10 +14,15 @@
 }
 
 .Button__top{
+    width: 100%;
+    height: 100%;
     background: transparent;
     border: none;
     animation: goToTop 1.2s linear infinite alternate-reverse;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes goToTop {

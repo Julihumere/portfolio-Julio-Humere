@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "../styles/SobreMi.module.css";
 import Link from "next/link";
-import Head from "next/head";
-import Layout from "./Layout";
-import Footer from "./Footer";
 
 export default function About(props) {
   return (
@@ -30,10 +27,10 @@ export default function About(props) {
           <div className={styles.SobreMi__buttons__cv}>
           <ul className={styles.SobreMi__Buttons}>
           <li className={styles.SobreMi__li}>
-            <Link
+            <a
             target="_blank"
               href={
-                "https://drive.google.com/file/d/13PClqUwLk4BFgaX6i9Zkx9Veq8nCbDKe/view?usp=share_link"
+                "https://drive.google.com/file/d/1RFFjcrTt7prhawix_MTEtP_YOLKFy9Qh/view?usp=share_link"
               }
             >
               <h1 className={styles.SobreMi__Buttons__title}>
@@ -42,22 +39,22 @@ export default function About(props) {
                 <span className={styles.SobreMi__line}></span>
               </>
             </h1>
-            </Link>
+            </a>
           </li>
           <li className={styles.SobreMi__li}>
-            <Link
+            <a
             target="_blank"
               href={
-                "https://drive.google.com/file/d/1hZJJ413zJwKLPNQwkFqBpjEvv3VaZzJc/view?usp=share_link"
+                "https://drive.google.com/file/d/18I9qp4-q8j42AdHMR7PL5cRsOaEiA6o6/view?usp=share_link"
               }
             >
               <h1 className={styles.SobreMI__Buttons__title}>
                 <>
-                  <span className={styles.SobreMi__button__span}>CV ingles</span>
+                  <span className={styles.SobreMi__button__span}>CV english</span>
                   <span className={styles.SobreMi__line}></span>
                 </>
               </h1>
-            </Link>
+            </a>
             </li>
             </ul>
           </div>
