@@ -1,25 +1,15 @@
-import React, { useRef, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
 import styles from "../styles/Proyectos.module.css";
-import Layout from "./Layout";
-import Head from "next/head";
 import SlideShow from "./SlideShow";
 import { AiFillStar } from "react-icons/ai";
 import { BsFillJournalBookmarkFill } from "react-icons/bs";
 import { FaGraduationCap, FaTools } from "react-icons/fa";
-import { getProyectos } from "../Redux/actions.js";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { useRouter } from "next/router";
 import proyectosArray from "../data/proyectos.json"
 
 export default function Projects({props}) {
-  const dispatch = useDispatch();
-  const proyectos = useSelector((state) => state.proyectos);
   const router = useRouter()
-
-  useEffect(() => {
-    dispatch(getProyectos());
-  }, []);
 
   return (
     <div>
@@ -30,7 +20,7 @@ export default function Projects({props}) {
           <h3>{props.subtitulo2}</h3>
 
           <div className={styles.SlideShow}>
-            <SlideShow proyectos={proyectos} />
+            <SlideShow proyectos={proyectosArray} />
           </div>
         </div>
 

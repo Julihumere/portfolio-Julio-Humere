@@ -1,14 +1,9 @@
 import React, { useEffect } from "react";
 import styles from "../styles/Habilidades.module.css";
 import Image from "next/image";
-import { useSelector, useDispatch } from "react-redux";
-import { getHabilidades } from "../Redux/actions";
 import habilidadesArray from "../data/habilidades.json"
 
 export default function Habilidades({props}) {
-  const dispatch = useDispatch();
-  const habilidades = useSelector((state) => state.habilidades);
-
   const Frontend =
   habilidadesArray && habilidadesArray.filter((e) => e.area === "Frontend");
 
@@ -20,9 +15,6 @@ export default function Habilidades({props}) {
 
   const Otros = habilidadesArray && habilidadesArray.filter((e) => e.area === "Otros");
 
-  useEffect(() => {
-    dispatch(getHabilidades());
-  }, []);
 
   return (
     <div className={styles.Habilidades__container} id="habilidades">
