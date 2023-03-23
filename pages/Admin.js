@@ -27,7 +27,6 @@ export default function Admin() {
     });
     if (response.data === "Inicio Sesion") {
       cookie.set("inicio", "true");
-      router.push("/PanelAdmin");
     }
   };
 
@@ -41,6 +40,7 @@ export default function Admin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     adminUser(form);
+    router.push("/PanelAdmin");
   };
   return (
     <div className={styles.Admin__container}>
