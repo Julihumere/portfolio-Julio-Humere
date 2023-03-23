@@ -17,7 +17,7 @@ export default function Admin() {
   const adminUser = async (form) => {
     const response = await axios({
       method: "post",
-      url: "https://api-portfolio-julio-humere.up.railway.app/admin",
+      url: `${process.env.NEXT_PUBLIC_URL}/admin`,
       data: {
         email: form.email,
         password: form.password,
