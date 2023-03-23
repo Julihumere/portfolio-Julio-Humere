@@ -24,10 +24,13 @@ export default function Admin() {
         email: form.email,
         password: form.password,
       },
-    });
-    if (response.data === "Inicio Sesion") {
-      cookie.set("inicio", "true");
-    }
+    }).then(res => {
+      if (res.data === "Inicio Sesion") {
+        cookie.set("inicio", "true");
+      }
+    }).then(()=>{
+      router.push("/PanelAdmin");
+    })
   };
 
   const handleOnChange = (e) => {
@@ -40,7 +43,6 @@ export default function Admin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     adminUser(form);
-    router.push("/PanelAdmin");
   };
   return (
     <div className={styles.Admin__container}>
