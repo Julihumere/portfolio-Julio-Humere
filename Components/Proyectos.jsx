@@ -10,6 +10,7 @@ import { FaGraduationCap, FaTools } from "react-icons/fa";
 import { getProyectos } from "../Redux/actions.js";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { useRouter } from "next/router";
+import proyectosArray from "../data/proyectos.json"
 
 export default function Projects({props}) {
   const dispatch = useDispatch();
@@ -34,8 +35,8 @@ export default function Projects({props}) {
         </div>
 
         <div className={styles.Proyectos__container__card}>
-          {proyectos &&
-            proyectos.map((e) => (
+          {proyectosArray &&
+            proyectosArray.map((e) => (
               <div
                 key={e.titulo}
                 className={styles.Proyectos__card}

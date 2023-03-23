@@ -1,0 +1,152 @@
+[
+    {
+      "id": "f107c7a0-c97c-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164457/Portfolio/Iconos/Lenguajes/js_v8beiz.png",
+      "tecnologia": "Javascript",
+      "area": "Lenguaje"
+    },
+    {
+      "id": "f56b96f0-c97c-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677165264/Portfolio/Iconos/Lenguajes/typescript_original_logo_icon_146317_ijdjzi.png",
+      "tecnologia": "Typescript",
+      "area": "Lenguaje"
+    },
+    {
+      "id": "fed12340-c97c-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164559/Portfolio/Iconos/Frontend/atom_iaesyq.png",
+      "tecnologia": "React",
+      "area": "Frontend"
+    },
+    {
+      "id": "02f94920-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1679577207/Portfolio/Iconos/Frontend/react_native_yvhoqo.png",
+      "tecnologia": "React Native",
+      "area": "Frontend"
+    },
+    {
+      "id": "07360870-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164835/Portfolio/Iconos/Frontend/nextjs_icon_213852_tlwiht.png",
+      "tecnologia": "Next",
+      "area": "Frontend"
+    },
+    {
+      "id": "0b5e7c70-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164803/Portfolio/Iconos/Frontend/redux_original_logo_icon_146365_a9fiyr.png",
+      "tecnologia": "Redux",
+      "area": "Frontend"
+    },
+    {
+      "id": "0f769cc0-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164623/Portfolio/Iconos/Frontend/html-5_vg6kvv.png",
+      "tecnologia": "HTML",
+      "area": "Frontend"
+    },
+    {
+      "id": "13852020-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164663/Portfolio/Iconos/Frontend/css-3_tfdgoe.png",
+      "tecnologia": "CSS",
+      "area": "Frontend"
+    },
+    {
+      "id": "174d24a0-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677545279/Portfolio/Iconos/Frontend/Tailwind_css_ezc1fv.png",
+      "tecnologia": "Tailwind CSS",
+      "area": "Frontend"
+    },
+    {
+      "id": "1b7daef0-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677545279/Portfolio/Iconos/Frontend/Styled_Components_v274ju.png",
+      "tecnologia": "Styled Components",
+      "area": "Frontend"
+    },
+    {
+      "id": "1f6f0d60-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677545279/Portfolio/Iconos/Frontend/Bootstrap_pz23na.png",
+      "tecnologia": "Bootstrap",
+      "area": "Frontend"
+    },
+    {
+      "id": "ad2d8550-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164880/Portfolio/Iconos/Backend/nodejs_plain_logo_icon_146409_idlcd1.png",
+      "tecnologia": "Node",
+      "area": "Backend"
+    },
+    {
+      "id": "b17bf7e0-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164774/Portfolio/Iconos/Backend/expressjs_logo_icon_169185_h6i6ps.png",
+      "tecnologia": "Express",
+      "area": "Backend"
+    },
+    {
+      "id": "b5c33e80-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164951/Portfolio/Iconos/Backend/sequelize_original_logo_icon_146348_dpwzyh.png",
+      "tecnologia": "Sequelize",
+      "area": "Backend"
+    },
+    {
+      "id": "ba5c4ea0-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677545309/Portfolio/Iconos/Backend/Mongoose_r3bhjj.png",
+      "tecnologia": "Mongoose",
+      "area": "Backend"
+    },
+    {
+      "id": "bf0e16e0-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677165159/Portfolio/Iconos/Backend/file_type_sql_icon_130152_mbtn1g.png",
+      "tecnologia": "SQL",
+      "area": "Backend"
+    },
+    {
+      "id": "c34ea6c0-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677164920/Portfolio/Iconos/Backend/postgresql_plain_wordmark_logo_icon_146390_akohxg.png",
+      "tecnologia": "PostgreSQL",
+      "area": "Backend"
+    },
+    {
+      "id": "cacbeb10-c97d-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677165303/Portfolio/Iconos/Backend/mongodb_plain_wordmark_logo_icon_146423_nlelai.png",
+      "tecnologia": "MongoDB",
+      "area": "Backend"
+    },
+    {
+      "id": "28f23e60-c97e-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1678108483/Portfolio/Iconos/Otros/Spline_lawmsx.png",
+      "tecnologia": "Spline",
+      "area": "Otros"
+    },
+    {
+      "id": "2caeaa20-c97e-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677860198/Portfolio/Iconos/Otros/postman_zswwjz.png",
+      "tecnologia": "Postman",
+      "area": "Otros"
+    },
+    {
+      "id": "34bf06b0-c97e-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677545365/Portfolio/Iconos/Otros/Github_ntw6tu.png",
+      "tecnologia": "Github",
+      "area": "Otros"
+    },
+    {
+      "id": "38934030-c97e-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677165416/Portfolio/Iconos/Otros/figma_logo_icon_170157_k7vj7n.png",
+      "tecnologia": "Figma",
+      "area": "Otros"
+    },
+    {
+      "id": "3c895990-c97e-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677165415/Portfolio/Iconos/Otros/file_type_git_icon_130581_l4pfri.png",
+      "tecnologia": "GIT",
+      "area": "Otros"
+    },
+    {
+      "id": "409d5b30-c97e-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677165415/Portfolio/Iconos/Otros/Trello_icon-icons.com_66775_upveyr.png",
+      "tecnologia": "Trello",
+      "area": "Otros"
+    },
+    {
+      "id": "442bb210-c97e-11ed-b0ab-bf83a987eba7",
+      "icono": "https://res.cloudinary.com/dann9ji59/image/upload/v1677165415/Portfolio/Iconos/Otros/file_type_vscode_icon_130084_eqx9fx.png",
+      "tecnologia": "Vs Code",
+      "area": "Otros"
+    }
+  ]
