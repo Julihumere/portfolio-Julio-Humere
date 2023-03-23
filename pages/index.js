@@ -8,7 +8,7 @@ import Stars from "../Components/Stars";
 import ButtonTop from "./../Components/ButtonTop";
 import { useTheme } from "next-themes";
 
-export default function Home() {
+export default function Home(props) {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -20,11 +20,25 @@ export default function Home() {
       </Head>
       <ButtonTop />
       <Stars />
-      <Layout />
-      <HomePage />
-      <SobreMi />
-      <Habilidades />
-      <Proyectos />
+      <Layout props={props.Layout} />
+      <HomePage props={props.Home}/>
+      <SobreMi props={props.SobreMi}/>
+      <Habilidades props={props.Habilidades}/>
+      <Proyectos props={props.Proyectos}/>
     </div>
   );
+}
+
+
+export async function getStaticProps({locale}){
+  const response = await import(`../Lang/${locale}.json`)
+  return {
+    props:{
+      "Layout":response.Layout,
+      "Home": response.Home,
+      "SobreMi": response.SobreMi,
+      "Habilidades": response.Habilidades,
+      "Proyectos": response.Proyectos,
+    }
+  }
 }

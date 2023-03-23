@@ -14,6 +14,8 @@ export default function Admin() {
     password: "",
   });
 
+  
+
   const adminUser = async (form) => {
     const response = await axios({
       method: "post",

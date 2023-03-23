@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
-export default function HomePage() {
+export default function HomePage({props}) {
   return (
     <div className={styles.Home__container} id="/">
       <div className={styles.Home__divMayor}>
@@ -19,9 +19,9 @@ export default function HomePage() {
                   loop: true,
                   autoStart: true,
                   strings: [
-                    "Soy Desarrollador Fullstack",
-                    "Soy Desarrollador Frontend",
-                    "Soy Desarrollador Backend",
+                    props.fullstack,
+                    props.frontend,
+                    props.backend,
                   ],
                 }}
               />

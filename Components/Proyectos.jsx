@@ -9,10 +9,12 @@ import { BsFillJournalBookmarkFill } from "react-icons/bs";
 import { FaGraduationCap, FaTools } from "react-icons/fa";
 import { getProyectos } from "../Redux/actions.js";
 import { FaGithub, FaLink } from "react-icons/fa";
+import { useRouter } from "next/router";
 
-export default function Projects() {
+export default function Projects({props}) {
   const dispatch = useDispatch();
   const proyectos = useSelector((state) => state.proyectos);
+  const router = useRouter()
 
   useEffect(() => {
     dispatch(getProyectos());
@@ -21,10 +23,10 @@ export default function Projects() {
   return (
     <div>
       <div className={styles.Proyectos__container} id="proyectos">
-        <title>&lt; Proyectos /&gt;</title>
+        <title>{props.titulo}</title>
         <div className={styles.Proyectos__titulo__slideShow}>
-          <h1>Explora los proyectos</h1>
-          <h3>Haciendo click te desplazaras al detalle!</h3>
+          <h1>{props.subtitulo1}</h1>
+          <h3>{props.subtitulo2}</h3>
 
           <div className={styles.SlideShow}>
             <SlideShow proyectos={proyectos} />
@@ -49,12 +51,12 @@ export default function Projects() {
                   <span className={styles.line}></span>
                   <div className={styles.Proyectos__info__detail}>
                     <BsFillJournalBookmarkFill size="2em" />
-                    <h3>{e.descripcion}</h3>
+                    <h3>{router.locale === 'es' ? e.descripcion : e.descripcionIngles}</h3>
                   </div>
                   <span className={styles.line}></span>
                   <div className={styles.Proyectos__info__education}>
                     <FaGraduationCap size="3em" />
-                    <h4>{e.tipo}</h4>
+                    <h4>{router.locale === 'es' ? e.tipo : e.tipoIngles}</h4>
                   </div>
                   <span className={styles.line}></span>
                   <div className={styles.enlaces}>

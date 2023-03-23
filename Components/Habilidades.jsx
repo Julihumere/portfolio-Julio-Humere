@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import { getHabilidades } from "../Redux/actions";
 
-export default function Habilidades() {
+export default function Habilidades({props}) {
   const dispatch = useDispatch();
   const habilidades = useSelector((state) => state.habilidades);
 
@@ -25,7 +25,7 @@ export default function Habilidades() {
 
   return (
     <div className={styles.Habilidades__container} id="habilidades">
-      <title>&lt; Habilidades /&gt;</title>
+      <title>{props.titulo}</title>
       <div className={styles.Habilidades__div}>
       <div
           style={{
@@ -35,7 +35,7 @@ export default function Habilidades() {
             alignItems: "center",
           }}
         >
-          <h1>Lenguajes</h1>
+          <h1>{props.Lenguajes}</h1>
           <div className={styles.Habilidades__tecnologia__div}>
             {Lenguajes &&
               Lenguajes.map((e, i) => (
@@ -92,7 +92,7 @@ export default function Habilidades() {
             alignItems: "center",
           }}
         >
-          <h1>Otros</h1>
+          <h1>{props.Otros}</h1>
           <div className={styles.Habilidades__tecnologia__div}>
             {Otros &&
               Otros.map((e, i) => (

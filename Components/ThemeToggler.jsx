@@ -13,8 +13,6 @@ export default function ThemeToggler() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  console.log(theme);
-
   return (
     <button
       onClick={handleTheme}

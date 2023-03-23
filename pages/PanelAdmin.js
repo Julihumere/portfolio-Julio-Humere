@@ -37,9 +37,11 @@ export default function PanelAdmin() {
   const [proyecto, setProyecto] = useState({
     titulo: "",
     descripcion: "",
+    descripcionIngles: "",
     imagen: "",
     video: "",
     tipo: "",
+    tipoIngles:"",
     github: "",
     demo: "",
     habilidad: [],
@@ -54,9 +56,11 @@ export default function PanelAdmin() {
     fecha: "",
     titulo: "",
     descripcion: "",
+    descripcionIngles: "",
     imagen: "",
     video: "",
     tipo: "",
+    tipoIngles:"",
     github: "",
     demo: "",
     habilidad: [],
@@ -84,9 +88,11 @@ export default function PanelAdmin() {
       fecha: "",
       titulo: "",
       descripcion: "",
+      descripcionIngles: "",
       imagen: "",
       video: "",
       tipo: "",
+      tipoIngles:"",
       github: "",
       demo: "",
       habilidad: [],
@@ -110,9 +116,11 @@ export default function PanelAdmin() {
       fecha: data.fecha,
       titulo: data.titulo,
       descripcion: data.descripcion,
+      descripcionIngles: data.descripcionIngles,
       imagen: data.imagen,
       video: data.video,
       tipo: data.tipo,
+      tipoIngles: data.tipoIngles,
       github: data.github,
       demo: data.demo,
       habilidad: data.habilidad,
@@ -225,6 +233,14 @@ export default function PanelAdmin() {
               />
             </div>
             <div className={styles.PanelAdmin__form__input}>
+              <label>Descripcion Ingles</label>
+              <textarea
+                onChange={handleOnChangeProyectos}
+                name="descripcionIngles"
+                value={proyecto.descripcionIngles}
+              />
+            </div>
+            <div className={styles.PanelAdmin__form__input}>
               <label>Imagen</label>
               <input
                 onChange={handleOnChangeProyectos}
@@ -246,6 +262,14 @@ export default function PanelAdmin() {
                 onChange={handleOnChangeProyectos}
                 name="tipo"
                 value={proyecto.tipo}
+              />
+            </div>
+            <div className={styles.PanelAdmin__form__input}>
+              <label>Area Ingles</label>
+              <input
+                onChange={handleOnChangeProyectos}
+                name="tipoIngles"
+                value={proyecto.tipoIngles}
               />
             </div>
             <div className={styles.PanelAdmin__form__input}>
@@ -389,10 +413,22 @@ export default function PanelAdmin() {
             value={update.descripcion}
             onChange={handleOnChangeUpdate}
           />
+          <label>Descripcion Ingles</label>
+          <textarea
+            name="descripcionIngles"
+            value={update.descripcionIngles}
+            onChange={handleOnChangeUpdate}
+          />
           <label>Area</label>
           <input
             name="tipo"
             value={update.tipo}
+            onChange={handleOnChangeUpdate}
+          />
+          <label>Area Ingles</label>
+          <input
+            name="tipoIngles"
+            value={update.tipoIngles}
             onChange={handleOnChangeUpdate}
           />
           <label>Habilidades</label>

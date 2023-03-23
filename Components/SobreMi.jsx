@@ -2,27 +2,20 @@ import React from "react";
 import styles from "../styles/SobreMi.module.css";
 import Link from "next/link";
 
-export default function About(props) {
+export default function About({props}) {
   return (
     <div className={styles.SobreMi__container} id="sobremi">
-      <title>&lt; SobreMi /&gt;</title>
+      <title>{props.titulo}</title>
       <div className={styles.SobreMi__text}>
         <div className={styles.Hoja1}>
-          <h1>Sobre mi</h1>
+          <h1>{props.tituloText}</h1>
           <p>
-            Fui parte del bootcamp de Henry, el cual me proporciono +600 horas
-            de codeo, practica y aprendizaje. En el cual aprendi Javascript,
-            React, Node.JS, Express, Redux, HTML, CSS. Y continuo aprendiendo
-            nuevas tecnologias que me den paso a un excelente empleo, como
-            typescript, nextJS, React Native, Mongo DB.
+            {props.text1}
           </p>
         </div>
         <div className={styles.Hoja2}>
           <p>
-            Si bien no tengo experiencia laboral como tal, me siento capacitado
-            para dar el maximo de mi y aprender lo que haya que saber, me
-            considero una persona que tiene aprendizaje rapido y muchas ganas de
-            demostrarlo
+            {props.text2}
           </p>
           <div className={styles.SobreMi__buttons__cv}>
           <ul className={styles.SobreMi__Buttons}>
@@ -35,7 +28,7 @@ export default function About(props) {
             >
               <h1 className={styles.SobreMi__Buttons__title}>
               <>
-                <span className={styles.SobreMi__button__span}>CV español</span>
+                <span className={styles.SobreMi__button__span}>{props.CvEspañol}</span>
                 <span className={styles.SobreMi__line}></span>
               </>
             </h1>
@@ -50,7 +43,7 @@ export default function About(props) {
             >
               <h1 className={styles.SobreMI__Buttons__title}>
                 <>
-                  <span className={styles.SobreMi__button__span}>CV english</span>
+                  <span className={styles.SobreMi__button__span}>{props.CVIngles}</span>
                   <span className={styles.SobreMi__line}></span>
                 </>
               </h1>
