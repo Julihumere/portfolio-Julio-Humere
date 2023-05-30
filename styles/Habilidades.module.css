@@ -28,8 +28,10 @@
 }
 
 .Habilidades__div h1 {
+  font-size: 1.5rem;
   color: #fff;
   font-style: italic;
+  text-align: center;
 }
 
 .Habilidades__tecnologia__div {
@@ -71,7 +73,6 @@
   }
   .Habilidades__container title {
     margin-top: 2rem;
-    font-size: 3rem;
   }
   .Habilidades__tecnologia h5 {
     color: #fff;
@@ -79,12 +80,18 @@
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 580px) {
   .Habilidades__tecnologia__div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
+  .Habilidades__container title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
   .Habilidades__container title {
     font-size: 2rem;
   }

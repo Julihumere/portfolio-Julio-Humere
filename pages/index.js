@@ -21,24 +21,23 @@ export default function Home(props) {
       <ButtonTop />
       <Stars />
       <Layout props={props.Layout} />
-      <HomePage props={props.Home}/>
-      <SobreMi props={props.SobreMi}/>
-      <Habilidades props={props.Habilidades}/>
-      <Proyectos props={props.Proyectos}/>
+      <HomePage props={props.Home} />
+      <SobreMi props={props.SobreMi} />
+      <Habilidades props={props.Habilidades} />
+      <Proyectos props={props.Proyectos} />
     </div>
   );
 }
 
-
-export async function getStaticProps({locale}){
-  const response = await import(`../Lang/${locale}.json`)
+export async function getStaticProps({ locale }) {
+  const response = await import(`../Lang/${locale}.json`);
   return {
-    props:{
-      "Layout":response.Layout,
-      "Home": response.Home,
-      "SobreMi": response.SobreMi,
-      "Habilidades": response.Habilidades,
-      "Proyectos": response.Proyectos,
-    }
-  }
+    props: {
+      Layout: response.Layout,
+      Home: response.Home,
+      SobreMi: response.SobreMi,
+      Habilidades: response.Habilidades,
+      Proyectos: response.Proyectos,
+    },
+  };
 }

@@ -7,12 +7,10 @@
     text-decoration: none;
   }
   .nav__container {
-    width: 100%;
-    padding: 0.6rem 1.2rem;
+    width: 60%;
     display: flex;
     align-items: center;
     position: relative;
-
   }
 
   .nav__collapse__input {
@@ -32,6 +30,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
   }
 
   .line {
@@ -68,16 +68,18 @@
 
   .nav__socialNetworks {
     width: 18rem;
-    height: 1.5rem;
+    height: 2.5rem;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    background-color: blue;
+    background-color: midnightblue;
     border-radius: 0 1rem 1rem 0;
-    padding: 0.4rem;
+    padding: 0.2rem;
     padding-left: 4rem;
     color: #fff;
     z-index: 2;
     margin-left: -3rem;
+    margin-top: 0.4rem;
     transform: scaleX(0);
     transition: transform 0.3s;
     transform-origin: left;
@@ -91,19 +93,17 @@
   .nav__menu {
     position: absolute;
     left: 0;
-    top: -5vh;
+    top: -7vh;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 100vh;
+    width: 100vw;
+    height: 60vh;
     background-color: var(--background);
     font-weight: 300;
     z-index: 1;
     transform: scaleY(0);
     transition: transform 0.3s;
     transform-origin: top;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
   }
 
   .nav__menu__Links {
@@ -112,7 +112,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 
   .nav__menu__Links h1 {
@@ -125,7 +125,7 @@
     cursor: pointer;
   }
 
-  .nav__Link__item button{
+  .nav__Link__item button {
     background: none;
     border: none;
     background-color: darkblue;

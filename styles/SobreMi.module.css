@@ -18,23 +18,16 @@
 }
 
 .SobreMi__text {
-  width: 80%;
+  width: 50%;
   height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   background: var(--bgHabilidades);
-  border: 2px solid #fff;
   margin-bottom: 5rem;
   z-index: 2;
-}
-
-.Hoja1 h1 {
-  text-align: center;
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: bold;
 }
 
 .Hoja1 {
@@ -53,7 +46,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  border-left: 3px solid #fff;
 }
 
 .SobreMi__text p {
@@ -76,7 +68,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 60%;
@@ -150,24 +141,34 @@
 
 @media screen and (max-width: 580px) {
   .SobreMi__container title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .Hoja1 h1 {
-    font-size: 2rem;
+    display: none;
+  }
+  .Hoja2 {
+    border: none;
+    justify-content: flex-start;
   }
   .SobreMi__text {
-    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 1rem;
   }
   .SobreMi__text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .SobreMi__buttons__cv {
     width: 100%;
     height: 20%;
+    margin-top: 1rem;
+  }
+  .SobreMi__Buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .SobreMi__cv {
     width: 40%;
@@ -177,18 +178,31 @@
 
 @media screen and (max-width: 430px) {
   .Hoja1 h1 {
-    font-size: 2rem;
+    display: none;
+  }
+  .Hoja2 {
+    border: none;
+    justify-content: flex-start;
+  }
+  .SobreMi__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 1rem;
   }
   .SobreMi__text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .SobreMi__buttons__cv {
     width: 100%;
     height: 20%;
+    margin-top: 1rem;
+  }
+  .SobreMi__Buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .SobreMi__cv {
     width: 40%;
@@ -196,7 +210,10 @@
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 360px) {
+  .SobreMi__container title {
+    font-size: 2rem;
+  }
   .Hoja1 h1 {
     font-size: 1.5rem;
   }

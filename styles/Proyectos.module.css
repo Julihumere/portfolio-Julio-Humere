@@ -236,7 +236,7 @@
 @media screen and (max-width: 900px) {
   .Proyectos__container title {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 4rem;
   }
   .Proyectos__titulo__slideShow {
     width: 90%;
@@ -318,6 +318,10 @@
 }
 
 @media screen and (max-width: 400px) {
+  .Proyectos__container title {
+    font-size: 2.5rem;
+  }
+
   .Proyectos__titulo__slideShow {
     width: 90%;
   }
@@ -352,5 +356,11 @@
 
   .habilidades h4 {
     font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .Proyectos__container title {
+    font-size: 2rem;
   }
 }
