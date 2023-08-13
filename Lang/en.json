@@ -1,31 +1,38 @@
 {
-    "Layout":{
-        "sobreMi": "About me",
-        "habilidades": "Skills",
-        "proyectos": "Projects"
-    },
-    "Home": {
-        "fullstack":"I'm full stack developer",
-        "frontend": "I'm frontend developer",
-        "backedn": "I'm backend developer"
-    },
-    "SobreMi":{
-        "titulo": "< About Me />",
-        "tituloText": "About Me",
-        "text1": "I was part of Henry's bootcamp, which gave me +600 hours of code, practice and learning. In which I learned Javascript, React, Node.JS, Express, Redux, HTML, CSS. And I continue to learn new technologies that lead me to an excellent job, such as typescript, nextJS, React Native, Mongo DB.",
-        "text2": "Although I do not have work experience as such, I feel empowered to give my best and learn what there is to know, I consider myself a person who learns quickly and is eager to prove it.",
-        "CvEspañol":"Cv Spanish",
-        "CVIngles": "CV English"
-    },
-    "Habilidades": {
-        "titulo": "< Skills />",
-        "Lenguajes": "Programming languages",
-        "Otros": "Others"
-    },
-    "Proyectos": {
-        "titulo": "< Projects />",
-        "subtitulo1": "Explore the projects",
-        "subtitulo2": "By clicking you will scroll to detail!"
-    }
-
+  "Layout": {
+    "sobreMi": "About me",
+    "habilidades": "Skills",
+    "proyectos": "Projects"
+  },
+  "Home": {
+    "fullstack": "I'm full stack developer",
+    "frontend": "I'm frontend developer",
+    "backedn": "I'm backend developer"
+  },
+  "SobreMi": {
+    "titulo": "< About Me />",
+    "tituloText": "About Me",
+    "text1": "I was part of Henry's bootcamp, which gave me +600 hours of code, practice and learning. In which I learned Javascript, React, Node.JS, Express, Redux, HTML, CSS. And I continue to learn new technologies that lead me to an excellent job, such as typescript, nextJS, React Native, Mongo DB.",
+    "text2": "Although I do not have work experience as such, I feel empowered to give my best and learn what there is to know, I consider myself a person who learns quickly and is eager to prove it.",
+    "CvEspañol": "Cv Spanish",
+    "CVIngles": "CV English"
+  },
+  "Experiencia": {
+    "titulo": "< Experience />",
+    "tituloText": "About Me",
+    "text1": "I was part of Henry's bootcamp, which gave me +600 hours of code, practice and learning. In which I learned Javascript, React, Node.JS, Express, Redux, HTML, CSS. And I continue to learn new technologies that lead me to an excellent job, such as typescript, nextJS, React Native, Mongo DB.",
+    "text2": "Although I do not have work experience as such, I feel empowered to give my best and learn what there is to know, I consider myself a person who learns quickly and is eager to prove it.",
+    "CvEspañol": "Cv Spanish",
+    "CVIngles": "CV English"
+  },
+  "Habilidades": {
+    "titulo": "< Skills />",
+    "Lenguajes": "Programming languages",
+    "Otros": "Others"
+  },
+  "Proyectos": {
+    "titulo": "< Projects />",
+    "subtitulo1": "Explore the projects",
+    "subtitulo2": "By clicking you will scroll to detail!"
+  }
 }

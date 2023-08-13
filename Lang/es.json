@@ -1,30 +1,37 @@
-{   
-    "Layout":{
-        "sobreMi": "Sobre Mi",
-        "habilidades": "Habilidades",
-        "proyectos": "Proyectos"
-    },
-    "Home":{
-        "fullstack":"Soy desarrollador full stack",
-        "frontend": "Soy desarrollador frontend",
-        "backend": "Soy desarrollador backend"
-    },
-    "SobreMi":{
-        "titulo": "< Sobre Mi />",
-        "tituloText": "Sobre Mi",
-        "text1": "Fui parte del bootcamp de Henry, el cual me proporciono +600 horas de codeo, practica y aprendizaje. En el cual aprendi Javascript, React, Node.JS, Express, Redux, HTML, CSS. Y continuo aprendiendo nuevas tecnologias que me den paso a un excelente empleo, como typescript, nextJS, React Native, Mongo DB.",
-        "text2": "Si bien no tengo experiencia laboral como tal, me siento capacitado para dar el maximo de mi y aprender lo que haya que saber, me considero una persona que tiene aprendizaje rapido y muchas ganas de demostrarlo",
-        "CvEspañol":"Cv Español",
-        "CVIngles": "CV Ingles"
-    },
-    "Habilidades": {
-        "titulo": "< Habildiades />",
-        "Lenguajes": "Lenguajes de programacion",
-        "Otros": "Otros"
-    },
-    "Proyectos": {
-        "titulo": "< Proyectos />",
-        "subtitulo1": "Explora los proyectos",
-        "subtitulo2": "Haciendo click te desplazaras al detalle!"
-    }
+{
+  "Layout": {
+    "sobreMi": "Sobre Mi",
+    "habilidades": "Habilidades",
+    "proyectos": "Proyectos"
+  },
+  "Home": {
+    "fullstack": "Soy desarrollador full stack",
+    "frontend": "Soy desarrollador frontend",
+    "backend": "Soy desarrollador backend"
+  },
+  "SobreMi": {
+    "titulo": "< Sobre Mi />",
+    "tituloText": "Sobre Mi",
+    "text1": "Fui parte del bootcamp de Henry, el cual me proporciono +600 horas de codeo, practica y aprendizaje. En el cual aprendi Javascript, React, Node.JS, Express, Redux, HTML, CSS. Y continuo aprendiendo nuevas tecnologias que me den paso a un excelente empleo, como typescript, nextJS, React Native, Mongo DB.",
+    "text2": "Si bien no tengo experiencia laboral como tal, me siento capacitado para dar el maximo de mi y aprender lo que haya que saber, me considero una persona que tiene aprendizaje rapido y muchas ganas de demostrarlo",
+    "CvEspañol": "Cv Español",
+    "CVIngles": "CV Ingles"
+  },
+  "Experiencia": {
+    "titulo": "< Experiencia />",
+    "nombre": "MoneyFi",
+    "fecha": "2023 - Actualidad",
+    "text": "Soy parte del equipo de desarrollado de MoneyFi. Diseño una app de telemedicina que conecta a pacientes con profesionales de la salud en cualquier momento y lugar. Nuestra plataforma ofrece consultas médicas virtuales, permitiendo a los usuarios recibir atención médica, recetas y asesoramiento sin tener que desplazarse. Priorizamos la privacidad y la seguridad de los datos médicos, brindando una experiencia cómoda y confiable para mejorar el acceso a la atención médica.",
+    "Habilidades": "Javascript, React-native, PHP, Mysql"
+  },
+  "Habilidades": {
+    "titulo": "< Habildiades />",
+    "Lenguajes": "Lenguajes de programacion",
+    "Otros": "Otros"
+  },
+  "Proyectos": {
+    "titulo": "< Proyectos />",
+    "subtitulo1": "Explora los proyectos",
+    "subtitulo2": "Haciendo click te desplazaras al detalle!"
+  }
 }
