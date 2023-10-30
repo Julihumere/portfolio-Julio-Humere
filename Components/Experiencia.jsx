@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../styles/Experiencia.module.css";
 
 export default function Experiencia({ props }) {
-  console.log(props);
   return (
     <div className={styles.Experiencia__container} id="experiencia">
       <title>{props.titulo}</title>
@@ -13,7 +12,9 @@ export default function Experiencia({ props }) {
         </div>
         <h4 className={styles.item__text}>{props.text}</h4>
 
-        <h5 className={styles.item__skills}>{props.Habilidades}</h5>
+        <h5 className={styles.item__skills}>
+          Habilidades técnicas: {props.Habilidades}
+        </h5>
       </div>
     </div>
   );

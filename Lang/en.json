@@ -1,6 +1,7 @@
 {
   "Layout": {
     "sobreMi": "About me",
+    "experiencia": "Experience",
     "habilidades": "Skills",
     "proyectos": "Projects"
   },
@@ -19,11 +20,10 @@
   },
   "Experiencia": {
     "titulo": "< Experience />",
-    "tituloText": "About Me",
-    "text1": "I was part of Henry's bootcamp, which gave me +600 hours of code, practice and learning. In which I learned Javascript, React, Node.JS, Express, Redux, HTML, CSS. And I continue to learn new technologies that lead me to an excellent job, such as typescript, nextJS, React Native, Mongo DB.",
-    "text2": "Although I do not have work experience as such, I feel empowered to give my best and learn what there is to know, I consider myself a person who learns quickly and is eager to prove it.",
-    "CvEspañol": "Cv Spanish",
-    "CVIngles": "CV English"
+    "nombre": "MoneyFi",
+    "fecha": "Jun 2023 - Present",
+    "text": "I work for a company in the healthcare industry that uses a cryptocurrency called MDCx. Within this company, I am a member of the mobile app development team, specializing as a full-stack developer. Our primary focus is to create a telemedicine application that allows users to access medical services remotely. In my role, I am responsible for both front-end and back-end development, ensuring that the application is user-friendly, secure, and meets the high standards required in the medical field.",
+    "Habilidades": "Javascript, React-native, PHP, Mysql"
   },
   "Habilidades": {
     "titulo": "< Skills />",

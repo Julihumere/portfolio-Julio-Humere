@@ -11,10 +11,9 @@ export default function Layout({ theme, setTheme, props }) {
       <div className={style.Layout__MenuDesplegable}>
         <MenuDesplegable theme={theme} setTheme={setTheme} />
         <div className={style.Layout__MenuDesplegableSelectors}>
-        <ThemeToggler theme={theme} setTheme={setTheme} />
-        <LanguajeSelector />
+          <ThemeToggler theme={theme} setTheme={setTheme} />
+          <LanguajeSelector />
         </div>
-       
       </div>
       <div className={style.Layout__icono}>
         <Link href={"/"}>
@@ -28,6 +27,18 @@ export default function Layout({ theme, setTheme, props }) {
               <>
                 <span className={style.Layout__button__span}>
                   {props.sobreMi}
+                </span>
+                <span className={style.Layout__line}></span>
+              </>
+            </h1>
+          </Link>
+        </li>
+        <li className={style.Layout__li}>
+          <Link href={"#experiencia"} scroll={false}>
+            <h1 className={style.Layout__Buttons__title}>
+              <>
+                <span className={style.Layout__button__span}>
+                  {props.experiencia}
                 </span>
                 <span className={style.Layout__line}></span>
               </>

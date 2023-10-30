@@ -1,6 +1,7 @@
 {
   "Layout": {
     "sobreMi": "Sobre Mi",
+    "experiencia": "Experiencia",
     "habilidades": "Habilidades",
     "proyectos": "Proyectos"
   },
@@ -20,8 +21,8 @@
   "Experiencia": {
     "titulo": "< Experiencia />",
     "nombre": "MoneyFi",
-    "fecha": "2023 - Actualidad",
-    "text": "Soy parte del equipo de desarrollado de MoneyFi. Diseño una app de telemedicina que conecta a pacientes con profesionales de la salud en cualquier momento y lugar. Nuestra plataforma ofrece consultas médicas virtuales, permitiendo a los usuarios recibir atención médica, recetas y asesoramiento sin tener que desplazarse. Priorizamos la privacidad y la seguridad de los datos médicos, brindando una experiencia cómoda y confiable para mejorar el acceso a la atención médica.",
+    "fecha": "Jun 2023 - Actualidad",
+    "text": "Trabajo para una empresa que se dedica al área de la medicina que posee una criptomoneda llamada MCDx que se utiliza como metodo de transaccion en su ecosistema. Dentro de esta empresa, soy miembro del equipo de desarrollo de aplicaciones móviles, especializándome como desarrollador full-stack. Nuestro objetivo principal es crear una aplicación de telemedicina que permita a los usuarios acceder a servicios médicos de forma remota. En mi función, soy responsable del desarrollo front-end y back-end, garantizando que la aplicación sea fácil de usar, segura y cumpla con los altos estándares requeridos en el campo médico.",
     "Habilidades": "Javascript, React-native, PHP, Mysql"
   },
   "Habilidades": {
