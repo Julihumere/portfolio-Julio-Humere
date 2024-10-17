@@ -1,7 +1,6 @@
 import Link from "next/link";
 import style from "../styles/Layout.module.css";
 import MenuDesplegable from "./MenuDesplegable";
-import Spline from "@splinetool/react-spline";
 import ThemeToggler from "./ThemeToggler";
 import LanguajeSelector from "./LanguajeSelector";
 
@@ -17,7 +16,7 @@ export default function Layout({ theme, setTheme, props }) {
       </div>
       <div className={style.Layout__icono}>
         <Link href={"/"}>
-          <Spline scene="https://prod.spline.design/d6Y54wtG-JYV4csQ/scene.splinecode" />
+          <img src="/img/logo.png" alt="Logo" />
         </Link>
       </div>
       <ul className={style.Layout__Buttons}>

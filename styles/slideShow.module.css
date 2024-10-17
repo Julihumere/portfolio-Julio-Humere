@@ -17,15 +17,15 @@
   flex-direction: column;
 }
 
-.Slide img {
-  width: 100%;
-  vertical-align: top;
+.SlideImages {
+  width: 850px;
+  height: 450px;
 }
 
 .textSlide {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  width: 85%;
+  width: 90%;
   padding: 10px 60px;
   position: absolute;
   bottom: 0.2rem;

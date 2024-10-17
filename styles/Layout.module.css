@@ -20,6 +20,11 @@
   width: 10%;
 }
 
+.Layout__icono img {
+  width: 100px;
+  height: 100px;
+}
+
 .Layout__Buttons {
   margin: 0;
   display: flex;
