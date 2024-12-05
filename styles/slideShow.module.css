@@ -1,81 +1,42 @@
-.slideShow__container {
+.carouselContainer {
+  width: 80%;
+  margin: 0 auto;
   position: relative;
 }
-.SlideShow {
-  display: flex;
-  flex-wrap: nowrap;
-}
 
-.Slide {
-  min-width: 100%;
-  overflow: hidden;
-  transition: 0.3s ease all;
-  z-index: 10;
-  max-height: 100%;
-  position: relative;
+.slide {
+  height: 300px;
   display: flex;
-  flex-direction: column;
-}
-
-.SlideImages {
-  width: 850px;
-  height: 450px;
-}
-
-.textSlide {
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  width: 90%;
-  padding: 10px 60px;
-  position: absolute;
-  bottom: 0.2rem;
-  display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-.SlideButtons {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 11;
-  width: 100%;
-  height: 99%;
-  pointer-events: none;
-}
-
-.SlideButtons button {
-  background: none;
-  border: none;
+  align-items: center;
+  border-radius: 10px;
   color: #fff;
-  pointer-events: all;
-  cursor: pointer;
-  outline: none;
-  width: 50px;
-  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
-  position: absolute;
-  transition: 0.3s ease all;
+  border-radius: 30px;
+}
+.image {
+  border-radius: 20px;
 }
 
-#button_left {
-  left: 0;
+.indicatorContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
 
-#button_left:hover {
-  background: rgba(0, 0, 0, 0.5);
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
 }
 
-#button_rigth {
-  right: 0;
-}
-
-#button_rigth:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.Link {
-  cursor: pointer;
+.active {
+  background-color: #333;
 }
 
 @media screen and (max-width: 700px) {

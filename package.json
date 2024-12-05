@@ -18,6 +18,8 @@
     "react-icons": "^4.4.0",
     "react-redux": "^8.0.5",
     "react-scroll": "^1.8.9",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
