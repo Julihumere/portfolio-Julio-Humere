@@ -8,9 +8,7 @@ export default function HomePage({ props }) {
     <div className={styles.Home__container} id="/">
       <div className={styles.Home__divMayor}>
         <div className={styles.Home__divTitle}>
-          <div>
-            <h1>Julio Humere</h1>
-          </div>
+          <h1>Julio Humere</h1>
           <div className={styles.Home__divTypewriter}>
             <h2 className={styles.Home__typewriter}>
               <Typewriter
@@ -25,13 +23,21 @@ export default function HomePage({ props }) {
         </div>
       </div>
       <div className={styles.Home__socialNetworks}>
-        <a href="https://github.com/Julihumere" target="_blank">
+        <a
+          href="https://github.com/Julihumere"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithub className={styles.Home__item__socialNetworks} />
         </a>
-        <a href="https://www.linkedin.com/in/juli-humere/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/juli-humere/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaLinkedinIn className={styles.Home__item__socialNetworks} />
         </a>
-        <a href="https://wa.link/h0b3bf" target="_blank">
+        <a href="https://wa.link/h0b3bf" target="_blank" rel="noreferrer">
           <FaWhatsapp className={styles.Home__item__socialNetworks} />
         </a>
       </div>
