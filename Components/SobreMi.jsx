@@ -20,6 +20,7 @@ export default function About({ props }) {
                   href={
                     "https://drive.google.com/file/d/1RFFjcrTt7prhawix_MTEtP_YOLKFy9Qh/view?usp=share_link"
                   }
+                  rel="noreferrer"
                 >
                   <h1 className={styles.SobreMi__Buttons__title}>
                     <>
@@ -37,6 +38,7 @@ export default function About({ props }) {
                   href={
                     "https://drive.google.com/file/d/18I9qp4-q8j42AdHMR7PL5cRsOaEiA6o6/view?usp=share_link"
                   }
+                  rel="noreferrer"
                 >
                   <h1 className={styles.SobreMI__Buttons__title}>
                     <>
