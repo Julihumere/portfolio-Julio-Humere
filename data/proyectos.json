@@ -1,100 +1,90 @@
 [
-    {
-      "id": "9203afc0-c982-11ed-ba85-ff7218849755",
-      "fecha": "21/03/2022",
-      "titulo": "Foodies",
-      "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677011077/Portfolio/Fotos/Foods_1_aii00e.png",
-      "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173337/Portfolio/Videos/Foodies_tfueyt.mp4",
-      "descripcion": "Es una SPA que tiene una paginacion de 9 recetas, con ordenamientos por abecedario y nivel saludable y filtrados por dietas, y una formulario controlado con javascript para crear distintas recetas.",
-      "descripcionIngles": "It is a SPA that has a page with 9 recipes, with alphabetical order by alphabet and healthy level and filtered by diets, and a form controlled with javascript to create different recipes.",
-      "tipo": "Henry",
-      "tipoIngles": "Henry",
-      "github": "https://github.com/Julihumere/PI_Food",
-      "demo": "/",
-      "habilidad": [
-        "Javascript",
-        "React",
-        "Redux",
-        "NodeJs",
-        "ExpressJs",
-        "Sequelize",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "id": "a40277b0-c982-11ed-ba85-ff7218849755",
-      "fecha": "17/03/2022",
-      "titulo": "Love of Travel",
-      "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677011088/Portfolio/Fotos/love_of_travel_1_k93id0.png",
-      "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173328/Portfolio/Videos/Love_of_Travel_r5ordk.mp4",
-      "descripcion": "Es una SPA que tiene una paginacion de 10 paises, cada carta tiene su detalle, ordenamientos por abecedario y poblacion y filtrados por continentes y actividades, y una formulario controlado con javascript para crear actividades y asignarselas a los distintos paises.",
-      "descripcionIngles": "It is a SPA that has a page of 10 countries, each letter has its details, sorting by alphabet and population and filtered by continents and activities, and a form controlled with javascript to create activities and assign them to the different countries.",
-      "tipo": "Henry",
-      "tipoIngles": "Henry",
-      "github": "https://github.com/Julihumere/PI-Countries",
-      "demo": "https://love-of-travel.vercel.app",
-      "habilidad": [
-        "Javascript",
-        "React",
-        "Redux",
-        "NodeJs",
-        "ExpressJs",
-        "Sequelize",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "id": "b5fea790-c982-11ed-ba85-ff7218849755",
-      "fecha": "10/05/2022",
-      "titulo": "Pomodoro and ToDo",
-      "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677011083/Portfolio/Fotos/Pomodoro_and_ToDo_-_Brave_26_8_2022_14_38_17_a6d0a0.png",
-      "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173319/Portfolio/Videos/Pomodoro_and_Todo_wmo9qb.mp4",
-      "descripcion": "Es una web page que tiene dos funcionalidades, una pomodoro en la cual se puede asignar las tareas y asignar el tiempo de trabajo y de descanso con un contador de repeticiones, y la otra un ToDo  en la cual se asignan las tareas y se las puede marcar como completadas o eliminarlas. La web trabaja de forma local y es responsive.",
-      "descripcionIngles": "It is a web page that has two functionalities, a pomodoro in which you can assign tasks and assign work and rest time with a repetition counter, and the other a ToDo in which you assign tasks and can mark them as completed or delete them. The website works locally and is responsive.",
-      "tipo": "Practica",
-      "tipoIngles": "Practice",
-      "github": "https://github.com/Julihumere/pomodoro-and.-todo",
-      "demo": "https://pomodoro-and-todo.vercel.app",
-      "habilidad": [
-        "javascript",
-        "Next",
-        "CSS"
-      ]
-    },
-    {
-      "id": "bf7300f0-c982-11ed-ba85-ff7218849755",
-      "fecha": "20/09/2022",
-      "titulo": "Switcher Mode",
-      "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677271716/Portfolio/Fotos/Switcher_mode_n8nfor.png",
-      "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173258/Portfolio/Videos/Dashboard_switch_mode_tzwf8r.mp4",
-      "descripcion": "Es dashboard de redes sociales el cual posee un switch que cambia el tema de oscuro a claro. Es una actividad de Frontend Mentor.",
-      "descripcionIngles": "It is a social media dashboard which has a switch that changes the theme from dark to light. It is a Frontend Mentor activity.",
-      "tipo": "Practica",
-      "tipoIngles": "Practice",
-      "github": "https://github.com/Julihumere/Switcher-mode",
-      "demo": "https://switcher-mode.vercel.app",
-      "habilidad": [
-        "javascript",
-        "Next",
-        "CSS"
-      ]
-    },
-    {
-      "id": "c7f224e0-c982-11ed-ba85-ff7218849755",
-      "fecha": "30/09/2022",
-      "titulo": "Interactive Card",
-      "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677271824/Portfolio/Fotos/Interactive_Card_awxbf0.png",
-      "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173261/Portfolio/Videos/Card_generator_a8cfr5.mp4",
-      "descripcion": "Es generador de tarjetas, la cual fue empleada en una actividad de Frontend Mentor.",
-      "descripcionIngles": "It is a card generator, which was used in a Frontend Mentor activity.",
-      "tipo": "Practica",
-      "tipoIngles": "Practice",
-      "github": "https://github.com/Julihumere/interactiveCard",
-      "demo": "https://interactive-card-ten.vercel.app",
-      "habilidad": [
-        "javascript",
-        "React",
-        "CSS"
-      ]
-    }
-  ]
+  {
+    "id": "c7f224e0-c982-11ed-ba85-344242424242",
+    "fecha": "19/11/2024",
+    "titulo": "World Ranks",
+    "imagen": "https://res.cloudinary.com/dtioqvhiz/image/upload/v1733436644/AnyConv.com__Captura_de_pantalla_2024-12-05_190855_ga1tlx.webp",
+    "video": "https://res.cloudinary.com/dtioqvhiz/video/upload/v1733436810/Untitled_video_-_Made_with_Clipchamp_dn4cvh.mp4",
+    "descripcion": "Es una SPA que tiene una paginacion de 10 paises, cada carta tiene su detalle, ordenamientos por abecedario y poblacion y filtrados por continentes y actividades, y una formulario controlado con javascript para crear actividades y asignarselas a los distintos paises.",
+    "descripcionIngles": "It is a SPA that has a page of 10 countries, each letter has its details, sorting by alphabet and population and filtered by continents and activities, and a form controlled with javascript to create activities and assign them to the different countries.",
+    "tipo": "Practica",
+    "tipoIngles": "Practice",
+    "github": "https://github.com/Julihumere/world-ranks",
+    "demo": "https://world-ranks-mu-nine.vercel.app/",
+    "habilidad": ["Javascript", "Next", "Tailwind CSS", "API"]
+  },
+
+  {
+    "id": "9203afc0-c982-11ed-ba85-ff7218849755",
+    "fecha": "21/03/2022",
+    "titulo": "Foodies",
+    "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677011077/Portfolio/Fotos/Foods_1_aii00e.png",
+    "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173337/Portfolio/Videos/Foodies_tfueyt.mp4",
+    "descripcion": "Es una SPA que tiene una paginacion de 9 recetas, con ordenamientos por abecedario y nivel saludable y filtrados por dietas, y una formulario controlado con javascript para crear distintas recetas.",
+    "descripcionIngles": "It is a SPA that has a page with 9 recipes, with alphabetical order by alphabet and healthy level and filtered by diets, and a form controlled with javascript to create different recipes.",
+    "tipo": "Henry",
+    "tipoIngles": "Henry",
+    "github": "https://github.com/Julihumere/PI_Food",
+    "demo": "/",
+    "habilidad": [
+      "Javascript",
+      "React",
+      "Redux",
+      "NodeJs",
+      "ExpressJs",
+      "Sequelize",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "id": "a40277b0-c982-11ed-ba85-ff7218849755",
+    "fecha": "17/03/2022",
+    "titulo": "Love of Travel",
+    "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677011088/Portfolio/Fotos/love_of_travel_1_k93id0.png",
+    "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173328/Portfolio/Videos/Love_of_Travel_r5ordk.mp4",
+    "descripcion": "Es una SPA que tiene una paginacion de 10 paises, cada carta tiene su detalle, ordenamientos por abecedario y poblacion y filtrados por continentes y actividades, y una formulario controlado con javascript para crear actividades y asignarselas a los distintos paises.",
+    "descripcionIngles": "It is a SPA that has a page of 10 countries, each letter has its details, sorting by alphabet and population and filtered by continents and activities, and a form controlled with javascript to create activities and assign them to the different countries.",
+    "tipo": "Henry",
+    "tipoIngles": "Henry",
+    "github": "https://github.com/Julihumere/PI-Countries",
+    "demo": "https://love-of-travel.vercel.app",
+    "habilidad": [
+      "Javascript",
+      "React",
+      "Redux",
+      "NodeJs",
+      "ExpressJs",
+      "Sequelize",
+      "PostgreSQL"
+    ]
+  },
+
+  {
+    "id": "bf7300f0-c982-11ed-ba85-ff7218849755",
+    "fecha": "20/09/2022",
+    "titulo": "Switcher Mode",
+    "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677271716/Portfolio/Fotos/Switcher_mode_n8nfor.png",
+    "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173258/Portfolio/Videos/Dashboard_switch_mode_tzwf8r.mp4",
+    "descripcion": "Es dashboard de redes sociales el cual posee un switch que cambia el tema de oscuro a claro. Es una actividad de Frontend Mentor.",
+    "descripcionIngles": "It is a social media dashboard which has a switch that changes the theme from dark to light. It is a Frontend Mentor activity.",
+    "tipo": "Practica",
+    "tipoIngles": "Practice",
+    "github": "https://github.com/Julihumere/Switcher-mode",
+    "demo": "https://switcher-mode.vercel.app",
+    "habilidad": ["javascript", "Next", "CSS"]
+  },
+  {
+    "id": "c7f224e0-c982-11ed-ba85-ff7218849755",
+    "fecha": "30/09/2022",
+    "titulo": "Interactive Card",
+    "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677271824/Portfolio/Fotos/Interactive_Card_awxbf0.png",
+    "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173261/Portfolio/Videos/Card_generator_a8cfr5.mp4",
+    "descripcion": "Es generador de tarjetas, la cual fue empleada en una actividad de Frontend Mentor.",
+    "descripcionIngles": "It is a card generator, which was used in a Frontend Mentor activity.",
+    "tipo": "Practica",
+    "tipoIngles": "Practice",
+    "github": "https://github.com/Julihumere/interactiveCard",
+    "demo": "https://interactive-card-ten.vercel.app",
+    "habilidad": ["javascript", "React", "CSS"]
+  }
+]

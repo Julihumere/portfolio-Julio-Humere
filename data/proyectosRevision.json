@@ -1,0 +1,30 @@
+[
+  {
+    "id": "b5fea790-c982-11ed-ba85-ff7218849755",
+    "fecha": "10/05/2022",
+    "titulo": "Pomodoro and ToDo",
+    "imagen": "https://res.cloudinary.com/dann9ji59/image/upload/v1677011083/Portfolio/Fotos/Pomodoro_and_ToDo_-_Brave_26_8_2022_14_38_17_a6d0a0.png",
+    "video": "https://res.cloudinary.com/dann9ji59/video/upload/v1677173319/Portfolio/Videos/Pomodoro_and_Todo_wmo9qb.mp4",
+    "descripcion": "Es una web page que tiene dos funcionalidades, una pomodoro en la cual se puede asignar las tareas y asignar el tiempo de trabajo y de descanso con un contador de repeticiones, y la otra un ToDo  en la cual se asignan las tareas y se las puede marcar como completadas o eliminarlas. La web trabaja de forma local y es responsive.",
+    "descripcionIngles": "It is a web page that has two functionalities, a pomodoro in which you can assign tasks and assign work and rest time with a repetition counter, and the other a ToDo in which you assign tasks and can mark them as completed or delete them. The website works locally and is responsive.",
+    "tipo": "Practica",
+    "tipoIngles": "Practice",
+    "github": "https://github.com/Julihumere/pomodoro-and.-todo",
+    "demo": "https://pomodoro-and-todo.vercel.app",
+    "habilidad": ["javascript", "Next", "CSS"]
+  },
+  {
+    "id": "c7f224e0-c982-11ed-ba85-dsfs34234234",
+    "fecha": "05/12/2024",
+    "titulo": "Github Finder",
+    "imagen": "https://res.cloudinary.com/dtioqvhiz/image/upload/v1733439689/AnyConv.com__Sin_t%C3%ADtulo_dzbfcc.webp",
+    "video": "https://res.cloudinary.com/dtioqvhiz/video/upload/v1733439696/Github_profile_-_Brave_2024-12-05_19-59-11_xhsidu.mp4",
+    "descripcion": "Es una SPA que tiene un buscador de usuarios de github, en el cual se puede ver el perfil del usuario, sus repositorios y sus seguidores. Asi como tambien se puede buscar los repositorios de un usuario en especifico y filtrar por repositorios recientes o más valorados.",
+    "descripcionIngles": "It is a SPA that has a github user search engine, in which you can see the user's profile, their repositories and their followers. As well as you can search for the repositories of a specific user and filter by recent or most valued repositories.",
+    "tipo": "Practica",
+    "tipoIngles": "Practice",
+    "github": "https://github.com/Julihumere/github-profile",
+    "demo": "https://world-ranks-mu-nine.vercel.app/",
+    "habilidad": ["Javascript", "Next", "Tailwind CSS", "API"]
+  }
+]
