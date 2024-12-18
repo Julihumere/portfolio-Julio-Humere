@@ -7,6 +7,7 @@ import { FaGraduationCap, FaTools } from "react-icons/fa";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { useRouter } from "next/router";
 import proyectosArray from "../data/proyectos.json";
+import VideoWithPreview from "./VideoWithPreview";
 
 export default function Projects({ props }) {
   const router = useRouter();
@@ -16,8 +17,6 @@ export default function Projects({ props }) {
       <title>{props.titulo}</title>
       <div className={styles.Proyectos__titulo__slideShow}>
         <h1>{props.subtitulo1}</h1>
-        <h3>{props.subtitulo2}</h3>
-
         <div className={styles.SlideShow}>
           <SlideShow proyectos={proyectosArray} />
         </div>
@@ -48,12 +47,11 @@ export default function Projects({ props }) {
                 </div>
                 <span className={styles.line}></span>
                 <div className={styles.Proyectos__img}>
-                  <video
-                    controls
-                    autoPlay={false}
-                    style={{ borderRadius: "25px" }}
-                    src={e.video}
-                  ></video>
+                  <VideoWithPreview
+                    previewImage={e.imagen}
+                    videoSrc={e.video}
+                    name={e.titulo}
+                  />
                   <div className={styles.tecnologias}>
                     <FaTools size="2em" />
                     <div className={styles.habilidades}>

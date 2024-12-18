@@ -4,19 +4,22 @@ import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import { Link } from "react-scroll";
 import Image from "next/image";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function SlideShow({ proyectos }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     afterChange: (current) => setActiveIndex(current),
     arrows: false,
-    //autoplay: true,
+    dotsClass: styles.custom_dots,
+    autoplay: true,
   };
 
   return (
@@ -28,13 +31,7 @@ export default function SlideShow({ proyectos }) {
             className={styles.slide}
             style={{ backgroundColor: item.color }}
           >
-            <Link
-              to={item.titulo}
-              spy={true}
-              smooth={true}
-              offset={-120}
-              duration={500}
-            >
+            <div>
               <Image
                 layout="responsive"
                 width={1000}
@@ -43,22 +40,23 @@ export default function SlideShow({ proyectos }) {
                 alt={"imagen de " + item.titulo}
                 className={styles.image}
               />
+            </div>
+            <div className={styles.content}>
               <h2>{item.titulo}</h2>
-            </Link>
+              <Link
+                to={item.titulo}
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+                style={{ cursor: "pointer" }}
+              >
+                Ir al proyecto
+              </Link>
+            </div>
           </div>
         ))}
       </Slider>
-
-      <div className={styles.indicatorContainer}>
-        {proyectos.map((_, index) => (
-          <div
-            key={index}
-            className={`${styles.indicator} ${
-              activeIndex === index ? styles.active : ""
-            }`}
-          ></div>
-        ))}
-      </div>
     </div>
   );
 }
