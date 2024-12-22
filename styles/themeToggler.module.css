@@ -1,15 +1,20 @@
-.button__toggler{
-    border: none;
-    background:none;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button__toggler {
+  border: none;
+  background: none;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
-.button__icon{
-    font-size: 3rem;
-    text-align: center;
-    cursor: pointer;
+.button__toggler:hover {
+  transform: scale(1.4);
+}
+
+.button__icon {
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
 }

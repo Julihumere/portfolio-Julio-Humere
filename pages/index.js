@@ -10,6 +10,7 @@ import { useTheme } from "next-themes";
 import Experiencia from "../Components/Experiencia.jsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import MouseTrail from "../Components/MouseTrail.jsx";
 
 export default function Home(props) {
   const { theme, setTheme } = useTheme();
@@ -22,6 +23,7 @@ export default function Home(props) {
         <link rel="icon" href="/img/logo.png" />
       </Head>
       <ButtonTop />
+      <MouseTrail />
       <Stars />
       <Layout props={props.Layout} />
       <HomePage props={props.Home} />

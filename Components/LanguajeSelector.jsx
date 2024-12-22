@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import styles from "../styles/LanguajeSelector.module.css";
 
 export default function LanguajeSelector() {
   const router = useRouter();
@@ -16,12 +17,7 @@ export default function LanguajeSelector() {
     <div>
       <button
         onClick={changeLanguaje}
-        style={{
-          marginTop: "0.5rem",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-        }}
+        className={styles.buttonLang}
         value={router.locale}
       >
         <span>
