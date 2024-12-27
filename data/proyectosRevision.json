@@ -12,19 +12,5 @@
     "github": "https://github.com/Julihumere/pomodoro-and.-todo",
     "demo": "https://pomodoro-and-todo.vercel.app",
     "habilidad": ["javascript", "Next", "CSS"]
-  },
-  {
-    "id": "c7f224e0-c982-11ed-ba85-dsfs34234234",
-    "fecha": "05/12/2024",
-    "titulo": "Github Finder",
-    "imagen": "https://res.cloudinary.com/dtioqvhiz/image/upload/v1733439689/AnyConv.com__Sin_t%C3%ADtulo_dzbfcc.webp",
-    "video": "https://res.cloudinary.com/dtioqvhiz/video/upload/v1733439696/Github_profile_-_Brave_2024-12-05_19-59-11_xhsidu.mp4",
-    "descripcion": "Es una SPA que tiene un buscador de usuarios de github, en el cual se puede ver el perfil del usuario, sus repositorios y sus seguidores. Asi como tambien se puede buscar los repositorios de un usuario en especifico y filtrar por repositorios recientes o más valorados.",
-    "descripcionIngles": "It is a SPA that has a github user search engine, in which you can see the user's profile, their repositories and their followers. As well as you can search for the repositories of a specific user and filter by recent or most valued repositories.",
-    "tipo": "Practica",
-    "tipoIngles": "Practice",
-    "github": "https://github.com/Julihumere/github-profile",
-    "demo": "https://world-ranks-mu-nine.vercel.app/",
-    "habilidad": ["Javascript", "Next", "Tailwind CSS", "API"]
   }
 ]

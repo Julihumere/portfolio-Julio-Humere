@@ -1,5 +1,19 @@
 [
   {
+    "id": "c7f224e0-c982-11ed-ba85-dsfuiewfn4534",
+    "fecha": "05/12/2024",
+    "titulo": "Github Profile",
+    "imagen": "/img/Proyectos/Images/github-profile.webp",
+    "video": "/img/Proyectos/Videos/github-profile.mp4",
+    "descripcion": "Es una SPA que tiene un buscador de usuarios de github, en el cual se puede ver el perfil del usuario, sus repositorios y sus seguidores. Asi como tambien se puede buscar los repositorios de un usuario en especifico y filtrar por repositorios recientes o más valorados.",
+    "descripcionIngles": "It is a SPA that has a github user search engine, in which you can see the user's profile, their repositories and their followers. As well as you can search for the repositories of a specific user and filter by recent or most valued repositories.",
+    "tipo": "Practica",
+    "tipoIngles": "Practice",
+    "github": "https://github.com/Julihumere/github-profile",
+    "demo": "https://github-profile-snowy.vercel.app/",
+    "habilidad": ["Javascript", "Next", "Tailwind CSS", "API"]
+  },
+  {
     "id": "c7f224e0-c982-11ed-ba85-344242424242",
     "fecha": "19/11/2024",
     "titulo": "World Ranks",
