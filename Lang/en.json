@@ -13,8 +13,12 @@
   "SobreMi": {
     "titulo": "< About Me />",
     "tituloText": "About Me",
-    "text1": "I was part of Henry's bootcamp, which gave me +600 hours of code, practice and learning. In which I learned Javascript, React, Node.JS, Express, Redux, HTML, CSS. And I continue to learn new technologies that lead me to an excellent job, such as typescript, nextJS, React Native, Mongo DB.",
-    "text2": "Although I do not have work experience as such, I feel empowered to give my best and learn what there is to know, I consider myself a person who learns quickly and is eager to prove it.",
+    "titulo1": "🚀 Education",
+    "titulo2": "💻 Professional Experience",
+    "titulo3": "🤝 Teamwork",
+    "formacion": "I completed the Henry bootcamp, gaining over 600 hours of hands-on practice and learning in web and mobile development. During this time, I mastered technologies such as JavaScript, React, Node.js, Express, Redux, HTML, and CSS. 🌱 I am currently pursuing a Web Development Technician degree at the National University of Entre Ríos 🎓, and I am proficient in tools like TypeScript, Next.js, React Native, and MongoDB.",
+    "experiencia": "With over 2 years of experience, I’ve worked on developing web and mobile applications, creating robust and scalable solutions. On the backend, I leverage Node.js and Express to build efficient APIs. 🔧",
+    "equipo": "I’m accustomed to collaborating in multidisciplinary teams and remote environments, using Scrum and DevOps practices to enhance project security and testing. I also use GitHub and Jira for agile task and project management. 🛠️",
     "CvEspañol": "Cv Spanish",
     "CVIngles": "CV English"
   },
@@ -23,6 +27,7 @@
     "nombre": "MoneyFi",
     "fecha": "Jun 2023 - Oct 2024",
     "text": "I work for a company in the healthcare industry that uses a cryptocurrency called MDCx. Within this company, I am a member of the mobile app development team, specializing as a full-stack developer. Our primary focus is to create a telemedicine application that allows users to access medical services remotely. In my role, I am responsible for both front-end and back-end development, ensuring that the application is user-friendly, secure, and meets the high standards required in the medical field.",
+    "titulohab": "🔧 Technical skills",
     "Habilidades": "Javascript, React-native, PHP, Mysql"
   },
   "Habilidades": {

@@ -19,15 +19,15 @@
 
 .SobreMi__text {
   width: 50%;
-  height: 70vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   background: var(--bgHabilidades);
-  margin-bottom: 5rem;
-  z-index: 2;
+  margin-bottom: 10rem;
+  padding: 20px;
 }
 
 .Hoja1 {
@@ -37,6 +37,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.Hoja1 > p > strong {
+  width: 100%;
+  margin-bottom: 0.4em;
 }
 
 .Hoja2 {
@@ -49,12 +54,12 @@
 }
 
 .SobreMi__text p {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--foreground);
 }
 

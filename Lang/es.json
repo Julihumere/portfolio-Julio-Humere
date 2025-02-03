@@ -13,8 +13,12 @@
   "SobreMi": {
     "titulo": "< Sobre Mi />",
     "tituloText": "Sobre Mi",
-    "text1": "Fui parte del bootcamp de Henry, el cual me proporciono +600 horas de codeo, practica y aprendizaje. En el cual aprendi Javascript, React, Node.JS, Express, Redux, HTML, CSS. Y continuo aprendiendo nuevas tecnologias que me den paso a un excelente empleo, como typescript, nextJS, React Native, Mongo DB.",
-    "text2": "Si bien no tengo experiencia laboral como tal, me siento capacitado para dar el maximo de mi y aprender lo que haya que saber, me considero una persona que tiene aprendizaje rapido y muchas ganas de demostrarlo",
+    "titulo1": "🚀 Formación",
+    "titulo2": "💻 Experiencia Profesional",
+    "titulo3": "🤝 Trabajo en Equipo",
+    "formacion": "Fui parte del bootcamp de Henry, donde adquirí más de 600 horas de práctica y aprendizaje en desarrollo web y móvil. Durante este tiempo, dominé tecnologías como JavaScript, React, Node.js, Express, Redux, HTML y CSS. 🌱 Actualmente, estoy cursando la Tecnicatura en Desarrollo Web en la Universidad Nacional de Entre Ríos 🎓, y ya manejo herramientas como TypeScript, Next.js, React Native y MongoDB",
+    "experiencia": "Con más de 2 años de experiencia, he trabajado en el desarrollo de aplicaciones web y móviles, creando soluciones robustas y escalables. En el backend, utilizo Node.js y Express para desarrollar APIs eficientes. 🔧",
+    "equipo": "Estoy acostumbrado a colaborar en equipos multidisciplinarios y en entornos remotos, utilizando Scrum y DevOps para mejorar la seguridad y el testing de los proyectos. Además, manejo GitHub y Jira para la gestión ágil de tareas y proyectos. 🛠️",
     "CvEspañol": "Cv Español",
     "CVIngles": "CV Ingles"
   },
@@ -23,6 +27,7 @@
     "nombre": "MoneyFi",
     "fecha": "Jun 2023 - Oct 2024",
     "text": "Trabajo para una empresa que se dedica al área de la medicina que posee una criptomoneda llamada MCDx que se utiliza como metodo de transaccion en su ecosistema. Dentro de esta empresa, soy miembro del equipo de desarrollo de aplicaciones móviles, especializándome como desarrollador full-stack. Nuestro objetivo principal es crear una aplicación de telemedicina que permita a los usuarios acceder a servicios médicos de forma remota. En mi función, soy responsable del desarrollo front-end y back-end, garantizando que la aplicación sea fácil de usar, segura y cumpla con los altos estándares requeridos en el campo médico.",
+    "titulohab": "🔧 Habilidades técnicas",
     "Habilidades": "Javascript, React-native, PHP, Mysql"
   },
   "Habilidades": {

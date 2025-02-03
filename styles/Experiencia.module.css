@@ -1,6 +1,6 @@
 .Experiencia__container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@
 
 .title__item {
   width: 90%;
-  height: 10vh;
+  height: auto;
   align-items: center;
   justify-content: space-between;
   display: flex;
@@ -41,25 +41,65 @@
   margin-top: 40px;
 }
 .title__item > h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 40px;
 }
 
 .item__text {
-  width: 80%;
+  width: 90%;
+  height: auto;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .item__skills {
-  width: 80%;
-  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+}
+
+.item__skills > strong {
+  margin-bottom: 0.4em;
+  margin-top: 1em;
+}
+
+.item__skills > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.item__skills > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item__skills > ul > li > p {
+  margin: 0;
+  padding: 0;
+  margin-left: 0.5em;
+}
+
+.img__skills {
+  width: 599px;
 }
 
 @media screen and (max-width: 840px) {
   .Experiencia__container title {
     margin-top: 2rem;
     font-size: 3rem;
+  }
+  .title__item {
+    flex-direction: column;
+  }
+  .title__item > h1 {
+    font-size: 2rem;
+  }
+  .img__skills {
+    width: 599px;
   }
 }
 
