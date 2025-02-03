@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from "../styles/Experiencia.module.css";
 import Image from "next/image";
@@ -17,72 +18,58 @@ export default function Experiencia({ props }) {
           <strong>{props.titulohab}</strong>
           <ul>
             <li>
-              <Image
+              <img
                 alt="Javascript"
                 src="/img/FrontEnd/Javascript.png"
-                width={50}
-                height={50}
                 className={styles.img__skills}
               />
               <p>Javascript</p>
             </li>
             <li>
-              <Image
+              <img
                 alt="React Native"
                 src="/img/FrontEnd/ReactNative.webp"
-                width={50}
-                height={50}
                 className={styles.img__skills}
               />
               <p>React Native</p>
             </li>
             <li>
-              <Image
+              <img
                 alt="React"
                 src="/img/FrontEnd/React.png"
-                width={50}
-                height={50}
                 className={styles.img__skills}
               />
               <p>React</p>
             </li>
 
             <li>
-              <Image
+              <img
                 alt="PHP"
                 src="/img/FrontEnd/PHP.webp"
-                width={70}
-                height={50}
                 className={styles.img__skills}
               />
               <p>PHP</p>
             </li>
             <li>
-              <Image
+              <img
                 alt="Node JS"
                 src="/img/Backend/nodejs.png"
-                width={50}
-                height={50}
                 className={styles.img__skills}
               />
               <p>Node JS</p>
             </li>
             <li>
-              <Image
+              <img
                 alt="Express"
                 src="/img/Backend/express.png"
-                width={50}
-                height={50}
                 className={styles.img__skills}
               />
               <p>Express</p>
             </li>
             <li>
-              <Image
+              <img
                 alt="SQL"
                 src="/img/Backend/sql.png"
-                width={50}
-                height={50}
                 className={styles.img__skills}
               />
               <p>MySql</p>
