@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .SobreMi__text {
-  width: 50%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -197,7 +197,7 @@
     padding: 1rem;
   }
   .SobreMi__text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .SobreMi__buttons__cv {
     width: 100%;

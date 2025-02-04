@@ -1,9 +1,9 @@
 .Experiencia__container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .Experiencia__container title {
@@ -17,7 +17,7 @@
 }
 
 .Experiencia__item {
-  width: 80%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@
   align-items: center;
   border-radius: 25px;
   background: var(--bgHabilidades);
+  padding: 20px;
 }
 
 .title__item {
@@ -89,7 +90,16 @@
   height: 50px;
 }
 
+@media screen and (max-width: 1015px) {
+  .Experiencia__item {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 840px) {
+  .Experiencia__item {
+    width: 80%;
+  }
   .Experiencia__container title {
     margin-top: 2rem;
     font-size: 3rem;
@@ -117,11 +127,11 @@
     margin-left: 1em;
   }
   .img__skills {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   .item__text {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 

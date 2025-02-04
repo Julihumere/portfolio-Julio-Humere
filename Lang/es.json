@@ -3,7 +3,8 @@
     "sobreMi": "Sobre Mi",
     "experiencia": "Experiencia",
     "habilidades": "Habilidades",
-    "proyectos": "Proyectos"
+    "proyectos": "Proyectos",
+    "contacto": "Contacto"
   },
   "Home": {
     "fullstack": "Soy desarrollador full stack",
@@ -39,5 +40,27 @@
     "titulo": "< Proyectos />",
     "subtitulo1": "Explora los proyectos deslizando!",
     "subtitulo2": "Haciendo click te desplazaras al detalle!"
+  },
+  "Contacto": {
+    "titulo": "< Contacto />",
+    "item1": "👤 Nombre",
+    "item2": "📧 Email",
+    "item3": "📬 Asunto",
+    "item4": "📝 Mensaje",
+    "button": "Enviar",
+    "formulario": "Formulario de contacto",
+    "enviado": "Mensaje enviado con éxito 🎉",
+    "item1Requerido": "Nombre es requerido",
+    "item2Requerido": "Email es requerido",
+    "item3Requerido": "Asunto es requerido",
+    "item4Requerido": "Mensaje es requerido",
+    "emailInvalido": "Email invalido",
+    "formularioVacio": "El formulario esta vacio",
+    "titleCountDown": "Podras enviar otro mensaje dentro de:",
+    "subtitleCountDown": "Para comunicación directa, envia un wpp",
+    "diasLang": "Dias",
+    "horasLang": "Horas",
+    "minutosLang": "Minutos",
+    "segundosLang": "Segundos"
   }
 }

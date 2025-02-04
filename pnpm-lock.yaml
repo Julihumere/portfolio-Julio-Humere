@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@emailjs/browser':
+        specifier: ^4.4.1
+        version: 4.4.1
       '@splinetool/runtime':
         specifier: ^0.9.235
         version: 0.9.526
+      flipdown:
+        specifier: ^0.3.2
+        version: 0.3.2
       next:
         specifier: 12.2.5
         version: 12.2.5(@babel/core@7.26.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -20,6 +26,9 @@ importers:
       react:
         specifier: 18.2.0
         version: 18.2.0
+      react-calendly:
+        specifier: ^4.3.1
+        version: 4.3.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
@@ -734,6 +743,10 @@ packages:
   '@babel/types@7.26.3':
     resolution: {integrity: sha512-vN5p+1kl59GVKMvTHt55NzzmYVxprfJD+ql7U9NFIfKCBkYE55LYtS+WtPlaYOyzydrKI8Nezd+aZextrd+FMA==}
     engines: {node: '>=6.9.0'}
+
+  '@emailjs/browser@4.4.1':
+    resolution: {integrity: sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg==}
+    engines: {node: '>=14.0.0'}
 
   '@eslint/eslintrc@1.4.1':
     resolution: {integrity: sha512-XXrH9Uarn0stsyldqDYq8r++mROmWRI1xKMXa640Bb//SY1+ECYX6VzT6Lcx5frD0V30XieqJ0oX9I2Xj5aoMA==}
@@ -1755,6 +1768,9 @@ packages:
   flatted@3.3.2:
     resolution: {integrity: sha512-AiwGJM8YcNOaobumgtng+6NHuOqC3A7MixFeDafM3X9cIUM+xUXoS5Vfgf+OihAYe20fxqNM9yPBXJzRtZ/4eA==}
 
+  flipdown@0.3.2:
+    resolution: {integrity: sha512-WR+NS6iAHcz8F3McMrxydkGVKE7y2H77STSVUa84czj3uwqjcB2EPM6v9XA98eFr8YU1FEfqqYitdl89pMZnJw==}
+
   flow-enums-runtime@0.0.6:
     resolution: {integrity: sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==}
 
@@ -2665,6 +2681,13 @@ packages:
   range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
+
+  react-calendly@4.3.1:
+    resolution: {integrity: sha512-poyUH3NOUOlsotr8ho5WzbsbPuRAppaY+Jvu+C/PkwTP6WT807pNFI8+HrbbuRknXZbd75zpzysOJQvcu3P8Pg==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
 
   react-devtools-core@5.3.2:
     resolution: {integrity: sha512-crr9HkVrDiJ0A4zot89oS0Cgv0Oa4OG1Em4jit3P3ZxZSKPMYyMjfwMqgcJna9o625g8oN87rBm8SWWrSTBZxg==}
@@ -4272,6 +4295,8 @@ snapshots:
       '@babel/helper-validator-identifier': 7.25.9
     optional: true
 
+  '@emailjs/browser@4.4.1': {}
+
   '@eslint/eslintrc@1.4.1':
     dependencies:
       ajv: 6.12.6
@@ -5739,6 +5764,8 @@ snapshots:
 
   flatted@3.3.2: {}
 
+  flipdown@0.3.2: {}
+
   flow-enums-runtime@0.0.6:
     optional: true
 
@@ -6882,6 +6909,11 @@ snapshots:
 
   range-parser@1.2.1:
     optional: true
+
+  react-calendly@4.3.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
 
   react-devtools-core@5.3.2:
     dependencies:

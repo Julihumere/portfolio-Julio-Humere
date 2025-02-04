@@ -1,0 +1,96 @@
+.countdown__container {
+  width: 90%;
+  height: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.countdown__container h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.countdown__values {
+  width: 100%;
+  display: flex;
+}
+
+.big__text {
+  font-weight: bold;
+  font-size: 5rem;
+  margin: 5px;
+}
+
+.countdown__value {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.countdown__value span {
+  font-size: 1.3rem;
+}
+
+.countdown__container__whatsapp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whatsapp {
+  background-color: rgb(8 190 63);
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1290px) {
+  .big__text {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .countdown__container h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .big__text {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 5px;
+  }
+
+  .countdown__container__whatsapp {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .big__text {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 5px;
+  }
+  .countdown__value span {
+    font-size: 1rem;
+  }
+}

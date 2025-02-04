@@ -11,10 +11,9 @@ import Experiencia from "../Components/Experiencia.jsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MouseTrail from "../Components/MouseTrail.jsx";
+import Contact from "../Components/Contact.jsx";
 
 export default function Home(props) {
-  const { theme, setTheme } = useTheme();
-
   return (
     <div>
       <Head>
@@ -31,6 +30,7 @@ export default function Home(props) {
       <Experiencia props={props.Experiencia} />
       <Habilidades props={props.Habilidades} />
       <Proyectos props={props.Proyectos} />
+      <Contact props={props.Contact} />
     </div>
   );
 }
@@ -45,6 +45,7 @@ export async function getStaticProps({ locale }) {
       Experiencia: response.Experiencia,
       Habilidades: response.Habilidades,
       Proyectos: response.Proyectos,
+      Contact: response.Contacto,
     },
   };
 }

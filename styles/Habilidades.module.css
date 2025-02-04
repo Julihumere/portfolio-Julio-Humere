@@ -1,10 +1,10 @@
 .Habilidades__container {
-  margin: 0;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .Habilidades__container title {
@@ -19,8 +19,8 @@
 }
 
 .Habilidades__div {
-  width: 100%;
-  height: 100%;
+  width: 94%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -35,7 +35,7 @@
 }
 
 .Habilidades__tecnologia__div {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

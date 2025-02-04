@@ -68,6 +68,18 @@ export default function Layout({ theme, setTheme, props }) {
             </h1>
           </Link>
         </li>
+        <li className={style.Layout__li}>
+          <Link href={"#contacto"}>
+            <h1 className={style.Layout__Buttons__title}>
+              <>
+                <span className={style.Layout__button__span}>
+                  {props.contacto}
+                </span>
+                <span className={style.Layout__line}></span>
+              </>
+            </h1>
+          </Link>
+        </li>
       </ul>
       <ul className={style.Layout__ul__selectors}>
         <li>
